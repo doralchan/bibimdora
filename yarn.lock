@@ -4111,6 +4111,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bibimdora@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "bibimdora@workspace:."
+  dependencies:
+    classnames: "npm:^2.5.1"
+    eslint-config-react: "npm:^1.1.7"
+    prop-types: "npm:^15.8.1"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    react-router-dom: "npm:^7.1.1"
+    react-scripts: "npm:^5.0.1"
+    react-select: "npm:^5.9.0"
+    styled-components: "npm:^6.1.14"
+    typescript: "npm:^5.7.3"
+  languageName: unknown
+  linkType: soft
+
 "big.js@npm:^5.2.2":
   version: 5.2.2
   resolution: "big.js@npm:5.2.2"
@@ -4504,23 +4521,6 @@ __metadata:
   checksum: 10c0/0264392e3b691a8551e619889f3e67558b4f755eeb09d67625032a25c37634731e778fabbd9d14df6477d6ae770e30ea9405d18e515b2ec492b0eb90bb8d7f43
   languageName: node
   linkType: hard
-
-"bibimdora@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "bibimdora@workspace:."
-  dependencies:
-    classnames: "npm:^2.5.1"
-    eslint-config-react: "npm:^1.1.7"
-    prop-types: "npm:^15.8.1"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
-    react-router-dom: "npm:^7.1.1"
-    react-scripts: "npm:^5.0.1"
-    react-select: "npm:^5.9.0"
-    styled-components: "npm:^6.1.14"
-    typescript: "npm:^5.7.3"
-  languageName: unknown
-  linkType: soft
 
 "collect-v8-coverage@npm:^1.0.0":
   version: 1.0.2
