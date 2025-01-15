@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Strokes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+        stroke: #FFF;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <polygon class="b" points="8.06 12.52 3.59 14.87 4.44 9.9 .83 6.37 5.83 5.65 8.06 1.12 10.3 5.65 15.29 6.37 11.68 9.9 12.53 14.87 8.06 12.52"/>
+</svg>

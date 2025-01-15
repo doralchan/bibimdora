@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Strokes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+        stroke: #FFF;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <circle class="b" cx="8" cy="8" r="1.45"/>
+  <path class="b" d="M11.08,4.92c1.7,1.7,1.7,4.46,0,6.16,0,0,0,0,0,0"/>
+  <path class="b" d="M4.92,11.08c-1.7-1.7-1.7-4.46,0-6.16,0,0,0,0,0,0"/>
+  <path class="b" d="M13.13,2.87c2.83,2.83,2.83,7.43,0,10.26"/>
+  <path class="b" d="M2.87,13.13C.03,10.3.03,5.7,2.87,2.87"/>
+</svg>
