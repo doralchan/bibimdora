@@ -1,1 +1,12 @@
-node_modules
+#dependencies
+/node_modules
+/.pnp
+.pnp.cjs
+
+#production
+/build
+
+#misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
