@@ -15,7 +15,7 @@ const data = {
     'TTFB'
   ],
   datasets: [{
-    data: [40, 30, 20, 10, 5],
+    data: [30, 30, 15, 15, 10],
     backgroundColor: [
       '#A737B4',
       '#9E86FF',
