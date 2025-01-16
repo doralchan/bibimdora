@@ -22,6 +22,7 @@ function Filter({ defaultSelection }) {
     { value: 'NextJS', label: 'NextJS'}, //14
     { value: 'Go', label: 'Go'}, //15
     { value: 'Python', label: 'Python'}, //16
+    { value: 'Go, Python', label: 'Go, Python'} //17
   ]
 
   const EnvOptions = [

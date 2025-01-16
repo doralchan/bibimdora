@@ -9,7 +9,7 @@ function OperationQueues() {
     <Main>
       <Header title='Queues'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='17' />
       </Body>
     </Main>
   )

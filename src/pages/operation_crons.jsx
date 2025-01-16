@@ -9,7 +9,7 @@ function OperationCrons() {
     <Main>
       <Header title='Crons'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='17' />
       </Body>
     </Main>
   )

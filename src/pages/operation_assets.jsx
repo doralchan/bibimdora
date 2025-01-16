@@ -9,7 +9,7 @@ function OperationAssets() {
     <Main>
       <Header title='Assets'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='14' />
       </Body>
     </Main>
   )

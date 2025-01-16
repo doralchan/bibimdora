@@ -9,7 +9,7 @@ function FrontendOperations() {
     <Main>
       <Header title='Frontend'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='14' />
       </Body>
     </Main>
   )

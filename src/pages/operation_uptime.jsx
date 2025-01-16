@@ -9,7 +9,7 @@ function OperationUptime() {
     <Main>
       <Header title='Uptime'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='17' />
       </Body>
     </Main>
   )

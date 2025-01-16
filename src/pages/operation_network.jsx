@@ -9,7 +9,7 @@ function OperationNetwork() {
     <Main>
       <Header title='Network Requests'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='14' />
       </Body>
     </Main>
   )

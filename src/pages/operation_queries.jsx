@@ -9,7 +9,7 @@ function OperationQueries() {
     <Main>
       <Header title='Queries'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='17' />
       </Body>
     </Main>
   )

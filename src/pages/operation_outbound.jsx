@@ -9,7 +9,7 @@ function OperationOutbound() {
     <Main>
       <Header title='Outbound Requests'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='17' />
       </Body>
     </Main>
   )

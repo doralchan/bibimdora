@@ -9,7 +9,7 @@ function BackendOperations() {
     <Main>
       <Header title='Backend'></Header>
       <Body>
-        <FilterBar />
+        <FilterBar defaultSelection='17' />
       </Body>
     </Main>
   )
