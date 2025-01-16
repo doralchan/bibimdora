@@ -4,6 +4,9 @@ import Subnavigation from '../layouts/subnavigation'
 import SubnavItem from '../layouts/subnavitem'
 
 import DefaultLogo from '../assets/logo-default.svg'
+import NextJSLogo from '../assets/logo-nextjs.svg'
+import GoLogo from '../assets/logo-go.svg'
+import PythonLogo from '../assets/logo-python.svg'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -11,10 +14,13 @@ import '../styles/theme.css'
 function Operations() {
   return (
     <StyledContainer>
-      <Subnavigation title='Peated App' subtitle='Insights B'>
+      <Subnavigation title='Peated App' subtitle='Insights'>
         <GroupedNav>
           <SubnavGroup>
             <SubnavItem to='overview'>Overview</SubnavItem>
+            <SubnavItem to='nextjs' src={NextJSLogo}>NextJS</SubnavItem>
+            <SubnavItem to='go' src={GoLogo}>Go</SubnavItem>
+            <SubnavItem to='python' src={PythonLogo}>Python</SubnavItem>
           </SubnavGroup>
           <SubnavGroup>
             <SubnavItem to='frontend'>Frontend</SubnavItem>

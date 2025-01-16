@@ -1,20 +1,18 @@
 import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
-import Widgets from '../layouts/widgets'
 
 import FilterBar from '../components/filterBar'
 
-function OverviewOperations() {
+function OperationProjectGo() {
   return (
     <Main>
       <Header title='Overview'></Header>
       <Body>
-        <FilterBar defaultSelection='13' />
-        <Widgets />
+        <FilterBar defaultSelection='15' />
       </Body>
     </Main>
   )
 }
 
-export default OverviewOperations
+export default OperationProjectGo

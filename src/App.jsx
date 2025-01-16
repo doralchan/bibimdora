@@ -35,6 +35,9 @@ import SavedDashboard2 from './pages/dashboards_saved2'
 
 import Operations from './pages/operations'
 import OverviewOperations from './pages/operations_overview'
+import OperationProjectNextjs from './pages/operation_project_nextjs'
+import OperationProjectGo from './pages/operation_project_go'
+import OperationProjectPython from './pages/operation_project_python'
 import FrontendOperations from './pages/operations_frontend'
 import OperationWebVitals from './pages/operation_webvitals'
 import OperationUI from './pages/operation_ui'
@@ -84,6 +87,9 @@ function App() {
           </Route>
           <Route path='/operations' element={<Operations/>}>
             <Route path='overview' element={<OverviewOperations/>} />
+            <Route path='nextjs' element={<OperationProjectNextjs/>} />
+            <Route path='go' element={<OperationProjectGo/>} />
+            <Route path='python' element={<OperationProjectPython/>} />
             <Route path='frontend' element={<FrontendOperations/>} />
             <Route path='webvitals' element={<OperationWebVitals/>} />
             <Route path='ui' element={<OperationUI/>} />

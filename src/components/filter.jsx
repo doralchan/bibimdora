@@ -18,6 +18,10 @@ function Filter({ defaultSelection }) {
     { value: 'foodfightiOS, foodfightDroid', label: 'foodfightiOS, foodfightDroid' }, //10
     { value: 'foodfightiOS', label: 'foodfightiOS' }, //11
     { value: 'foodfightDroid', label: 'foodfightDroid' }, //12
+    { value: 'NextJS, Go, Python', label: 'NextJS, Go, Python'}, //13
+    { value: 'NextJS', label: 'NextJS'}, //14
+    { value: 'Go', label: 'Go'}, //15
+    { value: 'Python', label: 'Python'}, //16
   ]
 
   const EnvOptions = [
