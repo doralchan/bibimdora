@@ -58,10 +58,12 @@ function App() {
       <Page>
         <Navigation/>
         <Routes>
-          <Route path='/' element={<Issues/>}>
-            <Route path='' element={<AllIssues/>} />
+          <Route path='/' element={<Navigate to='/issues/all'/>}/>
+          <Route path='/issues' element={<Issues/>}>
+            <Route path='all' element={<AllIssues/>} />
             <Route path='saved1' element={<SavedView1/>} />
             <Route path='saved2' element={<SavedView2/>} />
+            <Route path='' element={<Navigate to='/issues/all'/>} /> 
           </Route>
           <Route path='/services' element={<Services/>}>
             <Route path='app' element={<AppServices/>} />

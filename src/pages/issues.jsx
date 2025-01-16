@@ -13,7 +13,7 @@ function Issues() {
     <StyledContainer>
       <Subnavigation title='Issues'>
         <SubnavGroup>
-          <SubnavItem to=''>All Issues</SubnavItem>
+          <SubnavItem to='all'>All Issues</SubnavItem>
         </SubnavGroup>
         <SubnavHeader>Starred</SubnavHeader>
         <SubnavGroup>
