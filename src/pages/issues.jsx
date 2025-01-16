@@ -11,7 +11,7 @@ import '../styles/theme.css'
 function Issues() {
   return (
     <StyledContainer>
-      <Subnavigation title='Issues'>
+      <Subnavigation title='Peated App' subtitle='Issues'>
         <SubnavGroup>
           <SubnavItem to='all'>All Issues</SubnavItem>
         </SubnavGroup>

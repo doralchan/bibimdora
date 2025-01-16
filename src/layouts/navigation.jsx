@@ -18,7 +18,6 @@ const Navigation = ({className}) => (
       <NavItem to='issues' src={IconIssues} />
       <NavItem to='explore' src={IconExplore} />
       <NavItem to='dashboards' src={IconDashboards} />
-      <NavItem to='services' src={IconServices} />
       <NavItem to='operations' src={IconOperations} />
     </NavTop>
     <NavBottom>
