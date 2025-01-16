@@ -9,7 +9,7 @@ function OperationProjectNextjs() {
     <Main>
       <Header title='Overview'></Header>
       <Body>
-        <FilterBar defaultSelection='14' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )

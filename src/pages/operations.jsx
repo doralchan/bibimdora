@@ -18,9 +18,9 @@ function Operations() {
         <GroupedNav>
           <SubnavGroup>
             <SubnavItem to='overview'>Overview</SubnavItem>
-            <SubnavItem to='nextjs' src={NextJSLogo}>NextJS</SubnavItem>
-            <SubnavItem to='go' src={GoLogo}>Go</SubnavItem>
-            <SubnavItem to='python' src={PythonLogo}>Python</SubnavItem>
+            <SubnavItem to='nextjs' src={NextJSLogo}>PeatJS</SubnavItem>
+            <SubnavItem to='go' src={GoLogo}>WhiskyFetch</SubnavItem>
+            <SubnavItem to='python' src={PythonLogo}>ServerPy</SubnavItem>
           </SubnavGroup>
           <SubnavGroup>
             <SubnavItem to='frontend'>Frontend</SubnavItem>

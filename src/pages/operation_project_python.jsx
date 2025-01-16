@@ -9,7 +9,7 @@ function OperationProjectPython() {
     <Main>
       <Header title='Overview'></Header>
       <Body>
-        <FilterBar defaultSelection='16' />
+        <FilterBar defaultSelection='3' />
       </Body>
     </Main>
   )

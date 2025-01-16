@@ -9,7 +9,7 @@ function OperationUI() {
     <Main>
       <Header title='UI'></Header>
       <Body>
-        <FilterBar defaultSelection='14' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )

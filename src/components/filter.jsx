@@ -5,24 +5,11 @@ import '../styles/theme.css'
 
 function Filter({ defaultSelection }) {
   const ProjectOptions = [
-    { value: 'foodfight, project', label: 'foodfight, project' }, //0
-    { value: 'foodfight', label: 'foodfight' }, //1
-    { value: 'project', label: 'project' }, //2
-    { value: 'admin-portal, help-center', label: 'admin-portal, help-center' }, //3
-    { value: 'admin-portal', label: 'admin-portal' }, //4
-    { value: 'help-center', label: 'help-center' }, //5
-    { value: 'vendors, recs, payments', label: 'vendors, recs, payments' }, //6
-    { value: 'vendors', label: 'vendors' }, //7
-    { value: 'recs', label: 'recs' }, //8
-    { value: 'payments', label: 'payments' }, //9
-    { value: 'foodfightiOS, foodfightDroid', label: 'foodfightiOS, foodfightDroid' }, //10
-    { value: 'foodfightiOS', label: 'foodfightiOS' }, //11
-    { value: 'foodfightDroid', label: 'foodfightDroid' }, //12
-    { value: 'NextJS, Go, Python', label: 'NextJS, Go, Python'}, //13
-    { value: 'NextJS', label: 'NextJS'}, //14
-    { value: 'Go', label: 'Go'}, //15
-    { value: 'Python', label: 'Python'}, //16
-    { value: 'Go, Python', label: 'Go, Python'} //17
+    { value: 'PeatJS, WhiskyFetch, ServerPy', label: 'PeatJS, WhiskyFetch, ServerPy'}, //0
+    { value: 'PeatJS,', label: 'PeatJS'}, //1
+    { value: 'WhiskyFetch', label: 'WhiskyFetch'}, //2
+    { value: 'ServerPy', label: 'ServerPy'}, //3
+    { value: 'WhiskyFetch, ServerPy', label: 'WhiskyFetch, ServerPy'} //4
   ]
 
   const EnvOptions = [

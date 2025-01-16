@@ -9,7 +9,7 @@ function OperationCache() {
     <Main>
       <Header title='Cache'></Header>
       <Body>
-        <FilterBar defaultSelection='17' />
+        <FilterBar defaultSelection='4' />
       </Body>
     </Main>
   )

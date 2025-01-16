@@ -9,7 +9,7 @@ function OperationWebVitals() {
     <Main>
       <Header title='Web Vitals'></Header>
       <Body>
-        <FilterBar defaultSelection='14' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )

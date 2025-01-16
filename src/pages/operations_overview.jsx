@@ -10,7 +10,7 @@ function OverviewOperations() {
     <Main>
       <Header title='Overview'></Header>
       <Body>
-        <FilterBar defaultSelection='13' />
+        <FilterBar defaultSelection='0' />
         <Widgets />
       </Body>
     </Main>

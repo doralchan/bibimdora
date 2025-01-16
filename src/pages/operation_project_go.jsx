@@ -9,7 +9,7 @@ function OperationProjectGo() {
     <Main>
       <Header title='Overview'></Header>
       <Body>
-        <FilterBar defaultSelection='15' />
+        <FilterBar defaultSelection='2' />
       </Body>
     </Main>
   )

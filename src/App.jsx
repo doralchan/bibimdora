@@ -6,22 +6,6 @@ import AllIssues from './pages/issues_all'
 import SavedView1 from './pages/issues_saved1'
 import SavedView2 from './pages/issues_saved2'
 
-import Services from './pages/services'
-import AppServices from './pages/services_app'
-import ProjectNextJS from './pages/project_nextjs'
-import ProjectDefault from './pages/project_default'
-import FrontendServices from './pages/services_frontend'
-import ProjectJavascript from './pages/project_javascript'
-import ProjectReact from './pages/project_react'
-import BackendServices from './pages/services_backend'
-import ProjectPython from './pages/project_python'
-import ProjectRedis from './pages/project_redis'
-import ProjectGo from './pages/project_go'
-import MobileServices from './pages/services_mobile'
-import ProjectApple from './pages/project_apple'
-import ProjectAndroid from './pages/project_android'
-import ProjectAll from './pages/project_all'
-
 import Explore from './pages/explore'
 import ExploreSpans from './pages/explore_spans'
 import ExploreErrors from './pages/explore_errors'
@@ -51,6 +35,7 @@ import OperationQueues from './pages/operation_queues'
 import OperationCrons from './pages/operation_crons'
 import OperationUptime from './pages/operation_uptime'
 import MobileOperations from './pages/operations_mobile'
+import ProjectAll from './pages/project_all'
 
 import Page from './layouts/page'
 import Navigation from './layouts/navigation'
@@ -67,23 +52,6 @@ function App() {
             <Route path='saved1' element={<SavedView1/>} />
             <Route path='saved2' element={<SavedView2/>} />
             <Route path='' element={<Navigate to='/issues/all'/>} /> 
-          </Route>
-          <Route path='/services' element={<Services/>}>
-            <Route path='app' element={<AppServices/>} />
-            <Route path='nextjs' element={<ProjectNextJS/>} />
-            <Route path='default' element={<ProjectDefault/>} />
-            <Route path='frontend' element={<FrontendServices/>} />
-            <Route path='javascript' element={<ProjectJavascript/>} />
-            <Route path='react' element={<ProjectReact/>} />
-            <Route path='backend' element={<BackendServices/>} />
-            <Route path='python' element={<ProjectPython/>} />
-            <Route path='redis' element={<ProjectRedis/>} />
-            <Route path='go' element={<ProjectGo/>} />
-            <Route path='mobile' element={<MobileServices/>} />
-            <Route path='apple' element={<ProjectApple/>} />
-            <Route path='android' element={<ProjectAndroid/>} />
-            <Route path='all' element={<ProjectAll/>} />
-            <Route path='' element={<Navigate to='/services/app'/>} />      
           </Route>
           <Route path='/operations' element={<Operations/>}>
             <Route path='overview' element={<OverviewOperations/>} />
