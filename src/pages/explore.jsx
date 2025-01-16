@@ -16,6 +16,7 @@ function Explore() {
           <SubnavItem to='spans'>Spans</SubnavItem>
           <SubnavItem to='errors'>Errors</SubnavItem>
           <SubnavItem to='replays'>Replays</SubnavItem>
+          <SubnavItem to='profiles'>Profiles</SubnavItem>
           <SubnavItem to='logs'>Logs</SubnavItem>
         </SubnavGroup>
         <SubnavHeader>Starred</SubnavHeader>

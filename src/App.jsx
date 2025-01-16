@@ -10,6 +10,7 @@ import Explore from './pages/explore'
 import ExploreSpans from './pages/explore_spans'
 import ExploreErrors from './pages/explore_errors'
 import ExploreReplays from './pages/explore_replays'
+import ExploreProfiles from './pages/explore_profiles'
 import ExploreLogs from './pages/explore_logs'
 
 import Dashboards from './pages/dashboards'
@@ -77,7 +78,8 @@ function App() {
           <Route path='/explore' element={<Explore/>}>
             <Route path='spans' element={<ExploreSpans/>} />
             <Route path='errors' element={<ExploreErrors/>} />
-            <Route path='replays' element={<ExploreReplays/>} />          
+            <Route path='replays' element={<ExploreReplays/>} />
+            <Route path='profiles' element={<ExploreProfiles/>} />      
             <Route path='logs' element={<ExploreLogs/>} />
             <Route path='' element={<Navigate to='/explore/spans'/>} />
           </Route>
