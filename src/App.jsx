@@ -38,7 +38,7 @@ import OperationQueues from './pages/operation_queues'
 import OperationCrons from './pages/operation_crons'
 import OperationUptime from './pages/operation_uptime'
 import MobileOperations from './pages/operations_mobile'
-import ProjectAll from './pages/project_all'
+import Scrapers from './pages/operations_scrapers'
 
 import Page from './layouts/page'
 import Navigation from './layouts/navigation'
@@ -76,7 +76,7 @@ function App() {
             <Route path='crons' element={<OperationCrons/>} />
             <Route path='uptime' element={<OperationUptime/>} />
             <Route path='mobile' element={<MobileOperations/>} />
-            <Route path='all' element={<ProjectAll/>} />
+            <Route path='scrapers' element={<Scrapers/>} />
             <Route path='' element={<Navigate to='/operations/overview'/>} />
           </Route>
           <Route path='/explore' element={<Explore/>}>

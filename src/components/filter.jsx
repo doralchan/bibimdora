@@ -5,11 +5,11 @@ import '../styles/theme.css'
 
 function Filter({ defaultSelection }) {
   const ProjectOptions = [
-    { value: 'PeatJS, WhiskyFetch, ServerPy', label: 'PeatJS, WhiskyFetch, ServerPy'}, //0
-    { value: 'PeatJS,', label: 'PeatJS'}, //1
-    { value: 'WhiskyFetch', label: 'WhiskyFetch'}, //2
-    { value: 'ServerPy', label: 'ServerPy'}, //3
-    { value: 'WhiskyFetch, ServerPy', label: 'WhiskyFetch, ServerPy'} //4
+    { value: '@peated/web, server, worker', label: '@peated/web, server, worker'}, //0
+    { value: '@peated/web,', label: '@peated/web'}, //1
+    { value: 'server', label: 'server'}, //2
+    { value: 'worker', label: 'worker'}, //3
+    { value: 'server, worker', label: 'server, worker'} //4
   ]
 
   const EnvOptions = [
