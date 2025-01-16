@@ -4,7 +4,7 @@ import '../styles/theme.css'
 const Widget = ({className, children, title}) => (
   <WidgetStyles className={className}>
     <h4>{title}</h4>
-    <span>{children}</span>
+    {children}
   </WidgetStyles>
 );
 
@@ -16,7 +16,6 @@ const WidgetStyles = styled('div')`
   min-height: var(--space-unit);
   padding: var(--space-md);
   border-radius: var(--radius);
-  min-height: 120px;
 `;
 
 export default Widget;

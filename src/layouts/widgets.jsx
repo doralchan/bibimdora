@@ -1,11 +1,14 @@
 import Widget from '../components/widget'
+import Donut from '../components/donut'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
 
 const Widgets = ({className}) => (
     <GridStyles className={className}>
-      <WidgetScore />
+      <WidgetScore>
+        <Donut />
+      </WidgetScore>
       <WidgetThroughput />
       <WidgetA />
       <WidgetB />
@@ -19,7 +22,7 @@ const Widgets = ({className}) => (
   
 const GridStyles = styled('div')`
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 2fr 1fr 1fr 1fr;
   gap: var(--space-unit);
 `;
