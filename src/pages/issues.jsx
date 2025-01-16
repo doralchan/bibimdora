@@ -12,14 +12,20 @@ function Issues() {
   return (
     <StyledContainer>
       <Subnavigation title='Peated App' subtitle='Issues'>
-        <SubnavGroup>
-          <SubnavItem to='all'>All Issues</SubnavItem>
-        </SubnavGroup>
-        <SubnavHeader>Starred</SubnavHeader>
-        <SubnavGroup>
-          <SubnavItem to='saved1' src={DefaultLogo}>Custom View 1</SubnavItem>
-          <SubnavItem to='saved2' src={DefaultLogo}>Custom View 2</SubnavItem>
-        </SubnavGroup>
+        <GroupedNav>
+          <SubnavGroup>
+            <SubnavItem to='all'>All Issues</SubnavItem>
+          </SubnavGroup>
+          <SubnavGroup>
+            <SubnavHeader>Starred</SubnavHeader>
+            <SubnavItem to='saved1' src={DefaultLogo}>Custom View 1</SubnavItem>
+            <SubnavItem to='saved2' src={DefaultLogo}>Custom View 2</SubnavItem>
+          </SubnavGroup>
+          <SubnavGroup>
+            <SubnavItem to='monitors'>Monitors</SubnavItem>
+            <SubnavItem to='automations'>Automations</SubnavItem>
+          </SubnavGroup>
+        </GroupedNav>
       </Subnavigation>
       <Outlet/>
     </StyledContainer>
@@ -36,8 +42,13 @@ const SubnavHeader = styled('h4')`
   margin-bottom: var(--space-sm);
 `;
 
-const SubnavGroup = styled('div')`
-  margin-bottom: var(--space-lg);
+const GroupedNav = styled('div')`
+  display: grid;
+  grid-template-rows: repeat(2, auto) 1fr;
+  gap: var(--space-lg);
+  align-items: flex-end;
+  height: 100%;
 `;
 
+const SubnavGroup = styled('div')``;
 export default Issues;

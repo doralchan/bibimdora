@@ -5,6 +5,8 @@ import Issues from './pages/issues'
 import AllIssues from './pages/issues_all'
 import SavedView1 from './pages/issues_saved1'
 import SavedView2 from './pages/issues_saved2'
+import Monitors from './pages/issues_monitors'
+import Automations from './pages/issues_automations'
 
 import Explore from './pages/explore'
 import ExploreSpans from './pages/explore_spans'
@@ -52,6 +54,8 @@ function App() {
             <Route path='all' element={<AllIssues/>} />
             <Route path='saved1' element={<SavedView1/>} />
             <Route path='saved2' element={<SavedView2/>} />
+            <Route path='monitors' element={<Monitors/>} />
+            <Route path='automations' element={<Automations/>} />
             <Route path='' element={<Navigate to='/issues/all'/>} /> 
           </Route>
           <Route path='/operations' element={<Operations/>}>
