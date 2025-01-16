@@ -15,7 +15,7 @@ const Navigation = ({className}) => (
   <NavigationStyles className={className}>
     <NavTop>
       <StyledSentry />
-      <NavItem to='issues' src={IconIssues} />
+      <NavItem to='' src={IconIssues} />
       <NavItem to='explore' src={IconExplore} />
       <NavItem to='dashboards' src={IconDashboards} />
       <NavItem to='services' src={IconServices} />
