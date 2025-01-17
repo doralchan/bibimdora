@@ -17,8 +17,8 @@ function Operations() {
         <SubnavGroup>
           <SubnavItem to='overview'>Overview</SubnavItem>
           <SubnavItem to='nextjs' src={NextJSLogo}>@peated/web</SubnavItem>
-          <SubnavItem to='go' src={NodeLogo}>server</SubnavItem>
-          <SubnavItem to='python' src={NodeLogo}>worker</SubnavItem>
+          <SubnavItem to='go' src={NodeLogo}>@peated/server</SubnavItem>
+          <SubnavItem to='python' src={NodeLogo}>@peated/worker</SubnavItem>
         </SubnavGroup>
         <SubnavGroup>
           <SubnavItem to='frontend'>Frontend</SubnavItem>
