@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationAssets() {
   return (
     <Main>
-      <Header title='Assets'></Header>
+      <Header title='Assets'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>

@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationQueries() {
   return (
     <Main>
-      <Header title='Queries'></Header>
+      <Header title='Queries'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>

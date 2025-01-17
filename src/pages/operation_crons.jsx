@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationCrons() {
   return (
     <Main>
-      <Header title='Crons'></Header>
+      <Header title='Crons'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>

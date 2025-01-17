@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationUptime() {
   return (
     <Main>
-      <Header title='Uptime'></Header>
+      <Header title='Uptime'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>

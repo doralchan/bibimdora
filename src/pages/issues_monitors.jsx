@@ -5,7 +5,7 @@ import Body from '../layouts/body'
 function Monitors() {
   return (
     <Main>
-      <Header title='Monitors'></Header>
+      <Header title='Monitors'/>
       <Body>List of monitors</Body>
     </Main>
   )

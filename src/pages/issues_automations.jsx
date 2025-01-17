@@ -5,7 +5,7 @@ import Body from '../layouts/body'
 function Automations() {
   return (
     <Main>
-      <Header title='Automations'></Header>
+      <Header title='Automations'/>
       <Body>List of automations</Body>
     </Main>
   )

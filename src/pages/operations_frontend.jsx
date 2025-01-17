@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function FrontendOperations() {
   return (
     <Main>
-      <Header title='Frontend'></Header>
+      <Header title='Frontend'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>

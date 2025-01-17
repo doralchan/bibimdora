@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationWebVitals() {
   return (
     <Main>
-      <Header title='Web Vitals'></Header>
+      <Header title='Web Vitals'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>

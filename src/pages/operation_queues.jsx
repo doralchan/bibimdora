@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationQueues() {
   return (
     <Main>
-      <Header title='Queues'></Header>
+      <Header title='Queues'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>

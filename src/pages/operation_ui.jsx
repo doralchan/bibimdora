@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationUI() {
   return (
     <Main>
-      <Header title='UI'></Header>
+      <Header title='UI'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>

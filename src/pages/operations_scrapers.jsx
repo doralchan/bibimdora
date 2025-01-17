@@ -5,7 +5,7 @@ import Body from '../layouts/body'
 function Scrapers() {
   return (
     <Main>
-      <Header title='Scrapers'></Header>
+      <Header title='Scrapers'/>
       <Body>List of scrapers</Body>
     </Main>
   )

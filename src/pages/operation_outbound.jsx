@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationOutbound() {
   return (
     <Main>
-      <Header title='Outbound Requests'></Header>
+      <Header title='Outbound Requests'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>

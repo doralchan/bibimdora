@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationProjectPython() {
   return (
     <Main>
-      <Header title='Overview'></Header>
+      <Header title='Overview'/>
       <Body>
         <FilterBar defaultSelection='3' />
       </Body>

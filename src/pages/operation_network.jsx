@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationNetwork() {
   return (
     <Main>
-      <Header title='Network Requests'></Header>
+      <Header title='Network Requests'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>

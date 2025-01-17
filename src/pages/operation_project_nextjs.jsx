@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationProjectNextjs() {
   return (
     <Main>
-      <Header title='Overview'></Header>
+      <Header title='Overview'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>

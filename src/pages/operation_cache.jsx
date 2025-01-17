@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function OperationCache() {
   return (
     <Main>
-      <Header title='Cache'></Header>
+      <Header title='Cache'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>

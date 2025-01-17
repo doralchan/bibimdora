@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function MobileOperations() {
   return (
     <Main>
-      <Header title='Mobile'></Header>
+      <Header title='Mobile'/>
       <Body>
         <FilterBar />
       </Body>

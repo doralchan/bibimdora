@@ -8,9 +8,9 @@ import FilterBar from '../components/filterBar'
 function OverviewOperations() {
   return (
     <Main>
-      <Header title='Overview'></Header>
+      <Header title='Overview'/>
       <Body>
-        <FilterBar defaultSelection='0' />
+        <FilterBar />
         <Widgets />
       </Body>
     </Main>

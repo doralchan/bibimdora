@@ -7,7 +7,7 @@ import FilterBar from '../components/filterBar'
 function BackendOperations() {
   return (
     <Main>
-      <Header title='Backend'></Header>
+      <Header title='Backend'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>
