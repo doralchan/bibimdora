@@ -1,5 +1,6 @@
 import Widget from '../components/widget'
 import Donut from '../components/donut'
+import Bars from '../components/bars'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -9,7 +10,9 @@ const Widgets = ({className}) => (
       <WidgetScore>
         <Donut />
       </WidgetScore>
-      <WidgetThroughput />
+      <WidgetThroughput>
+        <Bars />
+      </WidgetThroughput>
       <WidgetA />
       <WidgetB />
       <WidgetC />

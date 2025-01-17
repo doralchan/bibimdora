@@ -1,19 +1,13 @@
 import React from 'react';
 import {Chart, ArcElement} from 'chart.js';
 import {Doughnut} from 'react-chartjs-2';
+import 'chart.js/auto';
 
 import styled from 'styled-components'
 
 Chart.register(ArcElement);
 
 const data = {
-  labels: [
-    'FCP',
-    'LCP',
-    'INP',
-    'CLS',
-    'TTFB'
-  ],
   datasets: [{
     data: [30, 30, 15, 15, 10],
     backgroundColor: [
@@ -35,8 +29,7 @@ function Donut() {
 }
 
 const StyledDonut = styled('div')`
-  display: inline-block;
-  width: 200px;
+  max-height: 200px;
 `;
 
 export default Donut;
