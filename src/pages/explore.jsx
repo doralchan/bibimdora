@@ -21,11 +21,6 @@ function Explore() {
         </SubnavGroup>
         <SubnavHeader>Starred</SubnavHeader>
         <SubnavGroup>
-          <SubnavItem to='saved1' src={DefaultLogo}>Custom Query 1</SubnavItem>
-          <SubnavItem to='saved2' src={DefaultLogo}>Custom Query 2</SubnavItem>
-        </SubnavGroup>
-        <SubnavHeader>Suggested</SubnavHeader>
-        <SubnavGroup>
           <SubnavItem to='suggested1' src={DefaultLogo}>Worst LCPs</SubnavItem>
           <SubnavItem to='suggested2' src={DefaultLogo}>Biggest Assets</SubnavItem>
           <SubnavItem to='suggested3' src={DefaultLogo}>Top Pageloads</SubnavItem>

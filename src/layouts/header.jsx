@@ -15,7 +15,7 @@ const Header = ({className, children, title, cta}) => (
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
-    background: var(--gray100);
+    background: var(--white);
     border-bottom: 1px solid var(--gray200);
     padding: var(--space-lg) var(--space-xl) var(--space-lg) var(--space-xl);
     grid-column: 2/3;
