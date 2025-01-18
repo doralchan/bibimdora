@@ -20,10 +20,14 @@ const data = {
   }]
 };
 
+const options = {
+  responsive: true
+};
+
 function Donut() {
   return (
     <StyledDonut>
-      <Doughnut data={data} />
+      <Doughnut data={data} option={options} />
     </StyledDonut>
   );
 }

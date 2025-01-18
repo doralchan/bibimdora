@@ -7,19 +7,19 @@ import '../styles/theme.css'
 
 const Widgets = ({className}) => (
     <GridStyles className={className}>
-      <WidgetScore>
+      <WidgetScore title='Score'>
         <Donut />
       </WidgetScore>
-      <WidgetThroughput>
+      <WidgetThroughput title='Throughput'>
         <Bars />
       </WidgetThroughput>
-      <WidgetA />
-      <WidgetB />
-      <WidgetC />
-      <WidgetD />
-      <WidgetE />
-      <WidgetF />
-      <WidgetIssues />
+      <WidgetA title='Slowest A' />
+      <WidgetB title='Slowest B' />
+      <WidgetC title='Slowest C' />
+      <WidgetD title='Worst X' />
+      <WidgetE title='Worst Y' />
+      <WidgetF title='Worst Z' />
+      <WidgetIssues title='Transactions' />
     </GridStyles>
   );
   
