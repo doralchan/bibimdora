@@ -1,5 +1,6 @@
 import Icon from '../components/icon'
 import IconChevron from '../assets/icon-chevron.svg'
+import PatternDots from '../assets/pattern-dots.svg'
 
 import styled from 'styled-components'
 
@@ -22,7 +23,9 @@ function Subnavigation({className, children, title, subtitle}) {
 const SubnavigationStyles = styled('div')`
   display: grid;
   grid-template-rows: auto 1fr;
-  background: var(--gray100);
+  background-image: url(${PatternDots});
+  background-color: var(--gray100);
+  background-repeat: space;
   grid-column: 1/2;
   padding: var(--space-lg) var(--space-lg);
   border-right: 1px solid var(--gray200);

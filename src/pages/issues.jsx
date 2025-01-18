@@ -4,6 +4,8 @@ import Subnavigation from '../layouts/subnavigation'
 import SubnavItem from '../layouts/subnavitem'
 
 import DefaultLogo from '../assets/logo-default.svg'
+import NextJSLogo from '../assets/logo-nextjs.svg'
+import NodeLogo from '../assets/logo-node.svg'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -18,8 +20,12 @@ function Issues() {
           </SubnavGroup>
           <SubnavGroup>
             <SubnavHeader>Starred</SubnavHeader>
-            <SubnavItem to='saved1' src={DefaultLogo}>Custom View 1</SubnavItem>
-            <SubnavItem to='saved2' src={DefaultLogo}>Custom View 2</SubnavItem>
+            <SubnavItem to='errors' src={DefaultLogo}>Errors & Outages</SubnavItem>
+            <SubnavItem to='metrics' src={DefaultLogo}>Metrics</SubnavItem>
+            <SubnavItem to='craft' src={DefaultLogo}>Craft</SubnavItem>
+            <SubnavItem to='security' src={DefaultLogo}>Security</SubnavItem>
+            <SubnavItem to='saved1' src={NextJSLogo}>Custom View 1</SubnavItem>
+            <SubnavItem to='saved2' src={NodeLogo}>Custom View 2</SubnavItem>
           </SubnavGroup>
           <SubnavGroup>
             <SubnavItem to='monitors'>Monitors</SubnavItem>

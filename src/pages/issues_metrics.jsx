@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationAssets() {
+function Metrics() {
   return (
     <Main>
-      <Header title='Assets'/>
+      <Header title='Metrics'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default OperationAssets
+export default Metrics

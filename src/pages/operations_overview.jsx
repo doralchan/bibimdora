@@ -3,7 +3,7 @@ import Header from '../layouts/header'
 import Body from '../layouts/body'
 import Widgets from '../layouts/widgets'
 
-import FilterBar from '../components/filterBar'
+import FilterBar from '../layouts/filterBar'
 
 function OverviewOperations() {
   return (

@@ -2,7 +2,6 @@ import Sentry from '../components/sentry'
 import NavItem from '../layouts/navitem'
 
 import IconIssues from '../assets/icon-issues.svg'
-import IconServices from '../assets/icon-services.svg'
 import IconOperations from '../assets/icon-operations.svg'
 import IconExplore from '../assets/icon-explore.svg'
 import IconDashboards from '../assets/icon-dashboards.svg'
@@ -31,10 +30,11 @@ const NavigationStyles = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--purple300);
+  background: var(--white);
   grid-column: 1/2;
   padding: var(--space-lg) var(--space-md);
   margin: 0;
+  border-right: 1px solid var(--gray200);
 `;
 
 const StyledSentry = styled(Sentry)`

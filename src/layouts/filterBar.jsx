@@ -1,5 +1,5 @@
-import Filter from './filter'
-import Input from './input'
+import Filter from '../components/filter'
+import Input from '../components/input'
 
 import styled from 'styled-components'
 import '../styles/theme.css'

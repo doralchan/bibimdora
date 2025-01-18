@@ -2,7 +2,7 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 
-import FilterBar from '../components/filterBar'
+import FilterBar from '../layouts/filterBar'
 
 function OperationProjectGo() {
   return (

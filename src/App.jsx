@@ -3,6 +3,10 @@ import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 
 import Issues from './pages/issues'
 import AllIssues from './pages/issues_all'
+import Errors from './pages/issues_errors'
+import Metrics from './pages/issues_metrics'
+import Craft from './pages/issues_craft'
+import Security from './pages/issues_security'
 import SavedView1 from './pages/issues_saved1'
 import SavedView2 from './pages/issues_saved2'
 import Monitors from './pages/issues_monitors'
@@ -52,6 +56,10 @@ function App() {
           <Route path='/' element={<Navigate to='/issues/all'/>}/>
           <Route path='/issues' element={<Issues/>}>
             <Route path='all' element={<AllIssues/>} />
+            <Route path='errors' element={<Errors/>} />
+            <Route path='metrics' element={<Metrics/>} />
+            <Route path='craft' element={<Craft/>} />
+            <Route path='security' element={<Security/>} />
             <Route path='saved1' element={<SavedView1/>} />
             <Route path='saved2' element={<SavedView2/>} />
             <Route path='monitors' element={<Monitors/>} />
