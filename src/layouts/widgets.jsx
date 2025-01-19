@@ -1,6 +1,7 @@
 import Widget from '../components/widget'
 import Donut from '../components/donut'
 import Bars from '../components/bars'
+import Table from '../components/table'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -13,20 +14,22 @@ const Widgets = ({className}) => (
       <WidgetThroughput title='Throughput'>
         <Bars />
       </WidgetThroughput>
-      <WidgetA title='Slowest A' />
-      <WidgetB title='Slowest B' />
-      <WidgetC title='Slowest C' />
-      <WidgetD title='Worst X' />
-      <WidgetE title='Worst Y' />
-      <WidgetF title='Worst Z' />
-      <WidgetIssues title='Transactions' />
+      <WidgetA title='Metric A' />
+      <WidgetB title='Metric B' />
+      <WidgetC title='Metric C' />
+      <WidgetD title='Metric X' />
+      <WidgetE title='Metric Y' />
+      <WidgetF title='Metric Z' />
+      <WidgetTable>
+        <Table />
+      </WidgetTable>
     </GridStyles>
   );
   
 const GridStyles = styled('div')`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 2fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
   gap: var(--space-unit);
 `;
 
@@ -70,7 +73,7 @@ const WidgetF = styled(Widget)`
   grid-row: 3/4;
 `;
 
-const WidgetIssues = styled(Widget)`
+const WidgetTable = styled('div')`
   grid-column: 1/7;
   grid-row: 4/5;
 `;

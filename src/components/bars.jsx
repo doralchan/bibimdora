@@ -32,12 +32,7 @@ const options = {
       grid: {
         display: false
       }
-    },
-    y: {
-      grid: {
-        display: false
-      }
-    },
+    }
   }
 }
 
@@ -50,7 +45,9 @@ function Bars() {
 }
 
 const StyledBar = styled('div')`
-  max-height: 210px;
+  display: flex;
+  align-items: center;
+  max-height: 200px;
 `;
 
 export default Bars;
