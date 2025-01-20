@@ -15,7 +15,7 @@ const WidgetStyles = styled('div')`
   padding: var(--space-md);
   border-radius: var(--radius);
   position: relative;
-  min-height: 50px;
+  min-height: 80px;
 `;
 
 export default Widget;

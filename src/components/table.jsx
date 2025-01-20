@@ -72,7 +72,7 @@ const Cell = styled('td')`
 const HeaderCell = styled(Cell)`
   font-weight: 500;
   font-size: 0.9em;
-  color: var(--gray500);
+  color: var(--gray400);
   border-bottom: 2px solid var(--gray200);
 `;
 
