@@ -15,7 +15,7 @@ function Dashboards(){
         <SubnavGroup>
           <SubnavItem to='all'>All Dashboards</SubnavItem>
         </SubnavGroup>
-        <SubnavHeader>Starred</SubnavHeader>
+        <SubnavHeader>Starred Dashboards</SubnavHeader>
         <SubnavGroup>
           <SubnavItem to='saved1' src={DefaultLogo}>Custom Dash 1</SubnavItem>
           <SubnavItem to='saved2' src={DefaultLogo}>Custom Dash 2</SubnavItem>

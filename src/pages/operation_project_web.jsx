@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectNextjs() {
+function OperationProjectWeb() {
   return (
     <Main>
-      <Header title='Overview'/>
+      <Header title='@peated/web'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>
@@ -15,4 +15,4 @@ function OperationProjectNextjs() {
   )
 }
 
-export default OperationProjectNextjs
+export default OperationProjectWeb

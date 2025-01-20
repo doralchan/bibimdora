@@ -19,7 +19,7 @@ function Issues() {
             <SubnavItem to='all'>All Issues</SubnavItem>
           </SubnavGroup>
           <SubnavGroup>
-            <SubnavHeader>Starred</SubnavHeader>
+            <SubnavHeader>Starred Views</SubnavHeader>
             <SubnavItem to='errors' src={DefaultLogo}>Errors & Outages</SubnavItem>
             <SubnavItem to='metrics' src={DefaultLogo}>Metrics</SubnavItem>
             <SubnavItem to='craft' src={DefaultLogo}>Craft</SubnavItem>

@@ -19,7 +19,7 @@ function Explore() {
           <SubnavItem to='profiles'>Profiles</SubnavItem>
           <SubnavItem to='logs'>Logs</SubnavItem>
         </SubnavGroup>
-        <SubnavHeader>Starred</SubnavHeader>
+        <SubnavHeader>Starred Queries</SubnavHeader>
         <SubnavGroup>
           <SubnavItem to='suggested1' src={DefaultLogo}>Worst LCPs</SubnavItem>
           <SubnavItem to='suggested2' src={DefaultLogo}>Biggest Assets</SubnavItem>

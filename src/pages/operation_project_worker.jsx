@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectPython() {
+function OperationProjectWorker() {
   return (
     <Main>
-      <Header title='Overview'/>
+      <Header title='@peated/worker'/>
       <Body>
         <FilterBar defaultSelection='3' />
       </Body>
@@ -15,4 +15,4 @@ function OperationProjectPython() {
   )
 }
 
-export default OperationProjectPython
+export default OperationProjectWorker

@@ -16,9 +16,9 @@ function Operations() {
       <Subnavigation title='Peated App' subtitle='Insights'>
         <SubnavGroup>
           <SubnavItem to='overview'>Overview</SubnavItem>
-          <SubnavItem to='nextjs' src={NextJSLogo}>@peated/web</SubnavItem>
-          <SubnavItem to='go' src={NodeLogo}>@peated/server</SubnavItem>
-          <SubnavItem to='python' src={NodeLogo}>@peated/worker</SubnavItem>
+          <SubnavItem to='web' src={NextJSLogo}>@peated/web</SubnavItem>
+          <SubnavItem to='server' src={NodeLogo}>@peated/server</SubnavItem>
+          <SubnavItem to='worker' src={NodeLogo}>@peated/worker</SubnavItem>
         </SubnavGroup>
         <SubnavGroup>
           <SubnavItem to='frontend'>Frontend</SubnavItem>

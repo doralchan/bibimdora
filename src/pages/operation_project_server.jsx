@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectGo() {
+function OperationProjectServer() {
   return (
     <Main>
-      <Header title='Overview'/>
+      <Header title='@peated/server'/>
       <Body>
         <FilterBar defaultSelection='2' />
       </Body>
@@ -15,4 +15,4 @@ function OperationProjectGo() {
   )
 }
 
-export default OperationProjectGo
+export default OperationProjectServer
