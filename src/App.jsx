@@ -44,6 +44,11 @@ import OperationUptime from './pages/operation_uptime'
 import MobileOperations from './pages/operations_mobile'
 import Scrapers from './pages/operations_scrapers'
 
+import Settings from './pages/settings'
+import Account from './pages/settings_account'
+import Organization from './pages/settings_organization'
+import Configuration from './pages/settings_config'
+
 import Page from './layouts/page'
 import Navigation from './layouts/navigation'
 
@@ -100,6 +105,12 @@ function App() {
             <Route path='saved1' element={<SavedDashboard1/>} />
             <Route path='saved2' element={<SavedDashboard2/>} />
             <Route path='' element={<Navigate to='/dashboards/all'/>} />
+          </Route>
+          <Route path='/settings' element={<Settings />}>
+            <Route path='account' element={<Account/>} />
+            <Route path='organization' element={<Organization/>} />
+            <Route path='config' element={<Configuration/>} />
+            <Route path='' element={<Navigate to='/settings/account'/>} />
           </Route>
         </Routes>
       </Page>
