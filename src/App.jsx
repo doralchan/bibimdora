@@ -46,8 +46,17 @@ import Scrapers from './pages/operations_scrapers'
 
 import Settings from './pages/settings'
 import Account from './pages/settings_account'
+import Preferences from './pages/settings_preferences'
+import SecurityPrivacy from './pages/settings_securityprivacy'
 import Organization from './pages/settings_organization'
+import Members from './pages/settings_members'
+import Permissions from './pages/settings_permissions'
 import Configuration from './pages/settings_config'
+import ServiceMap from './pages/settings_map'
+import Repos from './pages/settings_repos'
+import Integrations from './pages/settings_integrations'
+import Billing from './pages/settings_billing'
+import RateLimits from './pages/settings_limits'
 
 import Page from './layouts/page'
 import Navigation from './layouts/navigation'
@@ -108,8 +117,17 @@ function App() {
           </Route>
           <Route path='/settings' element={<Settings />}>
             <Route path='account' element={<Account/>} />
+            <Route path='preferences' element={<Preferences/>} />
+            <Route path='securityprivacy' element={<SecurityPrivacy/>} />
             <Route path='organization' element={<Organization/>} />
+            <Route path='members' element={<Members/>} />
+            <Route path='permissions' element={<Permissions/>} />
             <Route path='config' element={<Configuration/>} />
+            <Route path='map' element={<ServiceMap/>} />
+            <Route path='repos' element={<Repos/>} />
+            <Route path='integrations' element={<Integrations/>} />
+            <Route path='billing' element={<Billing/>} />
+            <Route path='limits' element={<RateLimits/>} />
             <Route path='' element={<Navigate to='/settings/account'/>} />
           </Route>
         </Routes>

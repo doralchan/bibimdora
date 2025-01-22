@@ -11,6 +11,8 @@ const Page = ({className, children}) => (
     display: grid;
     grid-template-columns: 60px auto;
     height: 100vh;
+    width: 100vw;
+    position: fixed;
   `;
 
 export default Page;

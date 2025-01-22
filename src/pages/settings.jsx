@@ -3,7 +3,7 @@ import {Outlet} from 'react-router-dom';
 import Subnavigation from '../layouts/subnavigation'
 import SubnavItem from '../layouts/subnavitem'
 
-import IconSettings from '../assets/icon-settings.svg'
+import IconWrench from '../assets/icon-wrench.svg'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -14,17 +14,23 @@ function Settings() {
       <Subnavigation title='Peated App' subtitle='Settings'>
         <SubnavGroup>
           <SubnavItem to='account'>My Account</SubnavItem>
-          <SubnavItem to='security' src={IconSettings}>Security & Privacy</SubnavItem>
+          <SubnavItem to='preferences' src={IconWrench}>Preferences</SubnavItem>
+          <SubnavItem to='securityprivacy' src={IconWrench}>Security & Privacy</SubnavItem>
         </SubnavGroup>
         <SubnavGroup>
-          <SubnavItem to='organization'>My Organization</SubnavItem>
-          <SubnavItem to='teams' src={IconSettings}>Teams</SubnavItem>
-          <SubnavItem to='members' src={IconSettings}>Members</SubnavItem>
+          <SubnavItem to='organization'>Organization</SubnavItem>
+          <SubnavItem to='members' src={IconWrench}>Members</SubnavItem>
+          <SubnavItem to='permissions' src={IconWrench}>Permissions</SubnavItem>
         </SubnavGroup>
         <SubnavGroup>
           <SubnavItem to='config'>Configuration</SubnavItem>
-          <SubnavItem to='services' src={IconSettings}>Service Map</SubnavItem>
-          <SubnavItem to='integration' src={IconSettings}>Integrations</SubnavItem>
+          <SubnavItem to='map' src={IconWrench}>Service Map</SubnavItem>
+          <SubnavItem to='repos' src={IconWrench}>Repositories</SubnavItem>
+          <SubnavItem to='integrations' src={IconWrench}>Integrations</SubnavItem>
+        </SubnavGroup>
+        <SubnavGroup>
+          <SubnavItem to='billing'>Usage & Billing</SubnavItem>
+          <SubnavItem to='limits' src={IconWrench}>Rate Limits</SubnavItem>
         </SubnavGroup>
       </Subnavigation>
       <Outlet/>
@@ -34,7 +40,8 @@ function Settings() {
 
 const StyledContainer = styled('div')`
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 210px auto;
+  overflow: scroll;
 `;
 
 const SubnavGroup = styled('div')`

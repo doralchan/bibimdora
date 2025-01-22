@@ -11,6 +11,7 @@ const Main = ({className, children}) => (
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: auto 1fr;
+    overflow: scroll;
   `;
 
 export default Main;

@@ -2,13 +2,13 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 
-function Organization() {
+function Billing() {
   return (
     <Main>
-      <Header title='Organization'/>
+      <Header title='Usage & Billing'/>
       <Body>TBD</Body>
     </Main>
   )
 }
 
-export default Organization
+export default Billing

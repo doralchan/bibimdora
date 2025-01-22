@@ -51,7 +51,7 @@ function Table() {
 const StyledContainer = styled('div')`
   background-color: var(--white);
   border: 1px solid var(--gray200);
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
   border-radius: var(--radius);
 `;
 

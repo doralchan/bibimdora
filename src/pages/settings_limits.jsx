@@ -2,13 +2,13 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 
-function Organization() {
+function RateLimits() {
   return (
     <Main>
-      <Header title='Organization'/>
+      <Header title='Rate Limits'/>
       <Body>TBD</Body>
     </Main>
   )
 }
 
-export default Organization
+export default RateLimits

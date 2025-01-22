@@ -2,13 +2,13 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 
-function Organization() {
+function Permissions() {
   return (
     <Main>
-      <Header title='Organization'/>
+      <Header title='Permissions'/>
       <Body>TBD</Body>
     </Main>
   )
 }
 
-export default Organization
+export default Permissions

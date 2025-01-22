@@ -11,7 +11,6 @@ const Body = ({className, children}) => (
     background: var(--gray100);
     padding: var(--space-lg) var(--space-xl);
     grid-column: 2/3;
-    z-index: ;
   `;
 
 export default Body;

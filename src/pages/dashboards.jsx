@@ -28,7 +28,8 @@ function Dashboards(){
 
 const StyledContainer = styled('div')`
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 210px auto;
+  overflow: scroll;
 `;
 
 const SubnavHeader = styled('h4')`

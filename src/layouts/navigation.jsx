@@ -32,9 +32,9 @@ const NavigationStyles = styled('div')`
   justify-content: space-between;
   background: var(--white);
   grid-column: 1/2;
-  padding: var(--space-lg) var(--space-md);
   margin: 0;
   border-right: 1px solid var(--gray200);
+  max-height: 100vh;
 `;
 
 const StyledSentry = styled(Sentry)`
@@ -44,10 +44,11 @@ const StyledSentry = styled(Sentry)`
 const NavTop = styled('div')`
   display: flex;
   flex-direction: column;
+  padding: var(--space-lg) var(--space-md);
 `;
 
 const NavBottom = styled('div')`
-
+  padding: var(--space-lg) var(--space-md);
 `;
 
 export default Navigation;

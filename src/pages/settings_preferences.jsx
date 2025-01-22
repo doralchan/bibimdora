@@ -2,13 +2,13 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 
-function Organization() {
+function Preferences() {
   return (
     <Main>
-      <Header title='Organization'/>
+      <Header title='Preferences'/>
       <Body>TBD</Body>
     </Main>
   )
 }
 
-export default Organization
+export default Preferences
