@@ -8,7 +8,7 @@ import '../styles/theme.css'
 function SubnavItem({className, children, src, to, strikethrough}) {
   const navigationActive = ({isActive}) => {
     return {
-      opacity: isActive ? '1' : '0.4',
+      opacity: isActive ? '1' : '0.5',
       fontWeight: isActive ? 500 : 400,
       backgroundColor: isActive ? 'white' : 'transparent',
       borderColor: isActive ? '#D6CCFF' : 'transparent',
