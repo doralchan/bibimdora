@@ -11,7 +11,7 @@ import '../styles/theme.css'
 function Settings() {
   return (
     <StyledContainer>
-      <Subnavigation title='Peated App' subtitle='Settings'>
+      <Subnavigation title='Peated Web' subtitle='Settings'>
         <SubnavGroup>
           <SubnavItem to='account'>My Account</SubnavItem>
           <SubnavItem to='preferences' src={IconWrench}>Preferences</SubnavItem>
@@ -30,6 +30,7 @@ function Settings() {
         </SubnavGroup>
         <SubnavGroup>
           <SubnavItem to='billing'>Usage & Billing</SubnavItem>
+          <SubnavItem to='subscription' src={IconWrench}>Subscription</SubnavItem>
           <SubnavItem to='limits' src={IconWrench}>Rate Limits</SubnavItem>
         </SubnavGroup>
       </Subnavigation>

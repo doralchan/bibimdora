@@ -9,7 +9,7 @@ const Page = ({className, children}) => (
   
   const PageStyles = styled('div')`
     display: grid;
-    grid-template-columns: 60px auto;
+    grid-template-columns: 55px auto;
     height: 100vh;
     width: 100vw;
     position: fixed;

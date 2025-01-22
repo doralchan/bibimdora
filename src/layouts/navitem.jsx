@@ -7,7 +7,8 @@ import '../styles/theme.css'
 function NavItem({className, src, to}) {
 	const navigationActive = ({isActive}) => {
     return {
-			borderColor: isActive ? '#D6CCFF' : 'transparent',
+			backgroundColor: isActive ? '#7B50FF' : 'transparent',
+			borderColor: isActive ? '#391475' : 'transparent',
 			opacity: isActive ? '1' : '0.5',
     };
   };

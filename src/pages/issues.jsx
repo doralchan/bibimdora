@@ -13,7 +13,7 @@ import '../styles/theme.css'
 function Issues() {
   return (
     <StyledContainer>
-      <Subnavigation title='Peated App' subtitle='Issues'>
+      <Subnavigation title='Peated Web' subtitle='Issues'>
         <GroupedNav>
           <SubnavGroup>
             <SubnavItem to='all'>All Issues</SubnavItem>

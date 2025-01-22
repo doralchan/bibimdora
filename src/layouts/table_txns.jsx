@@ -3,7 +3,8 @@ import Link from '../components/link'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function Table() {
+function Transactions() {
+  const headers = ['Transaction', 'Duration', 'Error Rate', 'Score', 'Count', 'Impact']
   const data = [
     { name: '/transaction 00', duration: '325.23ms', rate: '0.17%', score: '93', count: '13.1k', impact: 'High'},
     { name: '/transaction 01', duration: '834.19ms', rate: '0.94%', score: '94', count: '9.3k', impact: 'High'},
@@ -20,24 +21,24 @@ function Table() {
       <StyledTable>
         <thead>
           <tr>
-            <HeaderCell>Transaction</HeaderCell>
-            <HeaderCell>Duration</HeaderCell>
-            <HeaderCell>Error Rate</HeaderCell>
-            <HeaderCell>Score</HeaderCell>
-            <HeaderCell>Count</HeaderCell>
-            <HeaderCell>Impact</HeaderCell>
+            {headers.map((object) => {
+              return (
+                <HeaderCell key={object.id}>{object}</HeaderCell>
+              );
+            })
+            }
           </tr>
         </thead>
         <tbody>
-          {data.map((e) => {
+          {data.map((object) => {
             return (
-              <tr key={e.id}>
-                <Cell><Link>{e.name}</Link></Cell>
-                <Cell>{e.duration}</Cell>
-                <Cell>{e.rate}</Cell>
-                <Cell>{e.score}</Cell>
-                <Cell>{e.count}</Cell>
-                <Cell>{e.impact}</Cell>
+              <tr key={object.id}>
+                <Cell><Link>{object.name}</Link></Cell>
+                <Cell>{object.duration}</Cell>
+                <Cell>{object.rate}</Cell>
+                <Cell>{object.score}</Cell>
+                <Cell>{object.count}</Cell>
+                <Cell>{object.impact}</Cell>
               </tr>
             );
           })
@@ -62,7 +63,7 @@ const StyledTable = styled('table')`
 
 const Cell = styled('td')`
   border-bottom: 1px solid var(--gray200);
-  padding: var(--space-unit) var(--space-md);
+  padding: var(--space-sm) var(--space-md);
 
   &:not(:first-child) {
     text-align: right;
@@ -76,4 +77,4 @@ const HeaderCell = styled(Cell)`
   border-bottom: 2px solid var(--gray200);
 `;
 
-export default Table
+export default Transactions

@@ -1,7 +1,7 @@
 import Widget from '../components/widget'
 import Donut from '../components/donut'
 import Bars from '../components/bars'
-import Table from '../components/table'
+import Transactions from '../layouts/table_txns'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -21,7 +21,7 @@ const Widgets = ({className}) => (
       <WidgetE title='Metric Y' />
       <WidgetF title='Metric Z' />
       <WidgetTable>
-        <Table />
+        <Transactions />
       </WidgetTable>
     </GridStyles>
   );

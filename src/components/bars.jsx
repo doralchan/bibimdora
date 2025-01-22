@@ -48,7 +48,7 @@ function Bars() {
 const StyledBar = styled('div')`
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 150px;
 `;
 
 export default Bars;

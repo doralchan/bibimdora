@@ -30,7 +30,7 @@ const NavigationStyles = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--white);
+  background: var(--purple300);
   grid-column: 1/2;
   margin: 0;
   border-right: 1px solid var(--gray200);
@@ -45,10 +45,14 @@ const NavTop = styled('div')`
   display: flex;
   flex-direction: column;
   padding: var(--space-lg) var(--space-md);
+  gap: var(--space-sm);
 `;
 
 const NavBottom = styled('div')`
+  display: flex;
+  flex-direction: column;
   padding: var(--space-lg) var(--space-md);
+  gap: var(--space-sm);
 `;
 
 export default Navigation;

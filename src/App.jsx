@@ -56,6 +56,7 @@ import ServiceMap from './pages/settings_map'
 import Repos from './pages/settings_repos'
 import Integrations from './pages/settings_integrations'
 import Billing from './pages/settings_billing'
+import Subscription from './pages/settings_subscription'
 import RateLimits from './pages/settings_limits'
 
 import Page from './layouts/page'
@@ -127,6 +128,7 @@ function App() {
             <Route path='repos' element={<Repos/>} />
             <Route path='integrations' element={<Integrations/>} />
             <Route path='billing' element={<Billing/>} />
+            <Route path='subscription' element={<Subscription/>} />
             <Route path='limits' element={<RateLimits/>} />
             <Route path='' element={<Navigate to='/settings/account'/>} />
           </Route>

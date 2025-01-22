@@ -33,7 +33,7 @@ function Donut() {
 }
 
 const StyledDonut = styled('div')`
-  max-height: 200px;
+  max-height: 150px;
 `;
 
 export default Donut;
