@@ -15,8 +15,8 @@ function ServiceMap() {
       <Header title='Service Map'/>
       <Body>
         <Layout>
-          <StyledInput placeholder='Filter events...' />
-          <Widget />
+          <StyledInput placeholder='Filter events...'/>
+          <Widget title='Visual'/>
           <Apps/>
         </Layout>
       </Body>
