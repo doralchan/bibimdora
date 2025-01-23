@@ -1,6 +1,7 @@
 import Widget from '../components/widget'
 import Donut from '../components/donut'
 import Bars from '../components/bars'
+import Lines from '../components/lines'
 import Transactions from '../layouts/table_txns'
 
 import styled from 'styled-components'
@@ -14,7 +15,9 @@ const Widgets = ({className}) => (
       <WidgetThroughput title='Throughput'>
         <Bars />
       </WidgetThroughput>
-      <WidgetA title='Metric A' />
+      <WidgetA title='Metric A'>
+        <Lines />
+      </WidgetA>
       <WidgetB title='Metric B' />
       <WidgetC title='Metric C' />
       <WidgetD title='Metric X' />
