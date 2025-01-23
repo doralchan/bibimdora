@@ -30,7 +30,7 @@ function Apps() {
 
 const Layout = styled('div')`
   display: grid;
-  grid-template-columns: minmax(30%, 500px) 1fr;
+  grid-template-columns: minmax(20%, 500px) 1fr;
   gap: var(--space-unit);
 `;
 

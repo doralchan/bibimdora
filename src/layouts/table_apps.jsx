@@ -9,7 +9,7 @@ function AppList() {
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', access: '1 member', services: '3'},
     { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2 members', services: '2'},
-    { status: false, name: 'Infra Mode', owner: '@cramer', access: '2 members', services: '5'},
+    { status: false, name: 'Infra Mode', owner: '@cramer', access: '2 members', services: '1'},
     { status: false, name: 'Docs Mode', owner: '@cramer', access: '1 member', services: '1'},
   ];
   

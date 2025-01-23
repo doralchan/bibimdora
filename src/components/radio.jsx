@@ -6,8 +6,31 @@ const Radio = ({className, value, isChecked}) => (
 );
 
 const InputStyles = styled('input')`
-  margin: 0 auto;
-  width: 100%;
+  appearance: none;
+  margin: 1px 0 0 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--gray300);
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+
+  &::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+  }
+
+  &:checked::after {
+    background-color: var(--purple200);
+  }
+
+  &:hover::after {
+    transition: all 300ms ease-in-out;
+    background-color: var(--purple200);
+  }
 `;
 
 export default Radio;
