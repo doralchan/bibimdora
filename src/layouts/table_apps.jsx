@@ -1,15 +1,16 @@
 import Link from '../components/link'
+import Radio from '../components/radio'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function Apps() {
-  const headers = ['App', 'Owner', 'Access', 'Services']
+function AppList() {
+  const headers = ['Active', 'App Name', 'Owner', 'Access', 'Services']
   const data = [
-    { name: 'Peated Web', owner: '@cramer', access: '1 member', services: '3'},
-    { name: 'Peated Mobile', owner: '@cramer', access: '2 members', services: '2'},
-    { name: 'Infra Mode', owner: '@cramer', access: '2 members', services: '5'},
-    { name: 'Docs Mode', owner: '@cramer', access: '1 member', services: '1'},
+    { status: true, name: 'Peated Web', owner: '@cramer', access: '1 member', services: '3'},
+    { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2 members', services: '2'},
+    { status: false, name: 'Infra Mode', owner: '@cramer', access: '2 members', services: '5'},
+    { status: false, name: 'Docs Mode', owner: '@cramer', access: '1 member', services: '1'},
   ];
   
   return (
@@ -29,6 +30,7 @@ function Apps() {
           {data.map((object) => {
             return (
               <tr key={object.id}>
+                <Cell>{object.status === true ? <Radio isChecked/> : <Radio/>}</Cell>
                 <Cell><Link>{object.name}</Link></Cell>
                 <Cell>{object.owner}</Cell>
                 <Cell>{object.access}</Cell>
@@ -59,6 +61,10 @@ const Cell = styled('td')`
   border-bottom: 1px solid var(--gray200);
   padding: var(--space-sm) var(--space-md);
 
+  &:first-child {
+    text-align: center;
+  }
+
   &:last-child {
     text-align: right;
   }
@@ -71,4 +77,4 @@ const HeaderCell = styled(Cell)`
   border-bottom: 2px solid var(--gray200);
 `;
 
-export default Apps
+export default AppList

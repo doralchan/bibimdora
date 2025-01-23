@@ -5,13 +5,12 @@ import PatternDots from '../assets/pattern-dots.svg'
 import styled from 'styled-components'
 
 function Subnavigation({className, children, title, subtitle}) {
-  const hasDropdown = <Icon src={IconChevron} />
 
   return (
     <SubnavigationStyles className={className}>
       <HeaderStyles>
         <TitleStyles>
-          {title} {subtitle ? hasDropdown : null}
+          {title} <Icon src={IconChevron} />
         </TitleStyles>
         <SubtitleStyles>{subtitle}</SubtitleStyles>
       </HeaderStyles>

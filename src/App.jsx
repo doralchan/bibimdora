@@ -52,7 +52,7 @@ import Organization from './pages/settings_organization'
 import Members from './pages/settings_members'
 import Permissions from './pages/settings_permissions'
 import Configuration from './pages/settings_config'
-import ServiceMap from './pages/settings_map'
+import Apps from './pages/settings_apps'
 import Repos from './pages/settings_repos'
 import Integrations from './pages/settings_integrations'
 import Billing from './pages/settings_billing'
@@ -124,7 +124,7 @@ function App() {
             <Route path='members' element={<Members/>} />
             <Route path='permissions' element={<Permissions/>} />
             <Route path='config' element={<Configuration/>} />
-            <Route path='map' element={<ServiceMap/>} />
+            <Route path='apps' element={<Apps/>} />
             <Route path='repos' element={<Repos/>} />
             <Route path='integrations' element={<Integrations/>} />
             <Route path='billing' element={<Billing/>} />
