@@ -64,7 +64,6 @@ const StyledTable = styled('table')`
 const Cell = styled('td')`
   border-bottom: 1px solid var(--gray200);
   padding: var(--space-sm) var(--space-md);
-  vertical-align: top;
 
   &:last-child {
     text-align: right;
@@ -74,6 +73,7 @@ const Cell = styled('td')`
 const RadioCell = styled('div')`
   display: inline-flex;
   gap: var(--space-sm);
+  vertical-align: bottom;
 `;
 
 const HeaderCell = styled(Cell)`
