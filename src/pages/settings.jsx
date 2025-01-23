@@ -11,7 +11,7 @@ import '../styles/theme.css'
 function Settings() {
   return (
     <StyledContainer>
-      <Subnavigation title='Peated Web' subtitle='Settings'>
+      <Subnavigation subtitle='Settings'>
         <SubnavGroup>
           <SubnavItem to='account'>My Account</SubnavItem>
           <SubnavItem to='preferences' src={IconWrench}>Preferences</SubnavItem>

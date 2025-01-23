@@ -11,7 +11,7 @@ import '../styles/theme.css'
 function Explore() {
   return (
     <StyledContainer>
-      <Subnavigation title='Peated Web' subtitle='Explore'>
+      <Subnavigation subtitle='Explore'>
         <SubnavGroup>
           <SubnavItem to='spans'>Spans</SubnavItem>
           <SubnavItem to='errors'>Errors</SubnavItem>

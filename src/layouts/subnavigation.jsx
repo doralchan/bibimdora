@@ -1,17 +1,20 @@
-import Icon from '../components/icon'
-import IconChevron from '../assets/icon-chevron.svg'
+import Dropdown from '../components/dropdown'
 import PatternDots from '../assets/pattern-dots.svg'
 
 import styled from 'styled-components'
 
-function Subnavigation({className, children, title, subtitle}) {
+function Subnavigation({className, children, subtitle}) {
+  const AppOptions = [
+    { value: 'web', label: 'Peated Web' },
+    { value: 'mobile', label: 'Peated Mobile' },
+    { value: 'infra', label: 'Infra Mode' },
+    { value: 'docs', label: 'Docs Mode' },
+  ]
 
   return (
     <SubnavigationStyles className={className}>
       <HeaderStyles>
-        <TitleStyles>
-          {title} <Icon src={IconChevron} />
-        </TitleStyles>
+        <Dropdown defaultValue={AppOptions[0]} options={AppOptions} />
         <SubtitleStyles>{subtitle}</SubtitleStyles>
       </HeaderStyles>
       <ListStyles>{children}</ListStyles>
@@ -36,13 +39,6 @@ const HeaderStyles = styled('div')`
   display: flex;
   flex-direction: column;
   margin: 0 var(--space-md);
-`;
-
-const TitleStyles = styled('h3')`
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  justify-content: space-between;
 `;
 
 const SubtitleStyles = styled('h4')`

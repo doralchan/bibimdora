@@ -11,7 +11,7 @@ import '../styles/theme.css'
 function Dashboards(){
   return (
     <StyledContainer>
-      <Subnavigation title='Peated Web' subtitle='Dashboards'>
+      <Subnavigation subtitle='Dashboards'>
         <SubnavGroup>
           <SubnavItem to='all'>All Dashboards</SubnavItem>
         </SubnavGroup>

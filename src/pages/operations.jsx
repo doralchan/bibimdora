@@ -13,7 +13,7 @@ import '../styles/theme.css'
 function Operations() {
   return (
     <StyledContainer>
-      <Subnavigation title='Peated Web' subtitle='Insights'>
+      <Subnavigation subtitle='Insights'>
         <SubnavGroup>
           <SubnavItem to='overview'>Overview</SubnavItem>
           <SubnavItem to='web' src={NextJSLogo}>@peated/web</SubnavItem>
