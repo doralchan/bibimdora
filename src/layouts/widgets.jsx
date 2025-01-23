@@ -7,6 +7,36 @@ import Transactions from '../layouts/table_txns'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
+const dataA = {
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  datasets: [{
+    data: [ 1.2, 1.3, 1.2, 1.4, 1.2, 1.3, 1.4, 1.6, 1.8, 2, 1.9, 2, 1.9],
+    borderColor: [
+      '#FDB81B'
+    ]
+  }]
+};
+
+const dataB = {
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  datasets: [{
+    data: [ 200, 203, 202, 200, 221, 202, 203, 200, 201, 203, 202, 201, 200],
+    borderColor: [
+      '#92DD00'
+    ]
+  }]
+};
+
+const dataC = {
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  datasets: [{
+    data: [ 120, 121, 123, 119, 290, 285, 292, 120, 121, 120, 119, 121, 121],
+    borderColor: [
+      '#3EDCFF'
+    ]
+  }]
+};
+
 const Widgets = ({className}) => (
     <GridStyles className={className}>
       <WidgetScore title='Score'>
@@ -16,10 +46,14 @@ const Widgets = ({className}) => (
         <Bars />
       </WidgetThroughput>
       <WidgetA title='Metric A'>
-        <Lines />
+        <Lines data={dataA} />
       </WidgetA>
-      <WidgetB title='Metric B' />
-      <WidgetC title='Metric C' />
+      <WidgetB title='Metric B'>
+        <Lines data={dataB} />
+      </WidgetB>
+      <WidgetC title='Metric C'>
+        <Lines data={dataC} />
+      </WidgetC>
       <WidgetD title='Metric X' />
       <WidgetE title='Metric Y' />
       <WidgetF title='Metric Z' />
