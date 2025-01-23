@@ -7,7 +7,7 @@ const Radio = ({className, value, isChecked}) => (
 
 const InputStyles = styled('input')`
   appearance: none;
-  margin: 1px 0 0 0;
+  margin: 0;
   width: 16px;
   height: 16px;
   border: 1px solid var(--gray300);

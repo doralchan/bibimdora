@@ -30,9 +30,11 @@ function AppList() {
           {data.map((object) => {
             return (
               <tr key={object.id}>
-                <RadioCell>
-                  {object.status === true ? <Radio isChecked/> : <Radio/>}<Link>{object.name}</Link>
-                </RadioCell>
+                <Cell>
+                  <RadioCell>
+                    {object.status === true ? <Radio isChecked/> : <Radio/>}<Link>{object.name}</Link>
+                  </RadioCell>
+                </Cell>
                 <Cell>{object.owner}</Cell>
                 <Cell>{object.access}</Cell>
                 <Cell>{object.services}</Cell>
@@ -62,13 +64,14 @@ const StyledTable = styled('table')`
 const Cell = styled('td')`
   border-bottom: 1px solid var(--gray200);
   padding: var(--space-sm) var(--space-md);
+  vertical-align: top;
 
   &:last-child {
     text-align: right;
   }
 `;
 
-const RadioCell = styled(Cell)`
+const RadioCell = styled('div')`
   display: inline-flex;
   gap: var(--space-sm);
 `;
