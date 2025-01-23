@@ -19,7 +19,7 @@ function Apps() {
         <Layout>
           <StyledInput placeholder='Filter events...'/>
           <AppList/>
-          <Widget title='Access Map'>
+          <Widget title='Service Access Map'>
             <img src={Mapping} alt='' />
           </Widget>
         </Layout>
