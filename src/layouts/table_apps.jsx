@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import '../styles/theme.css'
 
 function AppList() {
-  const headers = ['Active', 'App Name', 'Owner', 'Access', 'Services']
+  const headers = ['App Name', 'Owner', 'Access', 'Services']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', access: '1 member', services: '3'},
     { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2 members', services: '2'},
@@ -30,8 +30,9 @@ function AppList() {
           {data.map((object) => {
             return (
               <tr key={object.id}>
-                <Cell>{object.status === true ? <Radio isChecked/> : <Radio/>}</Cell>
-                <Cell><Link>{object.name}</Link></Cell>
+                <RadioCell>
+                  {object.status === true ? <Radio isChecked/> : <Radio/>}<Link>{object.name}</Link>
+                </RadioCell>
                 <Cell>{object.owner}</Cell>
                 <Cell>{object.access}</Cell>
                 <Cell>{object.services}</Cell>
@@ -50,6 +51,7 @@ const StyledContainer = styled('div')`
   border: 1px solid var(--gray200);
   border-bottom-width: 2px;
   border-radius: var(--radius);
+  height: fit-content;
 `;
 
 const StyledTable = styled('table')`
@@ -61,13 +63,14 @@ const Cell = styled('td')`
   border-bottom: 1px solid var(--gray200);
   padding: var(--space-sm) var(--space-md);
 
-  &:first-child {
-    text-align: center;
-  }
-
   &:last-child {
     text-align: right;
   }
+`;
+
+const RadioCell = styled(Cell)`
+  display: inline-flex;
+  gap: var(--space-sm);
 `;
 
 const HeaderCell = styled(Cell)`

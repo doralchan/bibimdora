@@ -13,6 +13,7 @@ const InputStyles = styled('input')`
   border: 1px solid var(--gray300);
   border-radius: 50%;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -24,11 +25,6 @@ const InputStyles = styled('input')`
   }
 
   &:checked::after {
-    background-color: var(--purple200);
-  }
-
-  &:hover::after {
-    transition: all 300ms ease-in-out;
     background-color: var(--purple200);
   }
 `;

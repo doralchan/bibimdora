@@ -30,12 +30,14 @@ function Apps() {
 
 const Layout = styled('div')`
   display: grid;
-  grid-template-columns: minmax(20%, 500px) 1fr;
+  grid-template-columns: minmax(35%, 400px) 1fr;
+  grid-template-rows: auto 1fr;
   gap: var(--space-unit);
 `;
 
 const StyledInput = styled(Input)`
   grid-column: 1/3;
+  grid-row: 1/2;
 `;
 
 export default Apps
