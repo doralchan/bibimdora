@@ -7,8 +7,8 @@ function Subnavigation({className, children, subtitle}) {
   const AppOptions = [
     { value: 'web', label: 'Peated Web' },
     { value: 'mobile', label: 'Peated Mobile' },
-    { value: 'platform', label: 'Peated Platform' },
-    { value: 'docs', label: 'Peated Docs' },
+    { value: 'platform', label: 'Platform' },
+    { value: 'admin', label: 'Admin-Portal' },
   ]
 
   return (
