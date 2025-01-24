@@ -24,7 +24,7 @@ function Settings() {
         </SubnavGroup>
         <SubnavGroup>
           <SubnavItem to='config'>Configuration</SubnavItem>
-          <SubnavItem to='apps' src={IconWrench}>Apps & Services</SubnavItem>
+          <SubnavItem to='apps' src={IconWrench}>App Teams</SubnavItem>
           <SubnavItem to='repos' src={IconWrench}>Repositories</SubnavItem>
           <SubnavItem to='integrations' src={IconWrench}>Integrations</SubnavItem>
         </SubnavGroup>

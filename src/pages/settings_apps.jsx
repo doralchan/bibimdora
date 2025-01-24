@@ -14,7 +14,7 @@ import '../styles/theme.css'
 function Apps() {
   return (
     <Main>
-      <Header title='Apps & Services'/>
+      <Header title='App Teams'/>
       <Body>
         <Layout>
           <StyledInput placeholder='Filter events...'/>

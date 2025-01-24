@@ -5,12 +5,12 @@ import styled from 'styled-components'
 import '../styles/theme.css'
 
 function AppList() {
-  const headers = ['App Name', 'Owner', 'Members', 'Services']
+  const headers = ['App Team', 'Owner', 'Members', 'Services']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', access: '1', services: '3'},
     { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2', services: '2'},
-    { status: false, name: 'Infra Team', owner: '@cramer', access: '2', services: '1'},
-    { status: false, name: 'Docs Team', owner: '@cramer', access: '1', services: '1'},
+    { status: false, name: 'Peated Platform', owner: '@cramer', access: '2', services: '1'},
+    { status: false, name: 'Peated Docs', owner: '@cramer', access: '1', services: '1'},
   ];
   
   return (
