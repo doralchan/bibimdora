@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import '../styles/theme.css'
 
 function AppList() {
-  const [setSelect] = useState(true);
+  const [selected, setSelect] = useState(true);
   const handleChange = e => {
     const {value} = e.target
     setSelect(value)
