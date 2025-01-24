@@ -18,6 +18,7 @@ const DropdownStyles = styled(Select)`
     font-weight: 700;
     min-height: fit-content;
     caret-color: transparent;
+    cursor: pointer;
   }
 
   .react-select__menu {

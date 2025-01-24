@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import Link from '../components/link'
 import Radio from '../components/radio'
 
@@ -5,6 +6,12 @@ import styled from 'styled-components'
 import '../styles/theme.css'
 
 function AppList() {
+  const [setSelect] = useState(true);
+  const handleChange = e => {
+    const {value} = e.target
+    setSelect(value)
+  }
+
   const headers = ['App Team', 'Owner', 'Members', 'Services']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', access: '1', services: '3'},
@@ -12,7 +19,7 @@ function AppList() {
     { status: false, name: 'Platform', owner: '@cramer', access: '2', services: '1'},
     { status: false, name: 'Admin-Portal', owner: '@cramer', access: '1', services: '2'},
   ];
-  
+
   return (
     <StyledContainer>
       <StyledTable>
@@ -32,7 +39,8 @@ function AppList() {
               <tr key={object.id}>
                 <Cell>
                   <RadioCell>
-                    {object.status === true ? <Radio isChecked/> : <Radio/>}<Link>{object.name}</Link>
+                    <Radio onChange={handleChange} name='app' defaultChecked={object.status === true} />
+                    <Link>{object.name}</Link>
                   </RadioCell>
                 </Cell>
                 <Cell>{object.owner}</Cell>

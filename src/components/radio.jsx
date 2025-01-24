@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-const Radio = ({className, value, isChecked}) => (
-  <InputStyles className={className} value={value} defaultChecked={isChecked} type='radio' />
+const Radio = ({className, defaultChecked, name, onChange}) => (
+  <InputStyles 
+    className={className} 
+    defaultChecked={defaultChecked}
+    onChange={onChange}
+    name={name}
+    type='radio'
+  />
 );
 
 const InputStyles = styled('input')`
