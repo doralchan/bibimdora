@@ -2,11 +2,12 @@ import Select from 'react-select'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-const Dropdown = ({className, defaultValue, options}) => (
+const Dropdown = ({className, defaultValue, onChange, options}) => (
   <DropdownStyles
     className={className}
     classNamePrefix='react-select'
     defaultValue={defaultValue}
+    onChange={onChange}
     options={options}
     unstyled
   />

@@ -3,7 +3,7 @@ import PatternDots from '../assets/pattern-dots.svg'
 
 import styled from 'styled-components'
 
-function Subnavigation({className, children, subtitle}) {
+function Subnavigation({className, children, subtitle, onChange}) {
   const AppOptions = [
     { value: 'web', label: 'Peated Web' },
     { value: 'mobile', label: 'Peated Mobile' },
@@ -14,7 +14,7 @@ function Subnavigation({className, children, subtitle}) {
   return (
     <SubnavigationStyles className={className}>
       <HeaderStyles>
-        <Dropdown defaultValue={AppOptions[0]} options={AppOptions} />
+        <Dropdown defaultValue={AppOptions[0]} options={AppOptions} onChange={onChange} />
         <SubtitleStyles>{subtitle}</SubtitleStyles>
       </HeaderStyles>
       <ListStyles>{children}</ListStyles>

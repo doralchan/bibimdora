@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Strokes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+        stroke: #7B50FF;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <path class="b" d="M10.18,1.12c.37-.37.97-.38,1.35-.02l3.41,3.25c.38.36.38.95.02,1.32L6.9,13.7l-5.38,1.44c-.43.12-.83-.28-.72-.71l1.33-5.28L10.18,1.12Z"/>
+  <line class="b" x1="7.94" y1="3.35" x2="12.68" y2="7.94"/>
+  <line class="b" x1="2.12" y1="9.15" x2="6.9" y2="13.7"/>
+</svg>

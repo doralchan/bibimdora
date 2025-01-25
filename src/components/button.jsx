@@ -9,7 +9,7 @@ const Button = ({className, children}) => (
 
 const ButtonStyles = styled('a')`
   display: inline-block;
-  border: 1px solid var(--black);
+  border: 1px solid var(--purple400);
   border-bottom-width: 3px;
   background: var(--purple200);
   border-radius: var(--radius);

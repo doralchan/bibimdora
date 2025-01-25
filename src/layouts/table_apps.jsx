@@ -1,18 +1,20 @@
 import {useState} from 'react'
-import Link from '../components/link'
 import Radio from '../components/radio'
+import Icon from '../components/icon'
+
+import IconEdit from '../assets/icon-edit.svg'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function AppList() {
+function AppList({className}) {
   const [selected, setSelect] = useState(true);
   const handleChange = e => {
     const {value} = e.target
     setSelect(value)
   }
 
-  const headers = ['App Team', 'Owner', 'Members', 'Services']
+  const headers = ['App Team', 'Owner', 'Members', 'Services', 'Manage']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', access: '1', services: '3'},
     { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2', services: '2'},
@@ -21,7 +23,7 @@ function AppList() {
   ];
 
   return (
-    <StyledContainer>
+    <StyledContainer className={className}>
       <StyledTable>
         <thead>
           <tr>
@@ -40,12 +42,13 @@ function AppList() {
                 <Cell>
                   <RadioCell>
                     <Radio onChange={handleChange} name='app' defaultChecked={object.status === true} />
-                    <Link>{object.name}</Link>
+                    {object.name}
                   </RadioCell>
                 </Cell>
                 <Cell>{object.owner}</Cell>
                 <Cell>{object.access}</Cell>
                 <Cell>{object.services}</Cell>
+                <Cell><StyledIcon src={IconEdit} /></Cell>
               </tr>
             );
           })
@@ -72,13 +75,11 @@ const StyledTable = styled('table')`
 const Cell = styled('td')`
   border-bottom: 1px solid var(--gray200);
   padding: var(--space-sm) var(--space-md);
+  text-align: right;
 
-  &:nth-child(3) {
-    text-align: right;
-  }
-
-  &:last-child {
-    text-align: right;
+  &:first-child,
+  &:nth-child(2) {
+    text-align: left;
   }
 `;
 
@@ -93,6 +94,10 @@ const HeaderCell = styled(Cell)`
   font-size: 0.9em;
   color: var(--gray400);
   border-bottom: 2px solid var(--gray200);
+`;
+
+const StyledIcon = styled(Icon)`
+  float: right;
 `;
 
 export default AppList
