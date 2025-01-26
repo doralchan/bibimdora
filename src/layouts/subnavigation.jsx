@@ -1,12 +1,9 @@
-import {useState} from 'react'
 import Dropdown from '../components/dropdown'
 import PatternDots from '../assets/pattern-dots.svg'
 
 import styled from 'styled-components'
 
-function Subnavigation({className, children, subtitle}) {
-  const [selected, setSelect] = useState();
-
+function Subnavigation({className, children, subtitle, defaultValue, onChange}) {
   const AppOptions = [
     { value: 'web', label: 'Peated Web' },
     { value: 'mobile', label: 'Peated Mobile' },
@@ -18,9 +15,9 @@ function Subnavigation({className, children, subtitle}) {
     <SubnavigationStyles className={className}>
       <HeaderStyles>
         <Dropdown 
-          defaultValue={selected || AppOptions[0]} 
+          defaultValue={defaultValue || AppOptions[0]} 
           options={AppOptions} 
-          onChange={(e) => {setSelect(e.value)}} />
+          onChange={onChange} />
         <SubtitleStyles>{subtitle}</SubtitleStyles>
       </HeaderStyles>
       <ListStyles>{children}</ListStyles>

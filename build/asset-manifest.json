@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.800d2a66.css",
-    "main.js": "/static/js/main.a601b709.js",
+    "main.js": "/static/js/main.1c70e5fb.js",
     "static/media/avatar.png": "/static/media/avatar.428463850a50af09d790.png",
     "static/media/pattern-dots.svg": "/static/media/pattern-dots.80283bf139e72d104c48d17b6747d742.svg",
     "static/media/map.svg": "/static/media/map.692902a5fc7511bc73076937816dbaaf.svg",
     "static/media/icon-settings.svg": "/static/media/icon-settings.ab2f781f887ebed08a0bb19db7648e1a.svg",
     "static/media/logo-default.svg": "/static/media/logo-default.900b6ff5752722758f8faa9c3fb23d68.svg",
+    "static/media/logo-javascript.svg": "/static/media/logo-javascript.d4d022c40a75029d45b12482f9d8311e.svg",
     "static/media/logo-sentry.svg": "/static/media/logo-sentry.3131bcdd6f8a94523a625f1d481ce337.svg",
     "index.html": "/index.html",
     "static/media/logo-nextjs.svg": "/static/media/logo-nextjs.4a397345a224f6e5ba822179fa7325f1.svg",
+    "static/media/logo-apple.svg": "/static/media/logo-apple.beca8f84306e594fe135a3fe16277288.svg",
     "static/media/logo-node.svg": "/static/media/logo-node.abf97d024d6a525282cde065416fc710.svg",
     "static/media/icon-dashboards.svg": "/static/media/icon-dashboards.a56f3edbde7fd45453466611958e8bf7.svg",
     "static/media/icon-broadcast.svg": "/static/media/icon-broadcast.e454f422bfbc8faa2f80ef0186e0131c.svg",
@@ -19,10 +21,10 @@
     "static/media/icon-operations.svg": "/static/media/icon-operations.1ee434dc87bb37f83d5f98ac0b483735.svg",
     "static/media/icon-explore.svg": "/static/media/icon-explore.31db56705fbba444eb87b2a731aaf726.svg",
     "main.800d2a66.css.map": "/static/css/main.800d2a66.css.map",
-    "main.a601b709.js.map": "/static/js/main.a601b709.js.map"
+    "main.1c70e5fb.js.map": "/static/js/main.1c70e5fb.js.map"
   },
   "entrypoints": [
     "static/css/main.800d2a66.css",
-    "static/js/main.a601b709.js"
+    "static/js/main.1c70e5fb.js"
   ]
 }
