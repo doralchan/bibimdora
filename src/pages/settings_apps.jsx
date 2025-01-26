@@ -7,6 +7,7 @@ import Input from '../components/input'
 import Widget from '../components/widget'
 import Button from '../components/button'
 
+import AvatarBg from '../assets/avatar.png'
 import Mapping from '../assets/map.svg'
 
 import styled from 'styled-components'
@@ -24,10 +25,15 @@ function Apps() {
           </Controls>
           <StyledAppList />
           <Widget title='Service Map'>
-            <StyledMapping src={Mapping} alt='' />
+            <img src={Mapping} alt='' />
           </Widget>
           <Widget title='Member List'>
-            [Insert Avatars]
+            <MemberList>
+              <ActiveAvatar />
+              <DisabledAvatar />
+              <DisabledAvatar />
+              <DisabledAvatar />
+            </MemberList>
           </Widget>
         </Layout>
       </Body>
@@ -55,8 +61,25 @@ const StyledInput = styled(Input)`
   flex-grow: 1;
 `;
 
-const StyledMapping = styled('img')`
+const MemberList = styled('div')`
+  display: flex;
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+`;
 
+const ActiveAvatar = styled('div')`
+  border: 2px solid var(--purple300);
+  aspect-ratio: 1/1;
+  width: 40px;
+  border-radius: 100%;
+  background-image: url(${AvatarBg});
+  background-size: 180% 180%;
+  background-position: center;
+`;
+
+const DisabledAvatar = styled(ActiveAvatar)`
+  border-color: var(--gray200);
+  background-image: none;
 `;
 
 export default Apps

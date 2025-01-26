@@ -5,7 +5,6 @@ import Icon from '../components/icon'
 import IconEdit from '../assets/icon-edit.svg'
 
 import styled from 'styled-components'
-import '../styles/theme.css'
 
 function AppList({className}) {
   const [selected, setSelect] = useState(true);
