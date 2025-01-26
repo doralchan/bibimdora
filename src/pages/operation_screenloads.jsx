@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function MobileOperations() {
+function OperationScreenloads() {
   return (
     <Main>
-      <Header title='Mobile'/>
+      <Header title='Screenloads'/>
       <Body>
         <FilterBar defaultSelection='6' />
       </Body>
@@ -15,4 +15,4 @@ function MobileOperations() {
   )
 }
 
-export default MobileOperations
+export default OperationScreenloads

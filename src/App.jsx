@@ -29,6 +29,8 @@ import OverviewOperations from './pages/operations_overview'
 import OperationProjectWeb from './pages/operation_project_web'
 import OperationProjectServer from './pages/operation_project_server'
 import OperationProjectWorker from './pages/operation_project_worker'
+import OperationProjectAdmin from './pages/operation_project_admin'
+import OperationProjectiOS from './pages/operation_project_iOS'
 import FrontendOperations from './pages/operations_frontend'
 import OperationWebVitals from './pages/operation_webvitals'
 import OperationUI from './pages/operation_ui'
@@ -42,6 +44,8 @@ import OperationQueues from './pages/operation_queues'
 import OperationCrons from './pages/operation_crons'
 import OperationUptime from './pages/operation_uptime'
 import MobileOperations from './pages/operations_mobile'
+import OperationAppstart from './pages/operation_appstart'
+import OperationScreenloads from './pages/operation_screenloads'
 import Scrapers from './pages/operations_scrapers'
 
 import Settings from './pages/settings'
@@ -49,10 +53,10 @@ import Account from './pages/settings_account'
 import Preferences from './pages/settings_preferences'
 import SecurityPrivacy from './pages/settings_securityprivacy'
 import Organization from './pages/settings_organization'
+import Apps from './pages/settings_apps'
 import Members from './pages/settings_members'
 import Permissions from './pages/settings_permissions'
 import Configuration from './pages/settings_config'
-import Apps from './pages/settings_apps'
 import Repos from './pages/settings_repos'
 import Integrations from './pages/settings_integrations'
 import Billing from './pages/settings_billing'
@@ -86,6 +90,8 @@ function App() {
             <Route path='web' element={<OperationProjectWeb/>} />
             <Route path='server' element={<OperationProjectServer/>} />
             <Route path='worker' element={<OperationProjectWorker/>} />
+            <Route path='admin' element={<OperationProjectAdmin/>} />
+            <Route path='iOS' element={<OperationProjectiOS/>} />
             <Route path='frontend' element={<FrontendOperations/>} />
             <Route path='webvitals' element={<OperationWebVitals/>} />
             <Route path='ui' element={<OperationUI/>} />
@@ -99,6 +105,8 @@ function App() {
             <Route path='crons' element={<OperationCrons/>} />
             <Route path='uptime' element={<OperationUptime/>} />
             <Route path='mobile' element={<MobileOperations/>} />
+            <Route path='appstart' element={<OperationAppstart/>} />
+            <Route path='screenloads' element={<OperationScreenloads/>} />
             <Route path='scrapers' element={<Scrapers/>} />
             <Route path='' element={<Navigate to='/operations/overview'/>} />
           </Route>
@@ -121,10 +129,10 @@ function App() {
             <Route path='preferences' element={<Preferences/>} />
             <Route path='securityprivacy' element={<SecurityPrivacy/>} />
             <Route path='organization' element={<Organization/>} />
+            <Route path='apps' element={<Apps/>} />
             <Route path='members' element={<Members/>} />
             <Route path='permissions' element={<Permissions/>} />
             <Route path='config' element={<Configuration/>} />
-            <Route path='apps' element={<Apps/>} />
             <Route path='repos' element={<Repos/>} />
             <Route path='integrations' element={<Integrations/>} />
             <Route path='billing' element={<Billing/>} />

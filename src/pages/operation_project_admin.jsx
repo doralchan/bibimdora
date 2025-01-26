@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function MobileOperations() {
+function OperationProjectAdmin() {
   return (
     <Main>
-      <Header title='Mobile'/>
+      <Header title='@peated/admin'/>
       <Body>
-        <FilterBar defaultSelection='6' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )
 }
 
-export default MobileOperations
+export default OperationProjectAdmin

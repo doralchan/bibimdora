@@ -7,7 +7,7 @@ import '../styles/theme.css'
 function FilterBar({ defaultSelection }) {
   return (
     <StyledFilterBar>
-      { defaultSelection ? <Filter projectsOnly defaultSelection={defaultSelection} /> : <Filter defaultSelection={defaultSelection} /> }
+      <Filter defaultSelection={defaultSelection} />
       <Input placeholder='Filter events...' />
     </StyledFilterBar>
   )

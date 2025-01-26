@@ -17,8 +17,8 @@ function Operations() {
   const [selected, setSelect] = useState();
 
   const FrontendProject = <SubnavItem to='web' src={NextJSLogo}>@peated/web</SubnavItem>;
-  const MobileProject = <SubnavItem to='mobile' src={AppleLogo}>@peated/iOS</SubnavItem>;
-  const AdminProject = <SubnavItem to='js' src={JavascriptLogo}>@peated/admin</SubnavItem>;
+  const MobileProject = <SubnavItem to='iOS' src={AppleLogo}>@peated/iOS</SubnavItem>;
+  const AdminProject = <SubnavItem to='admin' src={JavascriptLogo}>@peated/admin</SubnavItem>;
 
   const FrontendModules = (
     <SubnavGroup>
@@ -35,8 +35,16 @@ function Operations() {
       <SubnavItem to='mobile'>Mobile</SubnavItem>
       <SubnavItem to='appstart' src={DefaultLogo}>App Start</SubnavItem>
       <SubnavItem to='screenloads' src={DefaultLogo}>Screenloads</SubnavItem>
+      <SubnavItem to='ui' src={DefaultLogo}>UI</SubnavItem>
       <SubnavItem to='assets' src={DefaultLogo}>Assets</SubnavItem>
       <SubnavItem to='network' src={DefaultLogo}>Network</SubnavItem>
+    </SubnavGroup>
+  );
+
+  const Starred = (
+    <SubnavGroup>
+      <SubnavHeader>Starred</SubnavHeader>
+      <SubnavItem to='scrapers' src={NodeLogo}>Scrapers</SubnavItem>
     </SubnavGroup>
   );
 
@@ -63,10 +71,7 @@ function Operations() {
           <SubnavItem to='crons' src={DefaultLogo}>Crons</SubnavItem>
           <SubnavItem to='uptime' src={DefaultLogo}>Uptime</SubnavItem>
         </SubnavGroup>
-        <SubnavGroup>
-          <SubnavHeader>Starred</SubnavHeader>
-          <SubnavItem to='scrapers' src={NodeLogo}>Scrapers</SubnavItem>
-        </SubnavGroup>
+        {selected === 'platform' ? Starred : null}
       </Subnavigation>
       <Outlet/>
     </StyledContainer>
