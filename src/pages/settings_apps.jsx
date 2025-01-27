@@ -73,7 +73,7 @@ const ActiveAvatar = styled('div')`
   width: 40px;
   border-radius: 100%;
   background-image: url(${AvatarBg});
-  background-size: 180% 180%;
+  background-size: 100%;
   background-position: center;
 `;
 

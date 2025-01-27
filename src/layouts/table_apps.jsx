@@ -13,7 +13,7 @@ function AppList({className}) {
     setSelect(value)
   }
 
-  const headers = ['App Team', 'Owner', 'Members', 'Services', 'Manage']
+  const headers = ['Your App Teams', 'Owner', 'Members', 'Services', 'Manage']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', access: '1', services: '3'},
     { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2', services: '2'},
