@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import Radio from '../components/radio'
+import Link from '../components/link'
 import Icon from '../components/icon'
 
 import IconEdit from '../assets/icon-edit.svg'
@@ -13,12 +14,12 @@ function AppList({className}) {
     setSelect(value)
   }
 
-  const headers = ['Your App Teams', 'Owner', 'Members', 'Services', 'Manage']
+  const headers = ['All App Teams', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
   const data = [
-    { status: true, name: 'Peated Web', owner: '@cramer', access: '1', services: '3'},
-    { status: false, name: 'Peated Mobile', owner: '@cramer', access: '2', services: '2'},
-    { status: false, name: 'Platform', owner: '@cramer', access: '2', services: '1'},
-    { status: false, name: 'Admin-Portal', owner: '@cramer', access: '1', services: '2'},
+    { status: true, name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today'},
+    { status: false, name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025'},
+    { status: false, name: 'Platform', owner: '@cramer', members: '2', access: false, services: '1', lastviewed:'1/2/2025'},
+    { status: false, name: 'Admin-Portal', owner: '@cramer', members: '1', access: false, services: '2', lastviewed:'1/15/2025'},
   ];
 
   return (
@@ -45,9 +46,12 @@ function AppList({className}) {
                   </RadioCell>
                 </Cell>
                 <Cell>{object.owner}</Cell>
-                <Cell>{object.access}</Cell>
+                <Cell>{object.members}</Cell>
                 <Cell>{object.services}</Cell>
-                <Cell><StyledIcon src={IconEdit} /></Cell>
+                <Cell>{object.lastviewed}</Cell>
+                <Cell>
+                  <Link>{object.access === true ? <StyledIcon src={IconEdit} /> : 'Request Access'}</Link>
+                </Cell>
               </tr>
             );
           })

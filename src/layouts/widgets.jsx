@@ -10,32 +10,56 @@ import '../styles/theme.css'
 const dataA = {
   labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
   datasets: [{
-    data: [ 1.2, 1.3, 1.2, 1.4, 1.2, 1.3, 1.4, 1.6, 1.8, 2, 1.9, 2, 1.9],
-    borderColor: [
-      '#FDB81B'
-    ]
+    data: [1.2, 1.3, 1.2, 1.4, 1.2, 1.3, 1.4, 1.6, 1.8, 2, 1.9, 2, 1.9],
+    borderColor: ['#FDB81B']
   }]
 };
 
 const dataB = {
   labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
   datasets: [{
-    data: [ 200, 203, 202, 200, 221, 202, 203, 200, 201, 203, 202, 201, 200],
-    borderColor: [
-      '#92DD00'
-    ]
+    data: [200, 203, 202, 200, 221, 202, 203, 200, 201, 203, 202, 201, 200],
+    borderColor: ['#92DD00']
   }]
 };
 
 const dataC = {
   labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
   datasets: [{
-    data: [ 120, 121, 123, 119, 290, 285, 292, 120, 121, 120, 119, 121, 121],
-    borderColor: [
-      '#3EDCFF'
-    ]
+    data: [120, 121, 123, 119, 290, 285, 292, 120, 121, 120, 119, 121, 121],
+    borderColor: ['#3EDCFF']
   }]
 };
+
+const dataD = {
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  datasets: [
+  {
+    data: [120, 121, 123, 119, 120, 130, 124, 120, 121, 120, 119, 121, 121],
+    borderColor: ['#FF70BC']
+  }, 
+  {
+    data: [200, 203, 202, 200, 201, 202, 203, 200, 201, 503, 942, 901, 1000],
+    borderColor: ['#9E86FF']
+  }]
+};
+
+const dataE = {
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  datasets: [{
+    data: [2.3, 2.2, 2.2, 2.4, 2.1, 2.2, 2.4, 2.2, 2.3, 2.4, 1.2, 2.3, 2.4],
+    borderColor: ['#226DFC'],
+  }]
+};
+
+const dataF = {
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  datasets: [{
+    data: [2.2, 2.3, 2.3, 2.4, 2.2, 2.1, 2.3, 2.1, 2.2, 2.5, 2.3, 2.2, 2.3],
+    borderColor: ['#4E2A9A'],
+  }]
+}
+
 
 const Widgets = ({className}) => (
     <GridStyles className={className}>
@@ -54,9 +78,15 @@ const Widgets = ({className}) => (
       <WidgetC title='Metric C'>
         <Lines data={dataC} />
       </WidgetC>
-      <WidgetD title='Metric X'>Coming Soon</WidgetD>
-      <WidgetE title='Metric Y'>Coming Soon</WidgetE>
-      <WidgetF title='Metric Z'>Coming Soon</WidgetF>
+      <WidgetD title='Metric D'>
+        <Lines data={dataD} />
+      </WidgetD>
+      <WidgetE title='Metric E'>
+        <Lines data={dataE} />
+      </WidgetE>
+      <WidgetF title='Metric F'>
+        <Lines data={dataF} />
+      </WidgetF>
       <WidgetTable>
         <Transactions />
       </WidgetTable>

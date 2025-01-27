@@ -8,6 +8,7 @@ const Link = ({className, href, children}) => (
 const LinkStyles = styled('a')`
   text-decoration: none;
   color: var(--purple200);
+  cursor: pointer;
 `;
 
 export default Link;
