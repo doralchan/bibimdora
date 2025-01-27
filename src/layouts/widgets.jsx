@@ -54,9 +54,9 @@ const Widgets = ({className}) => (
       <WidgetC title='Metric C'>
         <Lines data={dataC} />
       </WidgetC>
-      <WidgetD title='Metric X' />
-      <WidgetE title='Metric Y' />
-      <WidgetF title='Metric Z' />
+      <WidgetD title='Metric X'>Coming Soon</WidgetD>
+      <WidgetE title='Metric Y'>Coming Soon</WidgetE>
+      <WidgetF title='Metric Z'>Coming Soon</WidgetF>
       <WidgetTable>
         <Transactions />
       </WidgetTable>
