@@ -24,29 +24,29 @@ import AllDashboards from './pages/dashboards_all'
 import SavedDashboard1 from './pages/dashboards_saved1'
 import SavedDashboard2 from './pages/dashboards_saved2'
 
-import Operations from './pages/operations'
-import OverviewOperations from './pages/operations_overview'
-import OperationProjectWeb from './pages/operation_project_web'
-import OperationProjectServer from './pages/operation_project_server'
-import OperationProjectWorker from './pages/operation_project_worker'
-import OperationProjectAdmin from './pages/operation_project_admin'
-import OperationProjectiOS from './pages/operation_project_iOS'
-import FrontendOperations from './pages/operations_frontend'
-import OperationWebVitals from './pages/operation_webvitals'
-import OperationUI from './pages/operation_ui'
-import OperationAssets from './pages/operation_assets'
-import OperationNetwork from './pages/operation_network'
-import BackendOperations from './pages/operations_backend'
-import OperationQueries from './pages/operation_queries'
-import OperationOutbound from './pages/operation_outbound'
-import OperationCache from './pages/operation_cache'
-import OperationQueues from './pages/operation_queues'
-import OperationCrons from './pages/operation_crons'
-import OperationUptime from './pages/operation_uptime'
-import MobileOperations from './pages/operations_mobile'
-import OperationAppstart from './pages/operation_appstart'
-import OperationScreenloads from './pages/operation_screenloads'
-import Scrapers from './pages/operations_scrapers'
+import Insights from './pages/insights'
+import OverviewWeb from './pages/insights_overview_web'
+import InsightsProjectWeb from './pages/insights_project_web'
+import InsightsProjectServer from './pages/insights_project_server'
+import InsightsProjectWorker from './pages/insights_project_worker'
+import InsightsProjectAdmin from './pages/insights_project_admin'
+import InsightsProjectiOS from './pages/insights_project_iOS'
+import FrontendInsights from './pages/insights_frontend'
+import InsightsWebVitals from './pages/insights_webvitals'
+import InsightsUI from './pages/insights_ui'
+import InsightsAssets from './pages/insights_assets'
+import InsightsNetwork from './pages/insights_network'
+import BackendInsights from './pages/insights_backend'
+import InsightsQueries from './pages/insights_queries'
+import InsightsOutbound from './pages/insights_outbound'
+import InsightsCache from './pages/insights_cache'
+import InsightsQueues from './pages/insights_queues'
+import InsightsCrons from './pages/insights_crons'
+import InsightsUptime from './pages/insights_uptime'
+import MobileInsights from './pages/insights_mobile'
+import InsightsAppstart from './pages/insights_appstart'
+import InsightsScreenloads from './pages/insights_screenloads'
+import Scrapers from './pages/insights_scrapers'
 
 import Settings from './pages/settings'
 import Account from './pages/settings_account'
@@ -85,30 +85,30 @@ function App() {
             <Route path='automations' element={<Automations/>} />
             <Route path='' element={<Navigate to='/issues/all'/>} /> 
           </Route>
-          <Route path='/operations' element={<Operations/>}>
-            <Route path='overview' element={<OverviewOperations/>} />
-            <Route path='web' element={<OperationProjectWeb/>} />
-            <Route path='server' element={<OperationProjectServer/>} />
-            <Route path='worker' element={<OperationProjectWorker/>} />
-            <Route path='admin' element={<OperationProjectAdmin/>} />
-            <Route path='iOS' element={<OperationProjectiOS/>} />
-            <Route path='frontend' element={<FrontendOperations/>} />
-            <Route path='webvitals' element={<OperationWebVitals/>} />
-            <Route path='ui' element={<OperationUI/>} />
-            <Route path='assets' element={<OperationAssets/>} />
-            <Route path='network' element={<OperationNetwork/>} />
-            <Route path='backend' element={<BackendOperations/>} />
-            <Route path='queries' element={<OperationQueries/>} />
-            <Route path='outbound' element={<OperationOutbound/>} />
-            <Route path='cache' element={<OperationCache/>} />
-            <Route path='queues' element={<OperationQueues/>} />
-            <Route path='crons' element={<OperationCrons/>} />
-            <Route path='uptime' element={<OperationUptime/>} />
-            <Route path='mobile' element={<MobileOperations/>} />
-            <Route path='appstart' element={<OperationAppstart/>} />
-            <Route path='screenloads' element={<OperationScreenloads/>} />
+          <Route path='/insights' element={<Insights/>}>
+            <Route path='overview-web' element={<OverviewWeb/>} />
+            <Route path='web' element={<InsightsProjectWeb/>} />
+            <Route path='server' element={<InsightsProjectServer/>} />
+            <Route path='worker' element={<InsightsProjectWorker/>} />
+            <Route path='admin' element={<InsightsProjectAdmin/>} />
+            <Route path='iOS' element={<InsightsProjectiOS/>} />
+            <Route path='frontend' element={<FrontendInsights/>} />
+            <Route path='webvitals' element={<InsightsWebVitals/>} />
+            <Route path='ui' element={<InsightsUI/>} />
+            <Route path='assets' element={<InsightsAssets/>} />
+            <Route path='network' element={<InsightsNetwork/>} />
+            <Route path='backend' element={<BackendInsights/>} />
+            <Route path='queries' element={<InsightsQueries/>} />
+            <Route path='outbound' element={<InsightsOutbound/>} />
+            <Route path='cache' element={<InsightsCache/>} />
+            <Route path='queues' element={<InsightsQueues/>} />
+            <Route path='crons' element={<InsightsCrons/>} />
+            <Route path='uptime' element={<InsightsUptime/>} />
+            <Route path='mobile' element={<MobileInsights/>} />
+            <Route path='appstart' element={<InsightsAppstart/>} />
+            <Route path='screenloads' element={<InsightsScreenloads/>} />
             <Route path='scrapers' element={<Scrapers/>} />
-            <Route path='' element={<Navigate to='/operations/overview'/>} />
+            <Route path='' element={<Navigate to='/insights/overview-web'/>} />
           </Route>
           <Route path='/explore' element={<Explore/>}>
             <Route path='spans' element={<ExploreSpans/>} />

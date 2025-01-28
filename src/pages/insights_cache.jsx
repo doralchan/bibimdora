@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationOutbound() {
+function InsightsCache() {
   return (
     <Main>
-      <Header title='Outbound Requests'/>
+      <Header title='Cache'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>
@@ -15,4 +15,4 @@ function OperationOutbound() {
   )
 }
 
-export default OperationOutbound
+export default InsightsCache

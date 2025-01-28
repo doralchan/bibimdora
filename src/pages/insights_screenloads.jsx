@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationAssets() {
+function InsightsScreenloads() {
   return (
     <Main>
-      <Header title='Assets'/>
+      <Header title='Screenloads'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar defaultSelection='6' />
       </Body>
     </Main>
   )
 }
 
-export default OperationAssets
+export default InsightsScreenloads

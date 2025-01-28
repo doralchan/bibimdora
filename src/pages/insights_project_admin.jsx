@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationUI() {
+function InsightsProjectAdmin() {
   return (
     <Main>
-      <Header title='UI'/>
+      <Header title='@peated/admin'/>
       <Body>
         <FilterBar defaultSelection='1' />
       </Body>
@@ -15,4 +15,4 @@ function OperationUI() {
   )
 }
 
-export default OperationUI
+export default InsightsProjectAdmin

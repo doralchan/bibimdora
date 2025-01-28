@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationCache() {
+function InsightsQueues() {
   return (
     <Main>
-      <Header title='Cache'/>
+      <Header title='Queues'/>
       <Body>
         <FilterBar defaultSelection='4' />
       </Body>
@@ -15,4 +15,4 @@ function OperationCache() {
   )
 }
 
-export default OperationCache
+export default InsightsQueues

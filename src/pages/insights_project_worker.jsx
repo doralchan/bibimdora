@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationNetwork() {
+function InsightsProjectWorker() {
   return (
     <Main>
-      <Header title='Network Requests'/>
+      <Header title='@peated/worker'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar defaultSelection='3' />
       </Body>
     </Main>
   )
 }
 
-export default OperationNetwork
+export default InsightsProjectWorker

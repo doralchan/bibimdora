@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectAdmin() {
+function InsightsProjectiOS() {
   return (
     <Main>
-      <Header title='@peated/admin'/>
+      <Header title='@peated/iOS'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar defaultSelection='6' />
       </Body>
     </Main>
   )
 }
 
-export default OperationProjectAdmin
+export default InsightsProjectiOS

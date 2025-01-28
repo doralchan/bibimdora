@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectiOS() {
+function InsightsOutbound() {
   return (
     <Main>
-      <Header title='@peated/iOS'/>
+      <Header title='Outbound Requests'/>
       <Body>
-        <FilterBar defaultSelection='6' />
+        <FilterBar defaultSelection='4' />
       </Body>
     </Main>
   )
 }
 
-export default OperationProjectiOS
+export default InsightsOutbound

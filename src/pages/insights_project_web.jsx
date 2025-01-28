@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectServer() {
+function InsightsProjectWeb() {
   return (
     <Main>
-      <Header title='@peated/server'/>
+      <Header title='@peated/web'/>
       <Body>
-        <FilterBar defaultSelection='2' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )
 }
 
-export default OperationProjectServer
+export default InsightsProjectWeb

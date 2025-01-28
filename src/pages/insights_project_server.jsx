@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationQueues() {
+function InsightsProjectServer() {
   return (
     <Main>
-      <Header title='Queues'/>
+      <Header title='@peated/server'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar defaultSelection='2' />
       </Body>
     </Main>
   )
 }
 
-export default OperationQueues
+export default InsightsProjectServer

@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationQueries() {
+function InsightsUI() {
   return (
     <Main>
-      <Header title='Queries'/>
+      <Header title='UI'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )
 }
 
-export default OperationQueries
+export default InsightsUI

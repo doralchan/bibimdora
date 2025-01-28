@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectWorker() {
+function InsightsQueries() {
   return (
     <Main>
-      <Header title='@peated/worker'/>
+      <Header title='Queries'/>
       <Body>
-        <FilterBar defaultSelection='3' />
+        <FilterBar defaultSelection='4' />
       </Body>
     </Main>
   )
 }
 
-export default OperationProjectWorker
+export default InsightsQueries

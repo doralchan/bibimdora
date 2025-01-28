@@ -13,7 +13,7 @@ import NodeLogo from '../assets/logo-node.svg'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function Operations() {
+function Insights() {
   const [selected, setSelect] = useState();
 
   const FrontendProject = <SubnavItem to='web' src={NextJSLogo}>@peated/web</SubnavItem>;
@@ -56,7 +56,7 @@ function Operations() {
         onChange={(e) => {setSelect(e.value)}}
         >
         <SubnavGroup>
-          <SubnavItem to='overview'>Overview</SubnavItem>
+          <SubnavItem to='overview-web'>Overview</SubnavItem>
           {selected === 'mobile' ? MobileProject : selected === 'admin' ? AdminProject : selected === 'platform' ? null : FrontendProject}
           <SubnavItem to='server' src={NodeLogo}>@peated/server</SubnavItem>
           <SubnavItem to='worker' src={NodeLogo}>@peated/worker</SubnavItem>
@@ -93,4 +93,4 @@ const SubnavGroup = styled('div')`
   margin-bottom: var(--space-lg);
 `;
 
-export default Operations;
+export default Insights;

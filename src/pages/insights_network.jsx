@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationAppstart() {
+function InsightsNetwork() {
   return (
     <Main>
-      <Header title='App Start'/>
+      <Header title='Network Requests'/>
       <Body>
-        <FilterBar defaultSelection='6' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )
 }
 
-export default OperationAppstart
+export default InsightsNetwork

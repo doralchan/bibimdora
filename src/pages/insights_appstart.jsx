@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationProjectWeb() {
+function InsightsAppstart() {
   return (
     <Main>
-      <Header title='@peated/web'/>
+      <Header title='App Start'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar defaultSelection='6' />
       </Body>
     </Main>
   )
 }
 
-export default OperationProjectWeb
+export default InsightsAppstart

@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationUptime() {
+function InsightsWebVitals() {
   return (
     <Main>
-      <Header title='Uptime'/>
+      <Header title='Web Vitals'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar defaultSelection='1' />
       </Body>
     </Main>
   )
 }
 
-export default OperationUptime
+export default InsightsWebVitals

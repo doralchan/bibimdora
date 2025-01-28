@@ -1,20 +1,18 @@
 import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
-import Widgets from '../layouts/widgets'
 
 import FilterBar from '../layouts/filterBar'
 
-function OverviewOperations() {
+function InsightsUptime() {
   return (
     <Main>
-      <Header title='Overview'/>
+      <Header title='Uptime'/>
       <Body>
-        <FilterBar />
-        <Widgets />
+        <FilterBar defaultSelection='4' />
       </Body>
     </Main>
   )
 }
 
-export default OverviewOperations
+export default InsightsUptime

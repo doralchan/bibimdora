@@ -4,7 +4,7 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function OperationCrons() {
+function InsightsCrons() {
   return (
     <Main>
       <Header title='Crons'/>
@@ -15,4 +15,4 @@ function OperationCrons() {
   )
 }
 
-export default OperationCrons
+export default InsightsCrons
