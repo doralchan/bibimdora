@@ -14,12 +14,12 @@ function AppList({className}) {
     setSelect(value)
   }
 
-  const headers = ['All App Teams', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
+  const headers = ['Your App Teams', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today'},
     { status: false, name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025'},
-    { status: false, name: 'Platform', owner: '@cramer', members: '2', access: false, services: '1', lastviewed:'1/2/2025'},
-    { status: false, name: 'Admin-Portal', owner: '@cramer', members: '1', access: false, services: '2', lastviewed:'1/15/2025'},
+    { status: false, name: 'Platform', owner: '@cramer', members: '2', access: true, services: '1', lastviewed:'1/2/2025'},
+    { status: false, name: 'Admin-Portal', owner: '@cramer', members: '1', access: true, services: '2', lastviewed:'1/15/2025'},
   ];
 
   return (

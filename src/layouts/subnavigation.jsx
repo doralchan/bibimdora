@@ -1,5 +1,5 @@
 import Dropdown from '../components/dropdown'
-import PatternDots from '../assets/pattern-dots.svg'
+import PatternDots from '../assets/pattern-dots-light.svg'
 
 import styled from 'styled-components'
 
