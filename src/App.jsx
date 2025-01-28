@@ -31,19 +31,16 @@ import InsightsProjectServer from './pages/insights_project_server'
 import InsightsProjectWorker from './pages/insights_project_worker'
 import InsightsProjectAdmin from './pages/insights_project_admin'
 import InsightsProjectiOS from './pages/insights_project_iOS'
-import FrontendInsights from './pages/insights_frontend'
 import InsightsWebVitals from './pages/insights_webvitals'
 import InsightsUI from './pages/insights_ui'
 import InsightsAssets from './pages/insights_assets'
 import InsightsNetwork from './pages/insights_network'
-import BackendInsights from './pages/insights_backend'
 import InsightsQueries from './pages/insights_queries'
 import InsightsOutbound from './pages/insights_outbound'
 import InsightsCache from './pages/insights_cache'
 import InsightsQueues from './pages/insights_queues'
 import InsightsCrons from './pages/insights_crons'
 import InsightsUptime from './pages/insights_uptime'
-import MobileInsights from './pages/insights_mobile'
 import InsightsAppstart from './pages/insights_appstart'
 import InsightsScreenloads from './pages/insights_screenloads'
 import Scrapers from './pages/insights_scrapers'
@@ -92,19 +89,16 @@ function App() {
             <Route path='worker' element={<InsightsProjectWorker/>} />
             <Route path='admin' element={<InsightsProjectAdmin/>} />
             <Route path='iOS' element={<InsightsProjectiOS/>} />
-            <Route path='frontend' element={<FrontendInsights/>} />
             <Route path='webvitals' element={<InsightsWebVitals/>} />
             <Route path='ui' element={<InsightsUI/>} />
             <Route path='assets' element={<InsightsAssets/>} />
             <Route path='network' element={<InsightsNetwork/>} />
-            <Route path='backend' element={<BackendInsights/>} />
             <Route path='queries' element={<InsightsQueries/>} />
             <Route path='outbound' element={<InsightsOutbound/>} />
             <Route path='cache' element={<InsightsCache/>} />
             <Route path='queues' element={<InsightsQueues/>} />
             <Route path='crons' element={<InsightsCrons/>} />
             <Route path='uptime' element={<InsightsUptime/>} />
-            <Route path='mobile' element={<MobileInsights/>} />
             <Route path='appstart' element={<InsightsAppstart/>} />
             <Route path='screenloads' element={<InsightsScreenloads/>} />
             <Route path='scrapers' element={<Scrapers/>} />

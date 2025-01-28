@@ -22,7 +22,7 @@ function Insights() {
 
   const FrontendModules = (
     <SubnavGroup>
-      <SubnavItem to='frontend'>Frontend</SubnavItem>
+      <SubnavHeader>Frontend</SubnavHeader>
       <SubnavItem to='webvitals' src={DefaultLogo}>Web Vitals</SubnavItem>
       <SubnavItem to='ui' src={DefaultLogo}>UI</SubnavItem>
       <SubnavItem to='assets' src={DefaultLogo}>Assets</SubnavItem>
@@ -32,7 +32,7 @@ function Insights() {
   
   const MobileModules = (
     <SubnavGroup>
-      <SubnavItem to='mobile'>Mobile</SubnavItem>
+      <SubnavHeader>Mobile</SubnavHeader>
       <SubnavItem to='appstart' src={DefaultLogo}>App Start</SubnavItem>
       <SubnavItem to='screenloads' src={DefaultLogo}>Screenloads</SubnavItem>
       <SubnavItem to='ui' src={DefaultLogo}>UI</SubnavItem>
@@ -63,7 +63,7 @@ function Insights() {
         </SubnavGroup>
         {selected === 'mobile' ? MobileModules : selected === 'platform' ? null : FrontendModules}
         <SubnavGroup>
-          <SubnavItem to='backend'>Backend</SubnavItem>
+          <SubnavHeader>Backend</SubnavHeader>
           <SubnavItem to='queries' src={DefaultLogo}>Queries</SubnavItem>
           <SubnavItem to='outbound' src={DefaultLogo}>Outbound</SubnavItem>
           <SubnavItem to='cache' src={DefaultLogo}>Cache</SubnavItem>
