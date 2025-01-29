@@ -1,25 +1,16 @@
-import {useState} from 'react'
-import Radio from '../components/radio'
 import Link from '../components/link'
 import Icon from '../components/icon'
-
 import IconEdit from '../assets/icon-edit.svg'
 
 import styled from 'styled-components'
 
 function AppList({className}) {
-  const [selected, setSelect] = useState(true);
-  const handleChange = e => {
-    const {value} = e.target
-    setSelect(value)
-  }
-
   const headers = ['Your App Teams', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
   const data = [
-    { status: true, name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today'},
-    { status: false, name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025'},
-    { status: false, name: 'Platform', owner: '@cramer', members: '2', access: true, services: '1', lastviewed:'1/2/2025'},
-    { status: false, name: 'Admin-Portal', owner: '@cramer', members: '1', access: true, services: '2', lastviewed:'1/15/2025'},
+    { status: true, name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today' },
+    { status: false, name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025' },
+    { status: false, name: 'Platform', owner: '@cramer', members: '2', access: true, services: '1', lastviewed:'1/2/2025' },
+    { status: false, name: 'Admin-Portal', owner: '@cramer', members: '1', access: true, services: '2', lastviewed:'1/15/2025' },
   ];
 
   return (
@@ -39,12 +30,7 @@ function AppList({className}) {
           {data.map((object) => {
             return (
               <tr key={object.id}>
-                <Cell>
-                  <RadioCell>
-                    <Radio onChange={handleChange} name='app' defaultChecked={object.status === true} />
-                    {object.name}
-                  </RadioCell>
-                </Cell>
+                <Cell>{object.name}</Cell>
                 <Cell>{object.owner}</Cell>
                 <Cell>{object.members}</Cell>
                 <Cell>{object.services}</Cell>
@@ -84,12 +70,6 @@ const Cell = styled('td')`
   &:nth-child(2) {
     text-align: left;
   }
-`;
-
-const RadioCell = styled('div')`
-  display: inline-flex;
-  gap: var(--space-sm);
-  vertical-align: bottom;
 `;
 
 const HeaderCell = styled(Cell)`
