@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc2b146b.css",
-    "main.js": "/static/js/main.65f18091.js",
+    "main.css": "/static/css/main.02c8b93f.css",
+    "main.js": "/static/js/main.95584e4e.js",
+    "static/media/pattern-dots-dark.svg": "/static/media/pattern-dots-dark.3e8222d70e76865ed17c3059d01ad063.svg",
     "static/media/pattern-dots-light.svg": "/static/media/pattern-dots-light.80283bf139e72d104c48d17b6747d742.svg",
-    "static/media/avatar.png": "/static/media/avatar.296893c0968fdbb4a665.png",
-    "static/media/map.svg": "/static/media/map.692902a5fc7511bc73076937816dbaaf.svg",
-    "static/media/icon-settings.svg": "/static/media/icon-settings.ab2f781f887ebed08a0bb19db7648e1a.svg",
-    "static/media/logo-default.svg": "/static/media/logo-default.900b6ff5752722758f8faa9c3fb23d68.svg",
+    "static/media/icon-settings.svg": "/static/media/icon-settings.3b7a35ef546be6742acf6afdbe12c8d5.svg",
+    "static/media/logo-default.svg": "/static/media/logo-default.a38d105fc03bb632fc051aeec3baf879.svg",
     "static/media/logo-javascript.svg": "/static/media/logo-javascript.d4d022c40a75029d45b12482f9d8311e.svg",
     "static/media/logo-sentry.svg": "/static/media/logo-sentry.3131bcdd6f8a94523a625f1d481ce337.svg",
     "index.html": "/index.html",
     "static/media/logo-nextjs.svg": "/static/media/logo-nextjs.4a397345a224f6e5ba822179fa7325f1.svg",
     "static/media/logo-apple.svg": "/static/media/logo-apple.beca8f84306e594fe135a3fe16277288.svg",
     "static/media/logo-node.svg": "/static/media/logo-node.abf97d024d6a525282cde065416fc710.svg",
-    "static/media/icon-dashboards.svg": "/static/media/icon-dashboards.a56f3edbde7fd45453466611958e8bf7.svg",
-    "static/media/icon-broadcast.svg": "/static/media/icon-broadcast.e454f422bfbc8faa2f80ef0186e0131c.svg",
-    "static/media/icon-wrench.svg": "/static/media/icon-wrench.7fddfc7d55adf38144bc021975cd860d.svg",
+    "static/media/icon-dashboards.svg": "/static/media/icon-dashboards.34c6004aa47a97fdad2cce8e7009b7ee.svg",
+    "static/media/icon-broadcast.svg": "/static/media/icon-broadcast.933b309357524d1a7400828fc42597d2.svg",
+    "static/media/icon-wrench.svg": "/static/media/icon-wrench.439f323a2b6f57176803dd7792f1a2b6.svg",
     "static/media/icon-edit.svg": "/static/media/icon-edit.723a37686e596a2f8e1dea111731c56f.svg",
-    "static/media/icon-issues.svg": "/static/media/icon-issues.a8a9e87d9c1adaa2dd58dc87dd918c7a.svg",
+    "static/media/icon-issues.svg": "/static/media/icon-issues.43bcc630d064e240328792d7f3563c25.svg",
     "static/media/icon-chart.svg": "/static/media/icon-chart.1ee434dc87bb37f83d5f98ac0b483735.svg",
-    "static/media/icon-explore.svg": "/static/media/icon-explore.31db56705fbba444eb87b2a731aaf726.svg",
-    "main.bc2b146b.css.map": "/static/css/main.bc2b146b.css.map",
-    "main.65f18091.js.map": "/static/js/main.65f18091.js.map"
+    "static/media/icon-explore.svg": "/static/media/icon-explore.2a47c503d3ed0175746664f3fcf1fbdb.svg",
+    "main.02c8b93f.css.map": "/static/css/main.02c8b93f.css.map",
+    "main.95584e4e.js.map": "/static/js/main.95584e4e.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc2b146b.css",
-    "static/js/main.65f18091.js"
+    "static/css/main.02c8b93f.css",
+    "static/js/main.95584e4e.js"
   ]
 }
