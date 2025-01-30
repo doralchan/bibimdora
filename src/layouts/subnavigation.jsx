@@ -46,7 +46,7 @@ const HeaderStyles = styled('div')`
 
 const SubtitleStyles = styled('h4')`
   margin-top: var(--space-xs);
-  color: var(--pink300);
+  color: var(--pink200);
 `;
 
 const ListStyles = styled('div')`

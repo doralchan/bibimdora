@@ -12,21 +12,20 @@ const FormSelect = ({className, defaultValue, options}) => (
 );
 
 const SelectStyles = styled(Select)`
-  font-weight: 500;
-  min-width: 60px;
-
   .react-select__control {
     border-bottom-width: 3px;
     background-color: var(--dark200);
     border-color: var(--dark500);
     min-height: 28px;
+    min-width: 60px;
   }
 
   .react-select__control:hover {
     border-color: var(--dark500);
   }
 
-  .react-select__control--is-focused {
+  .react-select__control--is-focused,
+  .react-select__control--is-focused:hover {
     border-color: var(--purple300);
     box-shadow: none;
   }
@@ -43,6 +42,7 @@ const SelectStyles = styled(Select)`
 
   .react-select__single-value {
     color: var(--white);
+    font-weight: 500;
   }
 
   .react-select__value-container {
@@ -55,6 +55,10 @@ const SelectStyles = styled(Select)`
 
   .react-select__indicator-separator {
     display: none;
+  }
+
+  .react-select__option:hover {
+    background-color: var(--pink300);
   }
 `;
 
