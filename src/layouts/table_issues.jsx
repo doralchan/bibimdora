@@ -40,9 +40,9 @@ function Issues() {
 };
 
 const StyledContainer = styled('div')`
-  background-color: var(--white);
-  border: 1px solid var(--gray200);
-  border-bottom-width: 2px;
+  background-color: var(--dark200);
+  border: 1px solid var(--dark500);
+  border-bottom-width: 3px;
   border-radius: var(--radius);
 `;
 
@@ -52,7 +52,7 @@ const StyledTable = styled('table')`
 `;
 
 const Cell = styled('td')`
-  border-bottom: 1px solid var(--gray200);
+  border-bottom: 1px solid var(--dark500);
   padding: var(--space-sm) var(--space-md);
 `;
 
@@ -60,7 +60,7 @@ const HeaderCell = styled(Cell)`
   font-weight: 500;
   font-size: 0.9em;
   color: var(--gray400);
-  border-bottom: 2px solid var(--gray200);
+  border-bottom: 3px solid var(--dark500);
 `;
 
 export default Issues

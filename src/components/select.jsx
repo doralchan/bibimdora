@@ -17,26 +17,32 @@ const SelectStyles = styled(Select)`
 
   .react-select__control {
     border-bottom-width: 3px;
-    border-color: var(--gray200);
+    background-color: var(--dark200);
+    border-color: var(--dark500);
     min-height: 28px;
+  }
 
-    &:hover {
-      border-color: var(--gray200);
-    }
+  .react-select__control:hover {
+    border-color: var(--dark500);
   }
 
   .react-select__control--is-focused {
-    border-color: var(--purple100);
+    border-color: var(--purple300);
     box-shadow: none;
-
-    &:hover {
-      border-color: var(--purple100);
-    }
   }
 
   .react-select__control,
   .react-select__menu {
     padding: 0 var(--space-sm);
+  }
+
+  .react-select__menu {
+    background-color: var(--dark200);
+    border: 1px solid var(--dark500);
+  }
+
+  .react-select__single-value {
+    color: var(--white);
   }
 
   .react-select__value-container {

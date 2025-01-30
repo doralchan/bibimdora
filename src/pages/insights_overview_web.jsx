@@ -16,7 +16,7 @@ function OverviewWeb() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
       data: [1.2, 1.3, 1.2, 1.4, 1.2, 1.3, 1.4, 1.6, 1.8, 2, 1.9, 2, 1.9],
-      borderColor: ['#36166B']
+      borderColor: ['#4E2A9A']
     }]
   };
   
@@ -24,7 +24,7 @@ function OverviewWeb() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
       data: [200, 203, 202, 200, 221, 202, 203, 200, 201, 203, 202, 201, 200],
-      borderColor: ['#36166B']
+      borderColor: ['#4E2A9A']
     }]
   };
   
@@ -32,7 +32,7 @@ function OverviewWeb() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
       data: [120, 121, 123, 119, 290, 285, 292, 120, 121, 120, 119, 121, 121],
-      borderColor: ['#36166B']
+      borderColor: ['#4E2A9A']
     }]
   };
 
@@ -41,11 +41,11 @@ function OverviewWeb() {
     datasets: [
     {
       data: [120, 121, 123, 119, 120, 130, 124, 120, 121, 120, 119, 121, 121],
-      borderColor: ['#36166B']
+      borderColor: ['#A737B4']
     }, 
     {
       data: [200, 203, 202, 200, 201, 202, 203, 200, 201, 503, 942, 901, 1000],
-      borderColor: ['#FF45A8']
+      borderColor: ['#FDB81B']
     }]
   };
   
@@ -54,11 +54,11 @@ function OverviewWeb() {
     datasets: [
     {
       data: [2.3, 2.2, 2.2, 2.4, 2.1, 2.2, 2.4, 2.2, 2.3, 2.4, 1.2, 2.3, 2.4],
-      borderColor: ['#36166B'],
+      borderColor: ['#A737B4'],
     },
     {
       data: [2, 2.3, 2.2, 2, 2.1, 2.2, 2.3, 2, 2.1, 2.3, 2.4, 2.1, 2.3],
-      borderColor: ['#FF45A8']
+      borderColor: ['#FDB81B']
     }]
   };
   
@@ -67,11 +67,11 @@ function OverviewWeb() {
     datasets: [
     {
       data: [2.2, 2.3, 2.3, 2.4, 2.2, 2.1, 2.3, 2.1, 2.2, 2.5, 2.3, 2.2, 2.3],
-      borderColor: ['#36166B'],
+      borderColor: ['#A737B4'],
     },
     {
       data: [2.2, 2.3, 2.3, 2.4, 3.2, 8.1, 5.3, 2.1, 2.2, 2.5, 2.3, 2.2, 2.3],
-      borderColor: ['#FF45A8'],
+      borderColor: ['#FDB81B'],
     }]
   }
 

@@ -23,9 +23,9 @@ const DropdownStyles = styled(Select)`
   }
 
   .react-select__menu {
-    background-color: var(--white);
+    background-color: var(--dark200);
     padding: var(--space-sm);
-    border: 1px solid var(--gray200);
+    border: 1px solid var(--dark500);
     border-radius: var(--radius);
   }
 

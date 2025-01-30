@@ -9,15 +9,19 @@
     --gray500: #585558;
 
     --purple100: #D6CCFF;
-    --purple200: #7B50FF;
-    --purple300: #5428A3;
-    --purple400: #391475;
+    --purple200: #A791FF;
+    --purple300: #7B50FF;
+    --purple400: #5428A3;
+    --purple500: #391475;
 
     --pink200: #B450BC;
     --pink300: #B82ABE;
 
-    --dark400: #2F2847;
-    --dark500: #2B1F39;
+    --dark100: #2F2847;
+    --dark200: #29213B;
+    --dark300: #231B30;
+    --dark400: #1E1424;
+    --dark500: #180D18;
 
     --space-unit: 8px;
     --space-xxs: calc(0.25 * var(--space-unit)); 

@@ -14,7 +14,6 @@ function FilterBar({ defaultSelection }) {
 }
 
 const StyledFilterBar = styled('div')`
-  background-color: var(--white);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--space-unit);

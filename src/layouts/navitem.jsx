@@ -8,7 +8,7 @@ function NavItem({className, src, to}) {
 	const navigationActive = ({isActive}) => {
     return {
 			backgroundColor: isActive ? '#7B50FF' : 'transparent',
-			borderColor: isActive ? '#391475' : 'transparent',
+			borderColor: isActive ? '#180D18' : 'transparent',
 			opacity: isActive ? '1' : '0.5',
     };
   };

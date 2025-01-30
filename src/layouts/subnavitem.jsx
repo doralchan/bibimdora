@@ -10,9 +10,8 @@ function SubnavItem({className, children, src, to, strikethrough}) {
     return {
       opacity: isActive ? '1' : '0.5',
       fontWeight: isActive ? 500 : 400,
-      backgroundColor: isActive ? 'white' : 'transparent',
-      borderColor: isActive ? '#D6CCFF' : 'transparent',
-      color: isActive ? '#5428A3' : '#0A0A0A',
+      borderColor: isActive ? '#7B50FF' : 'transparent',
+      color: isActive ? '#FFFFFF' : '#D6CCFF',
     };
   };
 

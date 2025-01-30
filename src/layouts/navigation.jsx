@@ -30,10 +30,10 @@ const NavigationStyles = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--purple300);
+  background: var(--dark200);
   grid-column: 1/2;
   margin: 0;
-  border-right: 1px solid var(--gray200);
+  border-right: 2px solid var(--dark500);
   max-height: 100vh;
 `;
 

@@ -9,8 +9,8 @@ const Widget = ({className, children, title}) => (
 );
 
 const WidgetStyles = styled('div')`
-  background-color: var(--white);
-  border: 1px solid var(--gray200);
+  background-color: var(--dark200);
+  border: 1px solid var(--dark500);
   border-bottom-width: 3px;
   padding: var(--space-md);
   border-radius: var(--radius);

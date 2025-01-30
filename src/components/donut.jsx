@@ -15,8 +15,9 @@ const data = {
       '#9E86FF',
       '#FF45A8',
       '#FDB81B',
-      '#36166B'
+      '#4E2A9A'
     ],
+    borderColor: '#231B30',
   }]
 };
 

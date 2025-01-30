@@ -32,6 +32,7 @@ const Controls = styled('div')`
   display: flex;
   grid-column: 1/3;
   gap: var(--space-unit);
+  margin-bottom: var(--space-unit);
 `;
 
 const StyledInput = styled(Input)`

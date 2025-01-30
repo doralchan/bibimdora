@@ -1,5 +1,6 @@
 import Dropdown from '../components/dropdown'
 import PatternDotsLight from '../assets/pattern-dots-light.svg'
+import PatternDotsDark from '../assets/pattern-dots-dark.svg'
 
 import styled from 'styled-components'
 
@@ -28,12 +29,11 @@ function Subnavigation({className, children, subtitle, defaultValue, onChange}) 
 const SubnavigationStyles = styled('div')`
   display: grid;
   grid-template-rows: auto 1fr;
-  background-image: url(${PatternDotsLight});
-  background-color: var(--gray100);
-  background-repeat: space;
+  background-image: url(${PatternDotsDark});
+  background-color: var(--dark300);
   grid-column: 1/2;
   padding: var(--space-lg) var(--space-lg);
-  border-right: 1px solid var(--gray200);
+  border-right: 2px solid var(--dark500);
   gap: var(--space-lg);
 `;
 

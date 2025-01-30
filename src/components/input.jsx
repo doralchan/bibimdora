@@ -7,14 +7,15 @@ const Input = ({className, value, placeholder}) => (
 
 const InputStyles = styled('input')`
   display: block;
-  border: 1px solid var(--gray200);
+  border: 1px solid var(--dark500);
   border-bottom-width: 3px;
   border-radius: var(--radius);
   padding: var(--space-xs) var(--space-md);
+  background-color: var(--dark200);
 
   &:focus {
     outline: none;
-    border-color: var(--purple100);
+    border-color: var(--purple300);
   }
 
   &::placeholder {
