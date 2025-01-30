@@ -9,8 +9,8 @@ const Banner = ({className, children, title, description, primary, secondary}) =
       <h1>{title}</h1>
       <Description>{description}</Description>
       <Actions>
-        <Button priority>{primary}</Button>
-        <Button>{secondary}</Button>
+        <Button>{primary}</Button>
+        <StyledButton>{secondary}</StyledButton>
       </Actions>
     </MainContent>
   </StyledBanner>
@@ -44,6 +44,10 @@ const MainContent = styled('div')`
   flex-direction: column;
   gap: var(--space-unit);
   max-width: 500px;
+`;
+
+const StyledButton = styled(Button)`
+  background-color: transparent;
 `;
 
 export default Banner;

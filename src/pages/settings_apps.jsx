@@ -16,7 +16,7 @@ function Apps() {
       <Body>
         <Controls>
           <StyledInput placeholder='Filter events...'/>
-          <Button priority>+ Add App Team</Button>
+          <Button>+ Add App Team</Button>
         </Controls>
         <StyledAppList />
       </Body>
