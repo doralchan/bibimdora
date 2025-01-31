@@ -5,7 +5,7 @@ import IconEdit from '../assets/icon-edit.svg'
 import styled from 'styled-components'
 
 function AppList({className}) {
-  const headers = ['Your App Teams', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
+  const headers = ['Your Service Groups', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
   const data = [
     { status: true, name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today' },
     { status: false, name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025' },

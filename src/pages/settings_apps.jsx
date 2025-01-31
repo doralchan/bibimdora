@@ -12,11 +12,11 @@ import '../styles/theme.css'
 function Apps() {
   return (
     <Main>
-      <Header title='App Teams'/>
+      <Header title='Services'/>
       <Body>
         <Controls>
           <StyledInput placeholder='Filter events...'/>
-          <Button priority>+ Add App Team</Button>
+          <Button priority>+ Add Service Group</Button>
         </Controls>
         <AppList />
       </Body>
