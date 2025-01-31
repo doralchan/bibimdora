@@ -1,11 +1,11 @@
 import Dropdown from '../components/dropdown'
-import PatternDotsLight from '../assets/pattern-dots-light.svg'
 import PatternDotsDark from '../assets/pattern-dots-dark.svg'
 
 import styled from 'styled-components'
 
 function Subnavigation({className, children, subtitle, defaultValue, onChange}) {
   const AppOptions = [
+    { value: 'all', label: 'All Services' },
     { value: 'web', label: 'Peated Web' },
     { value: 'mobile', label: 'Peated Mobile' },
     { value: 'platform', label: 'Platform' },
@@ -16,7 +16,7 @@ function Subnavigation({className, children, subtitle, defaultValue, onChange}) 
     <SubnavigationStyles className={className}>
       <HeaderStyles>
         <Dropdown 
-          defaultValue={defaultValue || AppOptions[0]} 
+          defaultValue={defaultValue || AppOptions[1]} 
           options={AppOptions} 
           onChange={onChange} />
         <SubtitleStyles>{subtitle}</SubtitleStyles>

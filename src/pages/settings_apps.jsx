@@ -16,17 +16,13 @@ function Apps() {
       <Body>
         <Controls>
           <StyledInput placeholder='Filter events...'/>
-          <Button>+ Add App Team</Button>
+          <Button priority>+ Add App Team</Button>
         </Controls>
-        <StyledAppList />
+        <AppList />
       </Body>
     </Main>
   )
 }
-
-const StyledAppList = styled(AppList)`
-
-`;
 
 const Controls = styled('div')`
   display: flex;
