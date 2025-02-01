@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 30">
+  <defs>
+    <style>
+      .b {
+        fill: #b82abe;
+      }
+    </style>
+  </defs>
+  <rect class="b" x=".53" y="24.95" width="4" height="5.05"/>
+  <rect class="b" x="5.9" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="11.27" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="16.63" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="22" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="27.37" y="23.28" width="4" height="6.72"/>
+  <rect class="b" x="32.74" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="38.11" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="43.47" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="48.84" y="23.78" width="4" height="6.22"/>
+  <rect class="b" x="54.21" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="59.58" y="23.28" width="4" height="6.72"/>
+  <rect class="b" x="64.95" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="70.32" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="75.68" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="81.05" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="86.42" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="91.79" y="24.43" width="4" height="5.57"/>
+  <rect class="b" x="97.16" y="23.28" width="4" height="6.72"/>
+  <rect class="b" x="102.53" y="21.87" width="4" height="8.13"/>
+  <rect class="b" x="107.89" y="22.54" width="4" height="7.46"/>
+  <rect class="b" x="113.26" y="20.59" width="4" height="9.41"/>
+  <rect class="b" x="118.63" y="19.18" width="4" height="10.82"/>
+  <rect class="b" x="124" y="17.6" width="4" height="12.4"/>
+  <rect class="b" x="129.37" y="15.52" width="4" height="14.48"/>
+  <rect class="b" x="134.73" y="11.05" width="4" height="18.95"/>
+  <rect class="b" x="140.1" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="145.47" width="4" height="30"/>
+</svg>

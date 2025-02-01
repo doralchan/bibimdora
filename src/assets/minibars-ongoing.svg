@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 30">
+  <defs>
+    <style>
+      .b {
+        fill: #b82abe;
+      }
+    </style>
+  </defs>
+  <rect class="b" x=".53" y="9.25" width="4" height="20.75"/>
+  <rect class="b" x="5.9" y="7.27" width="4" height="22.73"/>
+  <rect class="b" x="11.27" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="16.63" y="7.63" width="4" height="22.37"/>
+  <rect class="b" x="22" y="9.25" width="4" height="20.75"/>
+  <rect class="b" x="27.37" y="8.48" width="4" height="21.52"/>
+  <rect class="b" x="32.74" y="8.48" width="4" height="21.52"/>
+  <rect class="b" x="38.11" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="43.47" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="48.84" y="4.96" width="4" height="25.04"/>
+  <rect class="b" x="54.21" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="59.58" y="4.62" width="4" height="25.38"/>
+  <rect class="b" x="64.95" y="2.99" width="4" height="27.01"/>
+  <rect class="b" x="70.32" y="4.62" width="4" height="25.38"/>
+  <rect class="b" x="75.68" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="81.05" y="6.68" width="4" height="23.32"/>
+  <rect class="b" x="86.42" y="2.64" width="4" height="27.36"/>
+  <rect class="b" x="91.79" width="4" height="30"/>
+  <rect class="b" x="97.16" y="1.73" width="4" height="28.27"/>
+  <rect class="b" x="102.53" width="4" height="30"/>
+  <rect class="b" x="107.89" y="2.64" width="4" height="27.36"/>
+  <rect class="b" x="113.26" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="118.63" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="124" y="8.36" width="4" height="21.64"/>
+  <rect class="b" x="129.37" y="11.18" width="4" height="18.82"/>
+  <rect class="b" x="134.73" y="8.36" width="4" height="21.64"/>
+  <rect class="b" x="140.1" y="6.33" width="4" height="23.67"/>
+  <rect class="b" x="145.47" y="6.33" width="4" height="23.67"/>
+</svg>

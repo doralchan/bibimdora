@@ -23,6 +23,11 @@
     --dark400: #1E1424;
     --dark500: #180D18;
 
+    --level-fatal: #F02F35;
+    --level-default: #EE8019;
+    --level-warning: #FDB81B;
+    --level-info: #226DFC;
+
     --space-unit: 8px;
     --space-xxs: calc(0.25 * var(--space-unit)); 
     --space-xs: calc(0.5 * var(--space-unit));  

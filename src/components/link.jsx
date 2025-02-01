@@ -7,6 +7,7 @@ const Link = ({className, href, children}) => (
 
 const LinkStyles = styled('a')`
   text-decoration: none;
+  font-weight: 500;
   color: var(--purple200);
   cursor: pointer;
 `;
