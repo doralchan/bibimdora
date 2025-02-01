@@ -43,16 +43,16 @@ function Issues({className}) {
       <StyledTable>
         <thead>
           <tr>
-            {headers.map((object) => {
-              return (<HeaderCell key={object.issue}>{object}</HeaderCell>);
+            {headers.map((object, index) => {
+              return (<HeaderCell key={index}>{object}</HeaderCell>);
             })
             }
           </tr>
         </thead>
         <tbody>
-          {data.map((object) => {
+          {data.map((object, index) => {
             return (
-              <tr key={object.id}>
+              <tr key={index}>
                 <Cell>
                   <MainIssue>
                     <Checkbox />
