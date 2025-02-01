@@ -13,8 +13,8 @@ import Regression from '../assets/minibars-regression.svg'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function Issues() {
-  const headers = ['Issue', 'Graph', 'Events', 'Users', 'Assignee']
+function Issues({className}) {
+  const headers = ['Issues', 'Graph', 'Events', 'Users', 'Assignee']
   const data = [
     {
       level:'warning', title: 'Hydration Error', culprit: 'Server rendered HTML didnt match client', project: NextJSLogo, location: 'https://peated.engineering',
@@ -39,7 +39,7 @@ function Issues() {
   ];
   
   return (
-    <StyledContainer>
+    <StyledContainer className={className}>
       <StyledTable>
         <thead>
           <tr>
@@ -71,7 +71,7 @@ function Issues() {
                 </Cell>
                 <Cell>
                   <ChartFont>{object.max}</ChartFont>
-                  <div><img src={object.trend} alt='minibar chart' /></div>
+                  <StyledChart src={object.trend} alt='minibar chart' />
                   <TinyFont>{object.status}</TinyFont>
                 </Cell>
                 <Cell>{object.events}</Cell>
@@ -123,7 +123,7 @@ const SmallFont = styled('div')`
 `;
 
 const TinyFont = styled('div')`
-  font-size: 0.8em;
+  font-size: 0.7em;
 `;
 
 const ChartFont = styled(TinyFont)`
@@ -132,6 +132,11 @@ const ChartFont = styled(TinyFont)`
   width: 100%;
   text-align: right;
   color: var(--purple100);
+`;
+
+const StyledChart = styled('img')`
+  max-height: 32px;
+  min-height: 16px;
 `;
 
 const MainIssue = styled('div')`

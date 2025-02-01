@@ -27,9 +27,9 @@ const options = {
   }
 }
 
-function Lines({data}) {
+function Lines({className, data}) {
   return (
-    <StyledLine>
+    <StyledLine className={className}>
       <Line data={data} options={options} />
     </StyledLine>
   );

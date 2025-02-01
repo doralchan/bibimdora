@@ -116,7 +116,7 @@ function OverviewWeb() {
 
 const GridStyles = styled('div')`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0,1fr));
   grid-template-rows: repeat(3, auto);
   gap: var(--space-unit);
 `;
