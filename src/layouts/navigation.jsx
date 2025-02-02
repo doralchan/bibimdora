@@ -7,6 +7,7 @@ import IconExplore from '../assets/icon-explore.svg'
 import IconDashboards from '../assets/icon-dashboards.svg'
 import IconSettings from '../assets/icon-settings.svg'
 import IconBroadcast from '../assets/icon-broadcast.svg'
+import IconNotifications from '../assets/icon-notification.svg'
 
 import styled from 'styled-components'
 
@@ -20,7 +21,8 @@ const Navigation = ({className}) => (
       <NavItem to='insights' src={IconChart} />
     </NavTop>
     <NavBottom>
-      <NavItem to='notifications' src={IconBroadcast} />
+      <NavItem to='new' src={IconBroadcast} />
+      <NavItem to='notifications' src={IconNotifications} />
       <NavItem to='settings' src={IconSettings} />
     </NavBottom>
   </NavigationStyles>
