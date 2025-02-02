@@ -36,6 +36,22 @@ function Issues({className}) {
       level:'default', title: 'Error', culprit: 'There was an error while hydrating but React was', project: NextJSLogo, location: 'https://peated.engineering',
       trend: Escalating2, status: 'Escalating', max: '65', events: '462', users: '23', assignee: '1',
     },
+    {
+      level:'default', title: 'TypeError', culprit: 'Failed to construct URL: Invalid URL', project: NextJSLogo, location: 'navigate(app/utils/navigate)',
+      trend: Ongoing, status: 'Ongoing', max: '23', events: '134', users: '5', assignee: '1',
+    },
+    {
+      level:'info', title: 'Object.captureException', culprit: 'Exceeded timeout of 5000ms for a', project: NodeLogo, location: 'Object?(autofixSteps.spec.tsx',
+      trend: New, status: 'New', max: '129', events: '2.3k', users: '1.2k', assignee: '1',
+    },
+    {
+      level:'fatal', title: 'TypeError', culprit: '(0, _reactDOM.findDOMNode) is not a function', project: NodeLogo, location: 'getCellMeasurementRequirements(react)',
+      trend: Regression, status: 'Regressing', max: '2', events: '40', users: '29', assignee: '1',
+    },
+    {
+      level:'default', title: 'Error', culprit: 'There was an error while hydrating but React was', project: NextJSLogo, location: 'https://peated.engineering',
+      trend: Escalating2, status: 'Escalating', max: '65', events: '462', users: '23', assignee: '1',
+    },
   ];
   
   return (
@@ -60,6 +76,7 @@ function Issues({className}) {
                     <div>{object.culprit}</div>
                   </PrimaryIssueRow>
                   <SecondaryIssueRow>
+                    <LevelDot $level={object.level}/>
                     <StyledProject>
                       <StyledLogo src={object.project} />
                       <span>{object.project === NextJSLogo ? '@peated/web' : '@peated/worker'}</span>
@@ -135,12 +152,15 @@ const PrimaryIssueRow = styled('div')`
   display: flex;
   gap: var(--space-unit);
   grid-column: 2/3;
+  overflow: hidden;
+  white-space: nowrap;
 `;
 
 const SecondaryIssueRow = styled('div')`
   display: flex;
   gap: var(--space-unit);
   grid-column: 2/3;
+  align-items: center;
 `;
 
 const StyledProject = styled(SmallFont)`
@@ -155,6 +175,20 @@ const StyledLogo = styled(Logo)`
 
 const StyledLocation = styled(SmallFont)`
   color: var(--purple100);
+`;
+
+const LevelDot = styled('div')`
+  height: var(--space-unit);
+  width: var(--space-unit);
+  background-color: 
+    ${
+        props => 
+        props.$level === 'default' ? '#EE8019' : 
+        props.$level === 'fatal' ? '#F02F35' :
+        props.$level === 'warning' ? '#FDB81B' :
+        '#226DFC'
+      };
+  border-radius: 50%;
 `;
 
 export default Issues

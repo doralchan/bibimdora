@@ -42,14 +42,15 @@ function AllIssues() {
           <IssueCount title='Overall Issue Count'>
             <StyledLines data={dataA} />
           </IssueCount>
-          <Distribution title='Service Level Distribution'>
-            Stacked Bar Chart
+          <Distribution title='Level Distribution Per Service'>
+
           </Distribution>
           <RecentActivity title='Recent Activity'>
             <Comment member='Sean' number='123'>This happens because of x, y and z. I'll fix this in the next release.</Comment>
             <Comment member='Brett' number='456'>Can someone fix this please?</Comment>
             <Comment member='Liam' number='789'>Urgent! I need help fixing this before the next deploy goes out.</Comment>
             <Comment member='Cassidy' number='123'>A lot of these are due to the recent outage at Twilio. We'll need to keep an eye on it.</Comment>
+            <Comment member='Jane' number='456'>OOF. Disaster.</Comment>
           </RecentActivity>
           <StyledIssues />
         </GridStyles>
@@ -75,7 +76,6 @@ const StyledIssues = styled(Issues)`
 `;
 
 const IssueCount = styled(Widget)`
-
   @media (min-width: 1281px) {
     grid-column: 1/2;
     grid-row: 1/3;
@@ -83,7 +83,6 @@ const IssueCount = styled(Widget)`
 `;
 
 const Distribution = styled(Widget)`
-
   @media (min-width: 1281px) {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -103,6 +102,5 @@ const RecentActivity = styled(Widget)`
 const StyledLines = styled(Lines)`
   height: auto;
 `;
-
 
 export default AllIssues
