@@ -16,7 +16,8 @@ function Apps() {
       <Body>
         <Controls>
           <StyledInput placeholder='Filter events...'/>
-          <Button priority>+ Add Service Group</Button>
+          <Button>+ Add Service Group</Button>
+          <Button priority>+ Add Service</Button>
         </Controls>
         <AppList />
       </Body>

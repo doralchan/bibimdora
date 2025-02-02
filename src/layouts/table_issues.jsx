@@ -1,6 +1,7 @@
 import Link from '../components/link'
 import Logo from '../components/logo'
 import Checkbox from '../components/checkbox'
+import Table from '../components/table'
 
 import NodeLogo from '../assets/logo-node.svg'
 import NextJSLogo from '../assets/logo-nextjs.svg'
@@ -11,7 +12,6 @@ import Escalating2 from '../assets/minibars-escalating-2.svg'
 import Regression from '../assets/minibars-regression.svg' 
 
 import styled from 'styled-components'
-import '../styles/theme.css'
 
 function Issues({className}) {
   const headers = ['Issues', 'Graph', 'Events', 'Users', 'Assignee']
@@ -39,65 +39,51 @@ function Issues({className}) {
   ];
   
   return (
-    <StyledContainer className={className}>
-      <StyledTable>
-        <thead>
-          <tr>
-            {headers.map((object, index) => {
-              return (<HeaderCell key={index}>{object}</HeaderCell>);
-            })
-            }
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((object, index) => {
-            return (
-              <tr key={index}>
-                <Cell>
-                  <MainIssue>
-                    <Checkbox />
-                    <PrimaryIssueRow>
-                      <Link>{object.title}</Link>
-                      <div>{object.culprit}</div>
-                    </PrimaryIssueRow>
-                    <SecondaryIssueRow>
-                      <StyledProject>
-                        <StyledLogo src={object.project} />
-                        <span>{object.project === NextJSLogo ? '@peated/web' : '@peated/worker'}</span>
-                      </StyledProject>|
-                      <StyledLocation>{object.location}</StyledLocation>
-                    </SecondaryIssueRow>
-                  </MainIssue>
-                </Cell>
-                <Cell>
-                  <ChartFont>{object.max}</ChartFont>
-                  <StyledChart src={object.trend} alt='minibar chart' />
-                  <TinyFont>{object.status}</TinyFont>
-                </Cell>
-                <Cell>{object.events}</Cell>
-                <Cell>{object.users}</Cell>
-                <Cell>{object.assignee}</Cell>
-              </tr>
-            );
+    <Table className={className}>
+      <thead>
+        <tr>
+          {headers.map((object, index) => {
+            return (<HeaderCell key={index}>{object}</HeaderCell>);
           })
           }
-        </tbody>
-      </StyledTable>    
-    </StyledContainer>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((object, index) => {
+          return (
+            <tr key={index}>
+              <Cell>
+                <MainIssue>
+                  <Checkbox />
+                  <PrimaryIssueRow>
+                    <Link>{object.title}</Link>
+                    <div>{object.culprit}</div>
+                  </PrimaryIssueRow>
+                  <SecondaryIssueRow>
+                    <StyledProject>
+                      <StyledLogo src={object.project} />
+                      <span>{object.project === NextJSLogo ? '@peated/web' : '@peated/worker'}</span>
+                    </StyledProject>|
+                    <StyledLocation>{object.location}</StyledLocation>
+                  </SecondaryIssueRow>
+                </MainIssue>
+              </Cell>
+              <Cell>
+                <ChartFont>{object.max}</ChartFont>
+                <StyledChart src={object.trend} alt='minibar chart' />
+                <TinyFont>{object.status}</TinyFont>
+              </Cell>
+              <Cell>{object.events}</Cell>
+              <Cell>{object.users}</Cell>
+              <Cell>{object.assignee}</Cell>
+            </tr>
+          );
+        })
+        }
+      </tbody>
+    </Table>    
   );
 };
-
-const StyledContainer = styled('div')`
-  background-color: var(--dark200);
-  border: 1px solid var(--dark500);
-  border-bottom-width: 3px;
-  border-radius: var(--radius);
-`;
-
-const StyledTable = styled('table')`
-  width: 100%;
-  border-collapse: collapse;
-`;
 
 const Cell = styled('td')`
   border-bottom: 1px solid var(--dark500);

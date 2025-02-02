@@ -1,7 +1,7 @@
 import Link from '../components/link'
+import Table from '../components/table'
 
 import styled from 'styled-components'
-import '../styles/theme.css'
 
 function Transactions() {
   const headers = ['Transaction', 'Duration', 'Error Rate', 'Score', 'Count', 'Impact']
@@ -17,49 +17,35 @@ function Transactions() {
   ];
   
   return (
-    <StyledContainer>
-      <StyledTable>
-        <thead>
-          <tr>
-            {headers.map((object) => {
-              return (
-                <HeaderCell key={object.id}>{object}</HeaderCell>
-              );
-            })
-            }
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((object) => {
+    <Table>
+      <thead>
+        <tr>
+          {headers.map((object, index) => {
             return (
-              <tr key={object.id}>
-                <Cell><Link>{object.name}</Link></Cell>
-                <Cell>{object.duration}</Cell>
-                <Cell>{object.rate}</Cell>
-                <Cell>{object.score}</Cell>
-                <Cell>{object.count}</Cell>
-                <Cell>{object.impact}</Cell>
-              </tr>
+              <HeaderCell key={index}>{object}</HeaderCell>
             );
           })
           }
-        </tbody>
-      </StyledTable>    
-    </StyledContainer>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((object, index) => {
+          return (
+            <tr key={index}>
+              <Cell><Link>{object.name}</Link></Cell>
+              <Cell>{object.duration}</Cell>
+              <Cell>{object.rate}</Cell>
+              <Cell>{object.score}</Cell>
+              <Cell>{object.count}</Cell>
+              <Cell>{object.impact}</Cell>
+            </tr>
+          );
+        })
+        }
+      </tbody>
+    </Table>
   );
 };
-
-const StyledContainer = styled('div')`
-  background-color: var(--dark200);
-  border: 1px solid var(--dark500);
-  border-bottom-width: 3px;
-  border-radius: var(--radius);
-`;
-
-const StyledTable = styled('table')`
-  width: 100%;
-  border-collapse: collapse;
-`;
 
 const Cell = styled('td')`
   border-bottom: 1px solid var(--dark500);

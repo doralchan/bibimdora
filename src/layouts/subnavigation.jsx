@@ -9,7 +9,7 @@ function Subnavigation({className, children, subtitle, defaultValue, onChange}) 
     { value: 'web', label: 'Peated Web' },
     { value: 'mobile', label: 'Peated Mobile' },
     { value: 'platform', label: 'Platform' },
-    { value: 'admin', label: 'Admin-Portal' },
+    { value: 'vanguard', label: 'Vanguard' },
   ]
 
   return (
