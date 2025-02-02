@@ -25,7 +25,7 @@ function Issues({className}) {
       trend: Escalating1, status: 'Escalating', max: '3', events: '93', users: '17', assignee: '1',
     },
     {
-      level:'info', title: 'Object.captureException', culprit: 'Exceeded timeout of 5000ms for a test', project: NodeLogo, location: 'Object?(autofixSteps.spec.tsx',
+      level:'info', title: 'Object.captureException', culprit: 'Exceeded timeout of 5000ms for a', project: NodeLogo, location: 'Object?(autofixSteps.spec.tsx',
       trend: New, status: 'New', max: '129', events: '2.3k', users: '1.2k', assignee: '1',
     },
     {
@@ -33,7 +33,7 @@ function Issues({className}) {
       trend: Regression, status: 'Regressing', max: '2', events: '40', users: '29', assignee: '1',
     },
     {
-      level:'default', title: 'Error', culprit: 'There was an error while hydrating but React was...', project: NextJSLogo, location: 'https://peated.engineering',
+      level:'default', title: 'Error', culprit: 'There was an error while hydrating but React was', project: NextJSLogo, location: 'https://peated.engineering',
       trend: Escalating2, status: 'Escalating', max: '65', events: '462', users: '23', assignee: '1',
     },
   ];

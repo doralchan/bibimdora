@@ -6,6 +6,7 @@ import FilterBar from '../layouts/filterBar'
 
 import Widget from '../components/widget'
 import Lines from '../components/lines'
+import Comment from '../components/comment'
 
 import styled from 'styled-components'
 
@@ -41,8 +42,15 @@ function AllIssues() {
           <IssueCount title='Overall Issue Count'>
             <StyledLines data={dataA} />
           </IssueCount>
-          <RecentlyViewed title='Recently Viewed'/>
-          <AssignedToMe title='Assigned to Me'/>
+          <Distribution title='Service Level Distribution'>
+            Stacked Bar Chart
+          </Distribution>
+          <RecentActivity title='Recent Activity'>
+            <Comment member='Sean' number='123'>This happens because of x, y and z. I'll fix this in the next release.</Comment>
+            <Comment member='Brett' number='456'>Can someone fix this please?</Comment>
+            <Comment member='Liam' number='789'>Urgent! I need help fixing this before the next deploy goes out.</Comment>
+            <Comment member='Cassidy' number='123'>A lot of these are due to the recent outage at Twilio. We'll need to keep an eye on it.</Comment>
+          </RecentActivity>
           <StyledIssues />
         </GridStyles>
       </Body>
@@ -55,29 +63,46 @@ const GridStyles = styled('div')`
   grid-template-columns: repeat(2, minmax(0,1fr));
   grid-template-rows: repeat(3, auto);
   gap: var(--space-unit);
+
+
+  @media (min-width: 1281px) {
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(25%, 100px);
+  }
 `;
 
 const StyledIssues = styled(Issues)`
   grid-column: 1/3;
 `;
 
+const IssueCount = styled(Widget)`
+
+  @media (min-width: 1281px) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+`;
+
+const Distribution = styled(Widget)`
+
+  @media (min-width: 1281px) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+`;
+
+const RecentActivity = styled(Widget)`
+  grid-column: 1/3;
+  grid-row: 3/4;
+
+  @media (min-width: 1281px) {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+`;
+
 const StyledLines = styled(Lines)`
   height: auto;
 `;
 
-const IssueCount = styled(Widget)`
-  grid-column: 1/2;
-  grid-row: 1/3;
-`;
-
-const RecentlyViewed = styled(Widget)`
-  grid-column: 2/3;
-  grid-row: 1/2;
-`;
-
-const AssignedToMe = styled(Widget)`
-  grid-column: 2/3;
-  grid-row: 2/3;
-`;
 
 export default AllIssues
