@@ -3,7 +3,7 @@ import '../styles/theme.css'
 
 const Widget = ({className, children, title}) => (
   <WidgetStyles className={className}>
-    <h4>{title}</h4>
+    <StyledTitle>{title}</StyledTitle>
     {children}
   </WidgetStyles>
 );
@@ -16,6 +16,10 @@ const WidgetStyles = styled('div')`
   border-radius: var(--radius);
   position: relative;
   min-height: 60px;
+`;
+
+const StyledTitle = styled('h4')`
+  margin-bottom: var(--space-sm);
 `;
 
 export default Widget;

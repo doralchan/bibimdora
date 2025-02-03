@@ -6,6 +6,7 @@ import FilterBar from '../layouts/filterBar'
 
 import Widget from '../components/widget'
 import Lines from '../components/lines'
+import Stacked from '../components/stacked'
 import Comment from '../components/comment'
 
 import styled from 'styled-components'
@@ -15,23 +16,53 @@ function AllIssues() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [
       {
+        label: 'Peated Web',
         data: [12, 13, 12, 14, 12, 13, 14, 16, 18, 20, 24, 32, 36],
         borderColor: ['#b82abe']
       },
       {
+        label: 'Peated Mobile',
         data: [5, 6, 5, 5, 6, 6, 5, 6, 8, 8, 9, 10, 9],
         borderColor: ['#595175']
       },
       {
+        label: 'Platform',
         data: [4, 5, 4, 5, 6, 5, 4, 4, 5, 5, 5, 6, 4],
         borderColor: ['#837AA3']
       },
       {
+        label: 'Vanguard',
         data: [1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 2, 1],
         borderColor: ['#ACA3D1']
       }
     ]
   };
+
+  const dataB = {
+    labels: ['Info', 'Warning', 'Default', 'Fatal'],
+    datasets: [
+      {
+        label: 'Peated Web',
+        data: [12, 32, 15, 3],
+        backgroundColor: ['#b82abe']
+      },
+      {
+        label: 'Peated Mobile',
+        data: [2, 2, 6, 1],
+        backgroundColor: ['#595175']
+      },
+      {
+        label: 'Platform',
+        data: [2, 4, 1, 2],
+        backgroundColor: ['#837AA3']
+      },
+      {
+        label: 'Vanguard',
+        data: [3, 12, 4, 0],
+        backgroundColor: ['#ACA3D1']
+      }
+    ]
+  }
 
   return (
     <Main>
@@ -42,8 +73,8 @@ function AllIssues() {
           <IssueCount title='Overall Issue Count'>
             <StyledLines data={dataA} />
           </IssueCount>
-          <Distribution title='Level Distribution Per Service'>
-
+          <Distribution title='Level Distribution'>
+            <Stacked data={dataB} />
           </Distribution>
           <RecentActivity title='Recent Activity'>
             <Comment member='Sean' number='123'>This happens because of x, y and z. I'll fix this in the next release.</Comment>
