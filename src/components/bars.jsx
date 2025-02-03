@@ -8,9 +8,9 @@ import styled from 'styled-components'
 Chart.register(BarElement);
 
 const data = {
-  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
+  labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
   datasets: [{
-    data: [ 200, 140, 90, 160, 90, 140, 160, 110, 480, 170, 239, 198, 209, 200, 143, 181, 129, 98, 139, 110, 124, 115, 109, 132],
+    data: [ 200, 140, 90, 160, 90, 140, 160, 110, 480, 170, 239, 198, 209, 200, 143, 181, 129, 98, 139, 110, 124, 115, 109, 132, 121, 124, 130],
     backgroundColor: [
       '#FDB81B'
     ]

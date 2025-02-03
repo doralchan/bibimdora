@@ -44,7 +44,7 @@ function AllIssues() {
       {
         label: 'Peated Web',
         data: [12, 32, 15, 3],
-        backgroundColor: ['#b82abe']
+        backgroundColor: ['#226DFC', '#FDB81B', '#EE8019', '#F02F35']
       },
       {
         label: 'Peated Mobile',
@@ -98,7 +98,7 @@ const GridStyles = styled('div')`
 
 
   @media (min-width: 1281px) {
-    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(25%, 100px);
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(22%, 100px);
   }
 `;
 
