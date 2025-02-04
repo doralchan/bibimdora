@@ -19,7 +19,7 @@ function Settings() {
         </SubnavGroup>
         <SubnavGroup>
           <SubnavItem to='organization'>Organization</SubnavItem>
-          <SubnavItem to='apps' src={IconWrench}>Services</SubnavItem>
+          <SubnavItem to='services' src={IconWrench}>Services</SubnavItem>
           <SubnavItem to='members' src={IconWrench}>Members</SubnavItem>
           <SubnavItem to='permissions' src={IconWrench}>Permissions</SubnavItem>
         </SubnavGroup>

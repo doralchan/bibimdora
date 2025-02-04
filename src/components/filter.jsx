@@ -9,7 +9,7 @@ function Filter({ defaultSelection }) {
     { value: '@peated/web,', label: '@peated/web'}, //1
     { value: '@peated/server', label: '@peated/server'}, //2
     { value: '@peated/worker', label: '@peated/worker'}, //3
-    { value: '@peated/server, @peated/worker', label: '@peated/server, @peated/worker'}, //4
+    { value: '@peated/server, @peated/worker', label: '@..server, @..worker'}, //4
     { value: '@peated/iOS, @peated/server, @peated/worker', label: '@..iOS, @..server, @..worker'}, //5
     { value: '@peated/iOS', label: '@peated/iOS'}, //6
   ]

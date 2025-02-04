@@ -50,7 +50,7 @@ import Account from './pages/settings_account'
 import Preferences from './pages/settings_preferences'
 import SecurityPrivacy from './pages/settings_securityprivacy'
 import Organization from './pages/settings_organization'
-import Apps from './pages/settings_apps'
+import Services from './pages/settings_services'
 import Members from './pages/settings_members'
 import Permissions from './pages/settings_permissions'
 import Configuration from './pages/settings_config'
@@ -123,7 +123,7 @@ function App() {
             <Route path='preferences' element={<Preferences/>} />
             <Route path='securityprivacy' element={<SecurityPrivacy/>} />
             <Route path='organization' element={<Organization/>} />
-            <Route path='apps' element={<Apps/>} />
+            <Route path='services' element={<Services/>} />
             <Route path='members' element={<Members/>} />
             <Route path='permissions' element={<Permissions/>} />
             <Route path='config' element={<Configuration/>} />

@@ -7,16 +7,16 @@ import IconEdit from '../assets/icon-edit.svg'
 import styled from 'styled-components'
 
 function AppList({className}) {
-  const headers = ['Your Service Groups', 'Owner', 'Members', 'Services', 'Last Viewed', 'Your Access']
+  const headers = ['Your Service Groups', 'Owner', 'Members', 'Services', 'Last Viewed', 'Access']
   const data = [
-    { status: true, name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today' },
-    { status: false, name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025' },
-    { status: false, name: 'Platform', owner: '@cramer', members: '2', access: true, services: '1', lastviewed:'1/2/2025' },
-    { status: false, name: 'Vanguard', owner: '@cramer', members: '1', access: true, services: '2', lastviewed:'1/15/2025' },
+    { name: 'Peated Web', owner: '@cramer', members: '1', access: true, services: '3', lastviewed:'Today' },
+    { name: 'Peated Mobile', owner: '@cramer', members: '2', access: true, services: '2', lastviewed:'1/23/2025' },
+    { name: 'Platform', owner: '@cramer', members: '2', access: true, services: '1', lastviewed:'1/2/2025' },
+    { name: 'Vanguard', owner: '@cramer', members: '1', access: true, services: '2', lastviewed:'1/15/2025' },
   ];
 
   return (
-    <Table>
+    <Table className={className}>
       <thead>
         <tr>
           {headers.map((object, index) => {
@@ -37,7 +37,7 @@ function AppList({className}) {
               <Cell>{object.services}</Cell>
               <Cell>{object.lastviewed}</Cell>
               <Cell>
-                <Link>{object.access === true ? <StyledIcon src={IconEdit} /> : 'Request Access'}</Link>
+                <Link><StyledIcon src={IconEdit} /></Link>
               </Cell>
             </tr>
           );
