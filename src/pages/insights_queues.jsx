@@ -9,7 +9,7 @@ function InsightsQueues() {
     <Main>
       <Header title='Queues'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar />
       </Body>
     </Main>
   )

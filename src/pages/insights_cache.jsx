@@ -9,7 +9,7 @@ function InsightsCache() {
     <Main>
       <Header title='Cache'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar />
       </Body>
     </Main>
   )

@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function InsightsAssets() {
+function InsightsUIMobile() {
   return (
     <Main>
-      <Header title='Assets'/>
+      <Header title='UI Components'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default InsightsAssets
+export default InsightsUIMobile

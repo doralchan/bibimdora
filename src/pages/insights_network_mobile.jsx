@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function InsightsUI() {
+function InsightsNetworkMobile() {
   return (
     <Main>
-      <Header title='UI'/>
+      <Header title='Network Requests'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default InsightsUI
+export default InsightsNetworkMobile

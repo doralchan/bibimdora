@@ -9,7 +9,7 @@ function InsightsCrons() {
     <Main>
       <Header title='Crons'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar />
       </Body>
     </Main>
   )

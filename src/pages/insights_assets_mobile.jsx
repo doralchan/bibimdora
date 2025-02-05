@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function InsightsProjectiOS() {
+function InsightsAssetsMobile() {
   return (
     <Main>
-      <Header title='@peated/iOS'/>
+      <Header title='Mobile Assets'/>
       <Body>
-        <FilterBar defaultSelection='5' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default InsightsProjectiOS
+export default InsightsAssetsMobile

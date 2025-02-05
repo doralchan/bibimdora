@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function InsightsNetwork() {
+function InsightsNetworkWeb() {
   return (
     <Main>
       <Header title='Network Requests'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default InsightsNetwork
+export default InsightsNetworkWeb

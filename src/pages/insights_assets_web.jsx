@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function InsightsProjectAdmin() {
+function InsightsAssetsWeb() {
   return (
     <Main>
-      <Header title='@peated/admin'/>
+      <Header title='Web Assets'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default InsightsProjectAdmin
+export default InsightsAssetsWeb

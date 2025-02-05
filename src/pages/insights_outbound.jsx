@@ -9,7 +9,7 @@ function InsightsOutbound() {
     <Main>
       <Header title='Outbound Requests'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar />
       </Body>
     </Main>
   )

@@ -9,7 +9,7 @@ function InsightsProjectWorker() {
     <Main>
       <Header title='@peated/worker'/>
       <Body>
-        <FilterBar defaultSelection='3' />
+        <FilterBar defaultSelection='7' />
       </Body>
     </Main>
   )

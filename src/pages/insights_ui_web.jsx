@@ -4,15 +4,15 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function InsightsWebVitals() {
+function InsightsUIWeb() {
   return (
     <Main>
-      <Header title='Web Vitals'/>
+      <Header title='UI Components'/>
       <Body>
-        <FilterBar defaultSelection='1' />
+        <FilterBar />
       </Body>
     </Main>
   )
 }
 
-export default InsightsWebVitals
+export default InsightsUIWeb

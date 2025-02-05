@@ -9,7 +9,7 @@ function InsightsAppstart() {
     <Main>
       <Header title='App Start'/>
       <Body>
-        <FilterBar defaultSelection='6' />
+        <FilterBar />
       </Body>
     </Main>
   )

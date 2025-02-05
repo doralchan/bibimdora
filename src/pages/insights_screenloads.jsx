@@ -9,7 +9,7 @@ function InsightsScreenloads() {
     <Main>
       <Header title='Screenloads'/>
       <Body>
-        <FilterBar defaultSelection='6' />
+        <FilterBar />
       </Body>
     </Main>
   )

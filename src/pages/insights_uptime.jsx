@@ -9,7 +9,7 @@ function InsightsUptime() {
     <Main>
       <Header title='Uptime'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar />
       </Body>
     </Main>
   )

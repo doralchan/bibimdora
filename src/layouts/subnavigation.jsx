@@ -15,10 +15,7 @@ function Subnavigation({className, children, subtitle, defaultValue, onChange}) 
   return (
     <SubnavigationStyles className={className}>
       <HeaderStyles>
-        <Dropdown 
-          defaultValue={defaultValue || AppOptions[1]} 
-          options={AppOptions} 
-          onChange={onChange} />
+        <TitleStyles>Organization</TitleStyles>
         <SubtitleStyles>{subtitle}</SubtitleStyles>
       </HeaderStyles>
       <ListStyles>{children}</ListStyles>
@@ -44,8 +41,12 @@ const HeaderStyles = styled('div')`
   margin: 0 var(--space-md);
 `;
 
+const TitleStyles = styled('h3')`
+  margin-bottom: 1px;
+`;
+
 const SubtitleStyles = styled('h4')`
-  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm);
   color: var(--pink200);
 `;
 
