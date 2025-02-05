@@ -115,25 +115,40 @@ function OverviewWeb() {
 }
 
 const GridStyles = styled('div')`
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0,1fr));
-  grid-template-rows: repeat(3, auto);
+  display: flex;
+  flex-direction: column;
   gap: var(--space-unit);
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0,1fr));
+    grid-template-rows: repeat(3, auto);
+  }
 `;
 
 const WidgetScore = styled(Widget)`
-  grid-column: 1/4;
-  grid-row: 1/2;
+
+  @media (min-width: 992px) {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
 `;
 
 const WidgetThroughput = styled(Widget)`
-  grid-column: 4/7;
-  grid-row: 1/2;
+
+  @media (min-width: 992px) {
+    grid-column: 4/7;
+    grid-row: 1/2;
+  }
+
 `;
 
 const WidgetA = styled(Widget)`
-  grid-column: 1/3;
-  grid-row: 2/3;
+
+  @media (min-width: 992px) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 
   @media (min-width: 1800px) {
     grid-column: 1/2;
@@ -141,8 +156,11 @@ const WidgetA = styled(Widget)`
 `;
 
 const WidgetB = styled(Widget)`
-  grid-column: 3/5;
-  grid-row: 2/3;
+
+  @media (min-width: 992px) {
+    grid-column: 3/5;
+    grid-row: 2/3;
+  }
 
   @media (min-width: 1800px) {
     grid-column: 2/3;
@@ -150,8 +168,11 @@ const WidgetB = styled(Widget)`
 `;
 
 const WidgetC = styled(Widget)`
-  grid-column: 5/7;
-  grid-row: 2/3;
+
+  @media (min-width: 992px) {
+    grid-column: 5/7;
+    grid-row: 2/3;
+  }
 
   @media (min-width: 1800px) {
     grid-column: 3/4;
@@ -159,8 +180,11 @@ const WidgetC = styled(Widget)`
 `;
 
 const WidgetD = styled(Widget)`
-  grid-column: 1/3;
-  grid-row: 3/4;
+
+  @media (min-width: 992px) {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
 
   @media (min-width: 1800px) {
     grid-column: 4/5;
@@ -169,8 +193,11 @@ const WidgetD = styled(Widget)`
 `;
 
 const WidgetE = styled(Widget)`
-  grid-column: 3/5;
-  grid-row: 3/4;
+
+  @media (min-width: 992px) {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
 
   @media (min-width: 1800px) {
     grid-column: 5/6;
@@ -179,8 +206,11 @@ const WidgetE = styled(Widget)`
 `;
 
 const WidgetF = styled(Widget)`
-  grid-column: 5/7;
-  grid-row: 3/4;
+
+  @media (min-width: 992px) {
+    grid-column: 5/7;
+    grid-row: 3/4;
+  }
 
   @media (min-width: 1800px) {
     grid-column: 6/7;
@@ -189,8 +219,11 @@ const WidgetF = styled(Widget)`
 `;
 
 const WidgetTable = styled('div')`
-  grid-column: 1/7;
-  grid-row: 4/5;
+
+  @media (min-width: 992px) {
+    grid-column: 1/7;
+    grid-row: 4/5;
+  }
 `;
 
 export default OverviewWeb
