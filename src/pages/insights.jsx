@@ -16,7 +16,7 @@ function Insights() {
     <StyledContainer>
       <Subnavigation subtitle='Insights'>
         <SubnavGroup>
-          <SubnavItem to='overview-web'>Overview</SubnavItem>
+          <SubnavItem to='overview'>Overview</SubnavItem>
         </SubnavGroup>
         <SubnavGroup>
           <SubnavHeader>Frontend</SubnavHeader>

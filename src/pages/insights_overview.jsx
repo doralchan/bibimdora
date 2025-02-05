@@ -11,7 +11,7 @@ import Lines from '../components/lines'
 
 import styled from 'styled-components'
 
-function OverviewWeb() {
+function Overview() {
   const dataA = {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
@@ -226,4 +226,4 @@ const WidgetTable = styled('div')`
   }
 `;
 
-export default OverviewWeb
+export default Overview

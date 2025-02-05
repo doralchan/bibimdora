@@ -25,7 +25,7 @@ import SavedDashboard1 from './pages/dashboards_saved1'
 import SavedDashboard2 from './pages/dashboards_saved2'
 
 import Insights from './pages/insights'
-import OverviewWeb from './pages/insights_overview_web'
+import Overview from './pages/insights_overview'
 import InsightsProjectWeb from './pages/insights_project_web'
 import InsightsProjectServer from './pages/insights_project_server'
 import InsightsProjectWorker from './pages/insights_project_worker'
@@ -83,7 +83,7 @@ function App() {
             <Route path='' element={<Navigate to='/issues/all'/>} /> 
           </Route>
           <Route path='/insights' element={<Insights/>}>
-            <Route path='overview-web' element={<OverviewWeb/>} />
+            <Route path='overview' element={<Overview/>} />
             <Route path='web' element={<InsightsProjectWeb/>} />
             <Route path='server' element={<InsightsProjectServer/>} />
             <Route path='worker' element={<InsightsProjectWorker/>} />
@@ -102,7 +102,7 @@ function App() {
             <Route path='ui-mobile' element={<InsightsUIMobile/>} />
             <Route path='assets-mobile' element={<InsightsAssetsMobile/>} />
             <Route path='network-mobile' element={<InsightsNetworkMobile/>} />            
-            <Route path='' element={<Navigate to='/insights/overview-web'/>} />
+            <Route path='' element={<Navigate to='/insights/overview'/>} />
           </Route>
           <Route path='/explore' element={<Explore/>}>
             <Route path='spans' element={<ExploreSpans/>} />
