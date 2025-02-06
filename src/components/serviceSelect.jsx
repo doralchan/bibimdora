@@ -60,6 +60,8 @@ const DropdownStyles = styled(Select)`
     border: 1px solid var(--dark500);
     border-bottom-width: 3px;
     padding: 0 var(--space-sm);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
   }
 
   .react-select__menu {
