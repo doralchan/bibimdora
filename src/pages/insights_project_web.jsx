@@ -9,7 +9,7 @@ function InsightsProjectWeb() {
     <Main>
       <Header title='@peated/web'/>
       <Body>
-        <FilterBar defaultSelection='4' />
+        <FilterBar isServicePage />
       </Body>
     </Main>
   )

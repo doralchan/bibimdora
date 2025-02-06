@@ -4,10 +4,10 @@ import Input from '../components/input'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function FilterBar({ defaultSelection }) {
+function FilterBar({ isServicePage }) {
   return (
     <StyledFilterBar>
-      <Filter defaultSelection={defaultSelection} />
+      <Filter isServicePage={isServicePage} />
       <Input placeholder='Filter events...' />
     </StyledFilterBar>
   )

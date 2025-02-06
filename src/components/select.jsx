@@ -57,8 +57,14 @@ const SelectStyles = styled(Select)`
     display: none;
   }
 
-  .react-select__option:hover {
+  .react-select__option--is-selected {
     background-color: var(--pink300);
+    color: var(--white);
+  }
+
+  .react-select__option:hover,
+  .react-select__option:focus {
+    background-color: var(--pink200);
   }
 `;
 

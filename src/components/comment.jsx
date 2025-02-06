@@ -1,13 +1,12 @@
-import Link from '../components/link'
 import Icon from '../components/icon'
 
-import CommentIcon from '../assets/icon-comment.svg'
+import IconComment from '../assets/icon-comment.svg'
 
 import styled from 'styled-components'
 
 const Comment = ({className, children, member, number}) => (
   <CommentStyles className={className}>
-    <Icon src={CommentIcon}/> 
+    <Icon src={IconComment}/> 
     <ContextStyles>
       <Member>{member} on ISSUE-{number}</Member>
       <Quote>"{children}"</Quote>

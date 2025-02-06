@@ -9,7 +9,7 @@ function InsightsProjectiOS() {
     <Main>
       <Header title='@peated/iOS'/>
       <Body>
-        <FilterBar defaultSelection='5' />
+        <FilterBar isServicePage />
       </Body>
     </Main>
   )

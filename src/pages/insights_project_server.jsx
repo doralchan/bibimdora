@@ -9,7 +9,7 @@ function InsightsProjectServer() {
     <Main>
       <Header title='@peated/server'/>
       <Body>
-        <FilterBar defaultSelection='6' />
+        <FilterBar isServicePage />
       </Body>
     </Main>
   )

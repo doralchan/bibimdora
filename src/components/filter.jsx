@@ -1,20 +1,10 @@
 import FormSelect from './select'
+import ServiceSelect from './serviceSelect'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function Filter({ defaultSelection }) {
-  const ProjectOptions = [
-    { value: 'My Services', label: 'My Services'}, //0
-    { value: 'Peated Web', label: 'Peated Web'}, //1
-    { value: 'Peated Mobile', label: 'Peated Mobile'}, //2
-    { value: 'Platform', label: 'Platform'}, //3
-    { value: '@peated/web', label: '@peated/web'}, //4
-    { value: '@peated/iOS', label: '@peated/iOS'}, //5
-    { value: '@peated/server', label: '@peated/server'}, //6
-    { value: '@peated/worker', label: '@peated/worker'}, //7
-  ]
-
+function Filter({ isServicePage }) {
   const EnvOptions = [
     { value: 'all', label: 'All Env' },
     { value: 'prod', label: 'prod' },
@@ -28,7 +18,7 @@ function Filter({ defaultSelection }) {
   
   return (
     <FilterStyles>
-      <ProjectFormSelect defaultValue={defaultSelection ? ProjectOptions[defaultSelection] : ProjectOptions[0]} options={ProjectOptions} />
+      { isServicePage ? null : <ServiceSelect /> }
       <EnvFormSelect 
         defaultValue={EnvOptions[0]}
         options={EnvOptions}
@@ -45,16 +35,9 @@ const FilterStyles = styled('div')`
   display: flex;
 `;
 
-const ProjectFormSelect = styled(FormSelect)`
-  .react-select__control {
-    border-right: 0;
-    border-radius: var(--radius) 0 0 var(--radius);
-  }
-`;
-
 const EnvFormSelect = styled(FormSelect)`
   .react-select__control {
-    border-radius: 0;
+    border-radius: ${props => props.isServicePage ? 'var(--radius) 0 0 var(--radius)' : '0'};
   }
 `;
 
