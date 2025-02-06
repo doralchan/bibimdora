@@ -28,9 +28,7 @@ function Insights() {
           <SubnavHeader>Mobile</SubnavHeader>
           <SubnavItem to='appstart' src={DefaultLogo}>App Start</SubnavItem>
           <SubnavItem to='screenloads' src={DefaultLogo}>Screenloads</SubnavItem>
-          <SubnavItem to='ui-mobile' src={DefaultLogo}>UI Components</SubnavItem>
-          <SubnavItem to='assets-mobile' src={DefaultLogo}>Assets</SubnavItem>
-          <SubnavItem to='network-mobile' src={DefaultLogo}>Network</SubnavItem>
+          <SubnavMore>+3 more</SubnavMore>
         </SubnavGroup>
         <SubnavGroup>
           <SubnavHeader>Backend</SubnavHeader>
@@ -38,8 +36,7 @@ function Insights() {
           <SubnavItem to='outbound' src={DefaultLogo}>Outbound</SubnavItem>
           <SubnavItem to='cache' src={DefaultLogo}>Cache</SubnavItem>
           <SubnavItem to='queues' src={DefaultLogo}>Queues</SubnavItem>
-          <SubnavItem to='crons' src={DefaultLogo}>Crons</SubnavItem>
-          <SubnavItem to='uptime' src={DefaultLogo}>Uptime</SubnavItem>
+          <SubnavMore>+2 more</SubnavMore>
         </SubnavGroup>
         <SubnavGroup>
           <SubnavHeader>Starred Services</SubnavHeader>
@@ -67,6 +64,15 @@ const SubnavHeader = styled('h4')`
 
 const SubnavGroup = styled('div')`
   margin-bottom: var(--space-lg);
+`;
+
+const SubnavMore = styled('div')`
+  margin: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-lg);
+  color: var(--purple100);
+  opacity: 0.5;
+  font-size: 0.8em;
+  cursor: pointer;
 `;
 
 export default Insights;
