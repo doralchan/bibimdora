@@ -1,4 +1,3 @@
-import Dropdown from '../components/dropdown'
 import PatternDotsDark from '../assets/pattern-dots-dark.svg'
 
 import styled from 'styled-components'

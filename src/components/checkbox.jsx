@@ -1,3 +1,5 @@
+import IconCheckmark from '../assets/icon-checkmark.svg'
+
 import styled from 'styled-components'
 import '../styles/theme.css'
 
@@ -30,7 +32,8 @@ const InputStyles = styled('input')`
   }
 
   &:checked::after {
-    background-color: var(--purple200);
+    background-color: var(--purple300);
+    background-image: url(${IconCheckmark});
   }
 `;
 

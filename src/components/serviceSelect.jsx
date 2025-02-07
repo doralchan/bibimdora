@@ -1,5 +1,11 @@
 import Select, {components} from 'react-select'
+
+import IconStar from '../assets/icon-star.svg'
+
+import Icon from '../components/icon'
+import Button from '../components/button'
 import Checkbox from '../components/checkbox'
+import Input from '../components/input'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -28,11 +34,27 @@ function ServiceSelect ({className, onChange}) {
     }
   ]
 
+  const MenuList = (props) => {
+    return (
+      <components.MenuList {...props}>
+        <MenuHeader>
+          <Input placeholder='Search Services...' />
+        </MenuHeader>
+        {props.children}
+        <MenuFooter>
+          <Button>View All Services</Button>
+          <Button priority>Apply</Button>
+        </MenuFooter>
+      </components.MenuList>
+    )
+  }
+  
   const CustomOption = (props) => {
     return (
       <components.Option {...props}>
-        {props.data.checkbox === true ? <Checkbox /> : null}
+        {props.data.checkbox === true ? <Checkbox defaultChecked={true} /> : null}
         {props.data.label}
+        {props.data.checkbox === true ? <StyledIcon src={IconStar} /> : null}
       </components.Option>
     )
   }
@@ -44,11 +66,29 @@ function ServiceSelect ({className, onChange}) {
       defaultValue={serviceOptions[0].options[0]}
       onChange={onChange}
       options={serviceOptions}
-      components={{Option: CustomOption}}
+      components={{MenuList, Option: CustomOption}}
       unstyled
     />
   )
 }
+
+const StyledIcon = styled(Icon)`
+  justify-self: right;
+`;
+
+const MenuHeader = styled('div')`
+  display: flex;
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--dark500);
+`;
+
+const MenuFooter = styled('div')`
+  padding: var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--dark500);
+  margin-top: var(--space-lg);
+`;
 
 const DropdownStyles = styled(Select)`
   .react-select__control {
@@ -66,11 +106,11 @@ const DropdownStyles = styled(Select)`
 
   .react-select__menu {
     background-color: var(--dark200);
-    padding: var(--space-sm);
     border: 1px solid var(--dark500);
     border-radius: var(--radius);
     min-width: 250px;
     margin-top: var(--space-unit);
+    box-shadow: 0px 3px 0px 0px var(--black);
   }
 
   .react-select__menu-list {
@@ -78,7 +118,7 @@ const DropdownStyles = styled(Select)`
   }
 
   .react-select__group-heading {
-    padding: var(--space-sm) var(--space-sm);
+    padding: var(--space-sm);
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: 500;
@@ -86,9 +126,14 @@ const DropdownStyles = styled(Select)`
     letter-spacing: 0.01em;
   }
 
+  .react-select__group {
+    padding: var(--space-md) var(--space-md) 0 var(--space-md);
+  }
+
   .react-select__option {
     padding: var(--space-sm) var(--space-sm);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
     gap: var(--space-unit);
     cursor: pointer;

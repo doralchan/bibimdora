@@ -12,6 +12,7 @@ const InputStyles = styled('input')`
   border-radius: var(--radius);
   padding: var(--space-xs) var(--space-md);
   background-color: var(--dark200);
+  flex-grow: 1;
 
   &:focus {
     outline: none;
