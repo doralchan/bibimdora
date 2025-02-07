@@ -20,7 +20,7 @@ const InputStyles = styled('input')`
   }
 
   &::placeholder {
-    opacity: 0.5;
+    color: var(--purple100);
   }
 `;
 

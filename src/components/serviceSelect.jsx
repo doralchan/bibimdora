@@ -73,6 +73,7 @@ function ServiceSelect ({className, onChange}) {
 
 const StyledIcon = styled(Icon)`
   justify-self: right;
+  opacity: 0.2;
 `;
 
 const MenuHeader = styled('div')`
