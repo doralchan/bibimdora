@@ -42,7 +42,7 @@ function ServiceSelect ({className, onChange}) {
         </MenuHeader>
         {props.children}
         <MenuFooter>
-          <Button>View All Services</Button>
+          <Button priority>View All Services</Button>
         </MenuFooter>
       </components.MenuList>
     )
@@ -77,16 +77,14 @@ const StyledIcon = styled(Icon)`
 
 const MenuHeader = styled('div')`
   display: flex;
-  padding: var(--space-md);
-  border-bottom: 1px solid var(--dark500);
+  padding: var(--space-sm);
 `;
 
 const MenuFooter = styled('div')`
   padding: var(--space-md);
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid var(--dark500);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-sm);
 `;
 
 const DropdownStyles = styled(Select)`
@@ -109,7 +107,7 @@ const DropdownStyles = styled(Select)`
     border-radius: var(--radius);
     min-width: 250px;
     margin-top: var(--space-unit);
-    box-shadow: 0px 3px 0px 0px var(--black);
+    box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.3)
   }
 
   .react-select__menu-list {
