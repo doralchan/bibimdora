@@ -1,6 +1,7 @@
 import Select, {components} from 'react-select'
 
 import IconStar from '../assets/icon-star.svg'
+import IconCheckmark from '../assets/icon-checkmark.svg'
 
 import Icon from '../components/icon'
 import Button from '../components/button'
@@ -52,6 +53,7 @@ function ServiceSelect ({className, onChange}) {
     return (
       <components.Option {...props}>
         {props.data.checkbox === true ? <Checkbox defaultChecked={true} /> : null}
+        {props.data.checkbox === false ? <StyledCheckmark /> : null}
         {props.data.label}
         {props.data.checkbox === true ? <StyledIcon src={IconStar} /> : null}
       </components.Option>
@@ -70,6 +72,12 @@ function ServiceSelect ({className, onChange}) {
     />
   )
 }
+
+const StyledCheckmark = styled('span')`
+  content: '';
+  width: var(--space-lg);
+  height: var(--space-unit);
+`;
 
 const StyledIcon = styled(Icon)`
   justify-self: right;
@@ -131,7 +139,7 @@ const DropdownStyles = styled(Select)`
   .react-select__option {
     padding: var(--space-sm) var(--space-sm);
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: repeat(2, auto) 1fr;
     align-items: center;
     gap: var(--space-unit);
     cursor: pointer;
@@ -140,6 +148,14 @@ const DropdownStyles = styled(Select)`
   .react-select__option--is-selected {
     background-color: var(--pink300);
     color: var(--white);
+  }
+
+  .react-select__option--is-selected::before {
+    position: absolute;
+    content: '';
+    background-image: url(${IconCheckmark});
+    width: 14px;
+    height: 14px;
   }
 
   .react-select__option:hover,
