@@ -43,7 +43,6 @@ function ServiceSelect ({className, onChange}) {
         {props.children}
         <MenuFooter>
           <Button>View All Services</Button>
-          <Button priority>Apply</Button>
         </MenuFooter>
       </components.MenuList>
     )
