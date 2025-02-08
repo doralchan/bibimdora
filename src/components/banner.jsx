@@ -4,7 +4,6 @@ import '../styles/theme.css'
 
 const Banner = ({className, children, title, description, primary, secondary}) => (
   <StyledBanner className={className}>
-    {children}
     <MainContent>
       <h1>{title}</h1>
       <Description>{description}</Description>
@@ -13,6 +12,7 @@ const Banner = ({className, children, title, description, primary, secondary}) =
         <Button>{secondary}</Button>
       </Actions>
     </MainContent>
+    {children}
   </StyledBanner>
 );
 
@@ -23,7 +23,7 @@ const StyledBanner = styled('div')`
   padding: var(--space-lg) 8%;
   border-radius: var(--radius);
   position: relative;
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
 `;
@@ -42,7 +42,9 @@ const MainContent = styled('div')`
   display: flex;
   flex-direction: column;
   gap: var(--space-unit);
-  max-width: 500px;
+  width: 50%;
+  max-width: 800px;
+  z-index: 1;
 `;
 
 export default Banner;
