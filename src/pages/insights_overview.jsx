@@ -2,6 +2,7 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 import Transactions from '../layouts/table_txns'
+import IssuesList from '../layouts/list_issues'
 import FilterBar from '../layouts/filterBar'
 
 import Widget from '../components/widget'
@@ -87,27 +88,30 @@ function Overview() {
           <WidgetThroughput title='Throughput'>
             <Bars />
           </WidgetThroughput>
-          <WidgetA title='Metric A'>
+          <WidgetA title='Duration'>
             <Lines data={dataA} />
           </WidgetA>
-          <WidgetB title='Metric B'>
+          <WidgetB title='Error Rate'>
             <Lines data={dataB} />
           </WidgetB>
-          <WidgetC title='Metric C'>
+          <WidgetC title='Issue Count'>
             <Lines data={dataC} />
           </WidgetC>
-          <WidgetD title='Metric D'>
+          <WidgetD title='Requests'>
             <Lines data={dataD} />
           </WidgetD>
-          <WidgetE title='Metric E'>
+          <WidgetE title='Queries'>
             <Lines data={dataE} />
           </WidgetE>
-          <WidgetF title='Metric F'>
+          <WidgetF title='Cache'>
             <Lines data={dataF} />
           </WidgetF>
-          <WidgetTable>
-            <Transactions />
-          </WidgetTable>
+          <WidgetTransactions>
+            <StyledTransactions />
+          </WidgetTransactions>
+          <WidgetList>
+            <StyledIssuesList />
+          </WidgetList>
         </GridStyles>
       </Body>
     </Main>
@@ -129,15 +133,14 @@ const GridStyles = styled('div')`
 const WidgetScore = styled(Widget)`
 
   @media (min-width: 992px) {
-    grid-column: 1/4;
-    grid-row: 1/2;
+    grid-column: 1/3;
   }
 `;
 
 const WidgetThroughput = styled(Widget)`
 
   @media (min-width: 992px) {
-    grid-column: 4/7;
+    grid-column: 3/7;
     grid-row: 1/2;
   }
 
@@ -218,12 +221,28 @@ const WidgetF = styled(Widget)`
   }
 `;
 
-const WidgetTable = styled('div')`
+const WidgetTransactions = styled('div')`
 
   @media (min-width: 992px) {
-    grid-column: 1/7;
+    grid-column: 1/4;
     grid-row: 4/5;
   }
+`;
+
+const WidgetList = styled('div')`
+
+  @media (min-width: 992px) {
+    grid-column: 4/7;
+    grid-row: 4/5;
+  }
+`;
+
+const StyledIssuesList = styled(IssuesList)`
+  height: 100%;
+`;
+
+const StyledTransactions = styled(Transactions)`
+  height: 100%;
 `;
 
 export default Overview

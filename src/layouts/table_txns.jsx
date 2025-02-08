@@ -3,7 +3,7 @@ import Table from '../components/table'
 
 import styled from 'styled-components'
 
-function Transactions() {
+function Transactions({className}) {
   const headers = ['Transaction', 'Duration', 'Error Rate', 'Score', 'Count', 'Impact']
   const data = [
     { name: '/transaction 00', duration: '325.23ms', rate: '0.17%', score: '93', count: '13.1k', impact: 'High' },
@@ -17,7 +17,7 @@ function Transactions() {
   ];
   
   return (
-    <Table>
+    <Table className={className}>
       <thead>
         <tr>
           {headers.map((object, index) => {

@@ -30,7 +30,7 @@ function AllDashboards() {
 const StyledHero = styled('img')`
   position: absolute;
   right: 10%;
-  width: 40%;
+  width: 38%;
   max-width: 800px;
 `;
 

@@ -44,7 +44,6 @@ const MainContent = styled('div')`
   gap: var(--space-unit);
   width: 50%;
   max-width: 800px;
-  z-index: 1;
 `;
 
 export default Banner;
