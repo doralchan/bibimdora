@@ -3,14 +3,6 @@ import PatternDotsDark from '../assets/pattern-dots-dark.svg'
 import styled from 'styled-components'
 
 function Subnavigation({className, children, subtitle, defaultValue, onChange}) {
-  const AppOptions = [
-    { value: 'all', label: 'All Services' },
-    { value: 'web', label: 'Peated Web' },
-    { value: 'mobile', label: 'Peated Mobile' },
-    { value: 'platform', label: 'Platform' },
-    { value: 'vanguard', label: 'Vanguard' },
-  ]
-
   return (
     <SubnavigationStyles className={className}>
       <HeaderStyles>

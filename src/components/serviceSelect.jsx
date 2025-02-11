@@ -22,15 +22,16 @@ function ServiceSelect ({className, onChange}) {
         { value: 'Peated Mobile', label: 'Peated Mobile', checkbox: false }, //2
         { value: 'Platform', label: 'Platform', checkbox: false }, //3
         { value: 'Vanguard', label: 'Vanguard', checkbox: false }, //4
+        { value: 'Custom', label: 'Custom', checkbox: false }, //5
       ]
     },
     {
       label: 'Relevant Services',
       options: [
-        { value: '@peated/web', label: '@peated/web', checkbox: true }, //5
-        { value: '@peated/iOS', label: '@peated/iOS', checkbox: true }, //6
-        { value: '@peated/server', label: '@peated/server', checkbox: true }, //7
-        { value: '@peated/worker', label: '@peated/worker', checkbox: true }, //8
+        { value: '@peated/web', label: '@peated/web', checkbox: true }, //6
+        { value: '@peated/iOS', label: '@peated/iOS', checkbox: true }, //7
+        { value: '@peated/server', label: '@peated/server', checkbox: true }, //8
+        { value: '@peated/worker', label: '@peated/worker', checkbox: true }, //9
       ]
     }
   ]
