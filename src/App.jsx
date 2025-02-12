@@ -29,6 +29,7 @@ import Overview from './pages/insights_overview'
 import InsightsProjectWeb from './pages/insights_project_web'
 import InsightsProjectServer from './pages/insights_project_server'
 import InsightsProjectWorker from './pages/insights_project_worker'
+import InsightsProjectAPI from './pages/insights_project_api'
 import InsightsProjectiOS from './pages/insights_project_iOS'
 import InsightsUIWeb from './pages/insights_ui_web'
 import InsightsAssetsWeb from './pages/insights_assets_web'
@@ -87,6 +88,7 @@ function App() {
             <Route path='web' element={<InsightsProjectWeb/>} />
             <Route path='server' element={<InsightsProjectServer/>} />
             <Route path='worker' element={<InsightsProjectWorker/>} />
+            <Route path='api' element={<InsightsProjectAPI/>} />
             <Route path='iOS' element={<InsightsProjectiOS/>} />
             <Route path='ui-web' element={<InsightsUIWeb/>} />
             <Route path='assets-web' element={<InsightsAssetsWeb/>} />

@@ -32,6 +32,7 @@ function ServiceSelect ({className, onChange}) {
         { value: '@peated/iOS', label: '@peated/iOS', checkbox: true }, //7
         { value: '@peated/server', label: '@peated/server', checkbox: true }, //8
         { value: '@peated/worker', label: '@peated/worker', checkbox: true }, //9
+        { value: '@peated/API', label: '@peated/API', checkbox: true }, //9
       ]
     }
   ]
@@ -82,7 +83,6 @@ const StyledCheckmark = styled('span')`
 
 const StyledIcon = styled(Icon)`
   justify-self: right;
-  opacity: 0.2;
 `;
 
 const MenuHeader = styled('div')`
