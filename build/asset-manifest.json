@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bd358e5a.css",
-    "main.js": "/static/js/main.63b1e3f9.js",
+    "main.js": "/static/js/main.d32afb1b.js",
     "static/media/hero-image-1.png": "/static/media/hero-image-1.e65ed5b6dcf8bb228b60.png",
     "static/media/pattern-dots-dark.svg": "/static/media/pattern-dots-dark.eccb6c972a24951b63183c62735b771a.svg",
     "static/media/minibars-escalating-2.svg": "/static/media/minibars-escalating-2.617dc70d36c0ee2b3c91e80efa435001.svg",
@@ -9,6 +9,7 @@
     "static/media/minibars-ongoing.svg": "/static/media/minibars-ongoing.9917b4ec3bbdc911aba4b3a21b87b6f0.svg",
     "static/media/minibars-regression.svg": "/static/media/minibars-regression.4a7ae651ba7cbc3ace51ff8300bb0a5b.svg",
     "static/media/minibars-new.svg": "/static/media/minibars-new.a0c29c570edb8c3766f5cf9bda615e7f.svg",
+    "static/media/logo-laravel.svg": "/static/media/logo-laravel.3fbe4c3ca9fbce82a1198cf5f80080b7.svg",
     "static/media/icon-settings.svg": "/static/media/icon-settings.3b7a35ef546be6742acf6afdbe12c8d5.svg",
     "static/media/logo-default.svg": "/static/media/logo-default.a38d105fc03bb632fc051aeec3baf879.svg",
     "static/media/logo-sentry.svg": "/static/media/logo-sentry.3131bcdd6f8a94523a625f1d481ce337.svg",
@@ -20,18 +21,18 @@
     "static/media/icon-broadcast.svg": "/static/media/icon-broadcast.933b309357524d1a7400828fc42597d2.svg",
     "static/media/icon-wrench.svg": "/static/media/icon-wrench.439f323a2b6f57176803dd7792f1a2b6.svg",
     "static/media/icon-edit.svg": "/static/media/icon-edit.723a37686e596a2f8e1dea111731c56f.svg",
+    "static/media/icon-star.svg": "/static/media/icon-star.a0aa058e426245d76855314d116b93cc.svg",
     "static/media/icon-notification.svg": "/static/media/icon-notification.fd96729aab9cc6d2779df1f5e9625d8b.svg",
     "static/media/icon-comment.svg": "/static/media/icon-comment.f7fa03a1bda7d29612a2cebe46e08aed.svg",
     "static/media/icon-issues.svg": "/static/media/icon-issues.43bcc630d064e240328792d7f3563c25.svg",
-    "static/media/icon-star.svg": "/static/media/icon-star.0ac87a7c0da41162ae021dc3818fcad2.svg",
     "static/media/icon-chart.svg": "/static/media/icon-chart.8e3da52e7c8f64a3d086a835c1ae8310.svg",
     "static/media/icon-explore.svg": "/static/media/icon-explore.2a47c503d3ed0175746664f3fcf1fbdb.svg",
     "static/media/icon-checkmark.svg": "/static/media/icon-checkmark.1dc1f2b6664c1a02ea95a63512d31bd0.svg",
     "main.bd358e5a.css.map": "/static/css/main.bd358e5a.css.map",
-    "main.63b1e3f9.js.map": "/static/js/main.63b1e3f9.js.map"
+    "main.d32afb1b.js.map": "/static/js/main.d32afb1b.js.map"
   },
   "entrypoints": [
     "static/css/main.bd358e5a.css",
-    "static/js/main.63b1e3f9.js"
+    "static/js/main.d32afb1b.js"
   ]
 }
