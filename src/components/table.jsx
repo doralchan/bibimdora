@@ -20,6 +20,10 @@ const StyledContainer = styled('div')`
 const StyledTable = styled('table')`
   width: 100%;
   border-collapse: collapse;
+
+  tbody tr:last-child td {
+    border-bottom-color: transparent;
+  }
 `;
 
 export default Table

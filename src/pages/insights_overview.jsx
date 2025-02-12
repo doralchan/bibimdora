@@ -88,22 +88,22 @@ function Overview() {
           <WidgetThroughput title='Throughput'>
             <Bars />
           </WidgetThroughput>
-          <WidgetA title='Duration'>
+          <WidgetA title='Metric A'>
             <Lines data={dataA} />
           </WidgetA>
-          <WidgetB title='Error Rate'>
+          <WidgetB title='Metric B'>
             <Lines data={dataB} />
           </WidgetB>
-          <WidgetC title='Issue Count'>
+          <WidgetC title='Metric C'>
             <Lines data={dataC} />
           </WidgetC>
-          <WidgetD title='Requests'>
+          <WidgetD title='Metric D'>
             <Lines data={dataD} />
           </WidgetD>
-          <WidgetE title='Queries'>
+          <WidgetE title='Metric E'>
             <Lines data={dataE} />
           </WidgetE>
-          <WidgetF title='Cache'>
+          <WidgetF title='Metric F'>
             <Lines data={dataF} />
           </WidgetF>
           <WidgetTransactions>

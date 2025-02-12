@@ -4,17 +4,23 @@ import Table from '../components/table'
 
 import NodeLogo from '../assets/logo-node.svg'
 import NextJSLogo from '../assets/logo-nextjs.svg'
+import Ongoing from '../assets/minibars-ongoing.svg'
+import New from '../assets/minibars-new.svg' 
+import Escalating1 from '../assets/minibars-escalating-1.svg' 
+import Escalating2 from '../assets/minibars-escalating-2.svg' 
+import Regression from '../assets/minibars-regression.svg' 
 
 import styled from 'styled-components'
 
 function IssuesList({className}) {
-  const headers = ['Top Issues']
+  const headers = ['Top Issues', 'Graph','']
   const data = [
-    {level:'warning', title: 'Hydration Error', culprit: 'Server rendered HTML didnt match client', project: NextJSLogo, location: 'https://peated.engineering'},
-    {level:'default', title: 'Error', culprit: 'Text content does not match server-rendered HTML', project: NextJSLogo, location: 'https://peated.engineering'},
-    {level:'info', title: 'Object.captureException', culprit: 'Exceeded timeout of 5000ms for a', project: NodeLogo, location: 'Object?(autofixSteps.spec.tsx'},
-    {level:'fatal', title: 'TypeError', culprit: '(0, _reactDOM.findDOMNode) is not a function', project: NodeLogo, location: 'getCellMeasurementRequirements(react)'},
-    {level:'default', title: 'Error', culprit: 'There was an error while hydrating but React was', project: NextJSLogo, location: 'https://peated.engineering'},
+    {level:'warning', title: 'Hydration Error', culprit: 'Server rendered HTML didnt match client', project: NextJSLogo, location: 'https://peated.engineering', trend: Ongoing, status: 'Ongoing', max: '539'},
+    {level:'default', title: 'Error', culprit: 'Text content does not match server-rendered HTML', project: NextJSLogo, location: 'https://peated.engineering', trend: Escalating1, status: 'Escalating', max: '3'},
+    {level:'info', title: 'Object.captureException', culprit: 'Exceeded timeout of 5000ms for a', project: NodeLogo, location: 'Object?(autofixSteps.spec.tsx', trend: New, status: 'New', max: '129'},
+    {level:'fatal', title: 'TypeError', culprit: '(0, _reactDOM.findDOMNode) is not a function', project: NodeLogo, location: 'getCellMeasurementRequirements(react)', trend: Regression, status: 'Regressing', max: '2'},
+    {level:'default', title: 'Error', culprit: 'There was an error while hydrating but React was', project: NextJSLogo, location: 'https://peated.engineering', trend: Escalating2, status: 'Escalating', max: '65'},
+    {level:'fatal', title: 'TypeError', culprit: '(0, _reactDOM.findDOMNode) is not a function', project: NodeLogo, location: 'getCellMeasurementRequirements(react)', trend: Ongoing, status: 'Ongoing', max: '23'},
   ];
   
   return (
@@ -45,6 +51,12 @@ function IssuesList({className}) {
                   <StyledLocation>{object.location}</StyledLocation>
                 </SecondaryIssueRow>
               </Cell>
+              <Cell>
+                <ChartFont>{object.max}</ChartFont>
+                <StyledChart src={object.trend} alt='minibar chart' />
+                <TinyFont>{object.status}</TinyFont>
+              </Cell>
+              <Cell/>
             </tr>
           );
         })
@@ -75,6 +87,23 @@ const HeaderCell = styled(Cell)`
 
 const SmallFont = styled('div')`
   font-size: 0.9em;
+`;
+
+const TinyFont = styled('div')`
+  font-size: 0.7em;
+`;
+
+const ChartFont = styled(TinyFont)`
+  position: absolute;
+  border-top: 1px dotted var(--purple100);
+  width: 100%;
+  text-align: right;
+  color: var(--purple100);
+`;
+
+const StyledChart = styled('img')`
+  max-height: 32px;
+  min-height: 16px;
 `;
 
 const PrimaryIssueRow = styled('div')`
