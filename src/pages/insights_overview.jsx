@@ -222,6 +222,7 @@ const WidgetF = styled(Widget)`
 `;
 
 const WidgetTransactions = styled('div')`
+  overflow: hidden;
 
   @media (min-width: 992px) {
     grid-column: 1/4;
@@ -230,6 +231,7 @@ const WidgetTransactions = styled('div')`
 `;
 
 const WidgetList = styled('div')`
+  overflow: hidden;
 
   @media (min-width: 992px) {
     grid-column: 4/7;

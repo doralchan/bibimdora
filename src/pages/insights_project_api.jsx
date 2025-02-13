@@ -1,7 +1,7 @@
 import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
-import Transactions from '../layouts/table_txns'
+import TransactionList from '../layouts/list_transactions'
 import IssuesList from '../layouts/list_issues'
 import ExampleList from '../layouts/list_examples'
 import FilterBar from '../layouts/filterBar'
@@ -86,7 +86,7 @@ function InsightsProjectAPI() {
             <ExampleList />
           </WidgetCaches>
           <WidgetTransactions>
-            <Transactions />
+            <TransactionList />
           </WidgetTransactions>
         </GridStyles>
       </Body>
