@@ -4,10 +4,10 @@ import Body from '../layouts/body'
 
 import FilterBar from '../layouts/filterBar'
 
-function Craft() {
+function Quality() {
   return (
     <Main>
-      <Header title='Craft'/>
+      <Header title='Quality'/>
       <Body>
         <FilterBar />
       </Body>
@@ -15,4 +15,4 @@ function Craft() {
   )
 }
 
-export default Craft
+export default Quality

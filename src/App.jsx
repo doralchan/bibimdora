@@ -5,7 +5,7 @@ import Issues from './pages/issues'
 import AllIssues from './pages/issues_all'
 import Errors from './pages/issues_errors'
 import Metrics from './pages/issues_metrics'
-import Craft from './pages/issues_craft'
+import Quality from './pages/issues_quality'
 import Security from './pages/issues_security'
 import SavedView1 from './pages/issues_saved1'
 import SavedView2 from './pages/issues_saved2'
@@ -75,7 +75,7 @@ function App() {
             <Route path='all' element={<AllIssues/>} />
             <Route path='errors' element={<Errors/>} />
             <Route path='metrics' element={<Metrics/>} />
-            <Route path='craft' element={<Craft/>} />
+            <Route path='quality' element={<Quality/>} />
             <Route path='security' element={<Security/>} />
             <Route path='saved1' element={<SavedView1/>} />
             <Route path='saved2' element={<SavedView2/>} />

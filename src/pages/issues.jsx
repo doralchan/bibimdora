@@ -22,7 +22,7 @@ function Issues() {
             <SubnavHeader>Starred Views</SubnavHeader>
             <SubnavItem to='errors' src={DefaultLogo}>Errors & Outages</SubnavItem>
             <SubnavItem to='metrics' src={DefaultLogo}>Metrics</SubnavItem>
-            <SubnavItem to='craft' src={DefaultLogo}>Craft</SubnavItem>
+            <SubnavItem to='quality' src={DefaultLogo}>Quality</SubnavItem>
             <SubnavItem to='security' src={DefaultLogo}>Security</SubnavItem>
             <SubnavItem to='saved1' src={NextJSLogo}>Custom View 1</SubnavItem>
             <SubnavItem to='saved2' src={NodeLogo}>Custom View 2</SubnavItem>
