@@ -10,6 +10,8 @@ import Widget from '../components/widget'
 import BarsLines from '../components/bars_lines'
 import Lines from '../components/lines'
 
+import LaravelLogo from '../assets/logo-laravel.svg'
+
 import styled from 'styled-components'
 
 function InsightsProjectAPI() {
@@ -58,42 +60,34 @@ function InsightsProjectAPI() {
 
   return (
     <Main>
-      <Header title='@peated/API'/>
+      <Header title='@peated/API' logo={LaravelLogo} />
       <Body>
         <FilterBar isServicePage />
         <GridStyles>
-        
           <WidgetThroughput title='Throughput Requests v. Errors'>
             <BarsLines />
           </WidgetThroughput>
-
           <WidgetDuration title='Duration (P50, P95)'>
             <Lines data={dataDuration} />
           </WidgetDuration>
-
           <WidgetIssueList>
             <StyledIssuesList />
           </WidgetIssueList>
-
           <WidgetQueries title='Top Queries'>
             <Lines data={dataQueries} />
             <TransactionsList />
           </WidgetQueries>
-
           <WidgetQueues title='Top Queues'>
             <Lines data={dataQueues} />
             <TransactionsList />
           </WidgetQueues>
-          
           <WidgetCaches title='Top Caches'>
             <Lines data={dataCaches} />
             <TransactionsList />
           </WidgetCaches>
-
           <WidgetTransactions>
             <Transactions />
           </WidgetTransactions>
-
         </GridStyles>
       </Body>
     </Main>

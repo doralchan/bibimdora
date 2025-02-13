@@ -1,11 +1,15 @@
 import Button from '../components/button'
+import Logo from '../components/logo'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-const Header = ({className, children, title, cta}) => (
+const Header = ({className, children, title, cta, logo}) => (
     <HeaderStyles className={className}>
-      <TitleStyles><h2>{title}</h2></TitleStyles>
+      <TitleStyles>
+        {logo ? <StyledLogo src={logo} /> : null}
+        <h2>{title}</h2>
+      </TitleStyles>
       {cta ? <ActionStyles><Button>{cta}</Button></ActionStyles> : null}
       <TabStyles>{children}</TabStyles>
     </HeaderStyles>
@@ -23,6 +27,12 @@ const Header = ({className, children, title, cta}) => (
 
   const TitleStyles = styled('div')`
     grid-column: 1/2;
+    display: flex;
+  `;
+
+  const StyledLogo = styled(Logo)`
+    height: 25px;
+    margin-right: var(--space-md);
   `;
 
   const ActionStyles = styled('div')`
