@@ -15,7 +15,10 @@ function ExampleList() {
         {data.map((object, index) => {
           return (
             <tr key={index}>
-              <Cell><Link>{object.name}</Link></Cell>
+              <Cell>
+                <Link>{object.name}</Link>
+                <SmallFont>Context Description</SmallFont>
+              </Cell>
               <Cell>{object.duration}</Cell>
             </tr>
           );
@@ -36,9 +39,14 @@ const StyledTable = styled('table')`
   }
 `;
 
+const SmallFont = styled('div')`
+  font-size: 0.9em;
+  color: var(--purple100);
+`;
+
 const Cell = styled('td')`
   border-bottom: 1px solid var(--dark500);
-  padding: var(--space-sm) var(--space-md);
+  padding: var(--space-sm) 0;
 
   &:not(:first-child) {
     text-align: right;
