@@ -3,7 +3,7 @@ import Header from '../layouts/header'
 import Body from '../layouts/body'
 import Transactions from '../layouts/table_txns'
 import IssuesList from '../layouts/list_issues'
-import TransactionsList from '../layouts/list_txns'
+import ExampleList from '../layouts/list_examples'
 import FilterBar from '../layouts/filterBar'
 
 import Widget from '../components/widget'
@@ -75,15 +75,15 @@ function InsightsProjectAPI() {
           </WidgetIssueList>
           <WidgetQueries title='Top Queries'>
             <Lines data={dataQueries} />
-            <TransactionsList />
+            <ExampleList />
           </WidgetQueries>
           <WidgetQueues title='Top Queues'>
             <Lines data={dataQueues} />
-            <TransactionsList />
+            <ExampleList />
           </WidgetQueues>
           <WidgetCaches title='Top Caches'>
             <Lines data={dataCaches} />
-            <TransactionsList />
+            <ExampleList />
           </WidgetCaches>
           <WidgetTransactions>
             <Transactions />

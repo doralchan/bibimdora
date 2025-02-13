@@ -2,7 +2,7 @@ import Link from '../components/link'
 
 import styled from 'styled-components'
 
-function TransactionsList({className}) {
+function ExampleList() {
   const data = [
     { name: '/example/00', duration: '35.23ms'},
     { name: '/example/01', duration: '84.19ms'},
@@ -45,4 +45,4 @@ const Cell = styled('td')`
   }
 `;
 
-export default TransactionsList
+export default ExampleList
