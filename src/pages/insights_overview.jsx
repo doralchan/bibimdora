@@ -7,7 +7,7 @@ import FilterBar from '../layouts/filterBar'
 
 import Widget from '../components/widget'
 import Donut from '../components/donut'
-import Bars from '../components/bars'
+import BarsLines from '../components/bars_lines'
 import Lines from '../components/lines'
 
 import styled from 'styled-components'
@@ -17,7 +17,7 @@ function Overview() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
       data: [1.2, 1.3, 1.2, 1.4, 1.2, 1.3, 1.4, 1.6, 1.8, 2, 1.9, 2, 1.9],
-      borderColor: ['#4E2A9A']
+      borderColor: ['#423C58']
     }]
   };
   
@@ -25,7 +25,7 @@ function Overview() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
       data: [200, 203, 202, 200, 221, 202, 203, 200, 201, 203, 202, 201, 200],
-      borderColor: ['#4E2A9A']
+      borderColor: ['#423C58']
     }]
   };
   
@@ -33,7 +33,7 @@ function Overview() {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
       data: [120, 121, 123, 119, 290, 285, 292, 120, 121, 120, 119, 121, 121],
-      borderColor: ['#4E2A9A']
+      borderColor: ['#423C58']
     }]
   };
 
@@ -42,11 +42,11 @@ function Overview() {
     datasets: [
     {
       data: [120, 121, 123, 119, 120, 130, 124, 120, 121, 120, 119, 121, 121],
-      borderColor: ['#A737B4']
+      borderColor: ['#423C58']
     }, 
     {
       data: [200, 203, 202, 200, 201, 202, 203, 200, 201, 503, 942, 901, 1000],
-      borderColor: ['#FDB81B']
+      borderColor: ['#837AA3']
     }]
   };
   
@@ -55,11 +55,11 @@ function Overview() {
     datasets: [
     {
       data: [2.3, 2.2, 2.2, 2.4, 2.1, 2.2, 2.4, 2.2, 2.3, 2.4, 1.2, 2.3, 2.4],
-      borderColor: ['#A737B4'],
+      borderColor: ['#423C58'],
     },
     {
       data: [2, 2.3, 2.2, 2, 2.1, 2.2, 2.3, 2, 2.1, 2.3, 2.4, 2.1, 2.3],
-      borderColor: ['#FDB81B']
+      borderColor: ['#837AA3']
     }]
   };
   
@@ -68,11 +68,11 @@ function Overview() {
     datasets: [
     {
       data: [2.2, 2.3, 2.3, 2.4, 2.2, 2.1, 2.3, 2.1, 2.2, 2.5, 2.3, 2.2, 2.3],
-      borderColor: ['#A737B4'],
+      borderColor: ['#423C58'],
     },
     {
       data: [2.2, 2.3, 2.3, 2.4, 3.2, 8.1, 5.3, 2.1, 2.2, 2.5, 2.3, 2.2, 2.3],
-      borderColor: ['#FDB81B'],
+      borderColor: ['#837AA3'],
     }]
   }
 
@@ -86,7 +86,7 @@ function Overview() {
             <Donut />
           </WidgetScore>
           <WidgetThroughput title='Throughput'>
-            <Bars />
+            <BarsLines />
           </WidgetThroughput>
           <WidgetA title='Metric A'>
             <Lines data={dataA} />
