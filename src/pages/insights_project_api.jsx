@@ -77,11 +77,11 @@ function InsightsProjectAPI() {
             <Lines data={dataQueries} />
             <ExampleList />
           </WidgetQueries>
-          <WidgetQueues title='Top Queues'>
+          <WidgetQueues title='Queue Breakdown'>
             <Lines data={dataQueues} />
             <ExampleList />
           </WidgetQueues>
-          <WidgetCaches title='Top Caches'>
+          <WidgetCaches title='Top Cache Hit Rates'>
             <Lines data={dataCaches} />
             <ExampleList />
           </WidgetCaches>

@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 function ExampleList() {
   const data = [
-    { name: '/example/00', duration: '35.23ms'},
-    { name: '/example/01', duration: '84.19ms'},
-    { name: '/example/02', duration: '27.32ms'},
+    { name: '/example/00', duration: 'XX.X%'},
+    { name: '/example/01', duration: 'XX.X%'},
+    { name: '/example/02', duration: 'XX.X%'},
   ];
   
   return (
@@ -19,7 +19,9 @@ function ExampleList() {
                 <Link>{object.name}</Link>
                 <SmallFont>Context Description</SmallFont>
               </Cell>
-              <Cell>{object.duration}</Cell>
+              <Cell>
+                {object.duration}
+              </Cell>
             </tr>
           );
         })
