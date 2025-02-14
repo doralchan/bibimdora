@@ -2,13 +2,7 @@ import Link from '../components/link'
 
 import styled from 'styled-components'
 
-function ExampleList() {
-  const data = [
-    { name: '/example/00', duration: 'XX.X%'},
-    { name: '/example/01', duration: 'XX.X%'},
-    { name: '/example/02', duration: 'XX.X%'},
-  ];
-  
+function ExampleList({data}) {  
   return (
     <StyledTable>
       <tbody>
@@ -17,10 +11,10 @@ function ExampleList() {
             <tr key={index}>
               <Cell>
                 <Link>{object.name}</Link>
-                <SmallFont>Context Description</SmallFont>
+                <TinyFont>{object.description}</TinyFont>
               </Cell>
               <Cell>
-                {object.duration}
+                {object.value}
               </Cell>
             </tr>
           );
@@ -41,8 +35,8 @@ const StyledTable = styled('table')`
   }
 `;
 
-const SmallFont = styled('div')`
-  font-size: 0.9em;
+const TinyFont = styled('div')`
+  font-size: 0.7em;
   color: var(--purple100);
 `;
 

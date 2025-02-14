@@ -13,7 +13,7 @@ import Regression from '../assets/minibars-regression.svg'
 import styled from 'styled-components'
 
 function IssuesList({className}) {
-  const headers = ['Top Issues', 'Graph','']
+  const headers = ['Recommended Issues', 'Graph','']
   const data = [
     {level:'warning', title: 'Hydration Error', culprit: 'Server rendered HTML didnt match client', project: NextJSLogo, location: 'https://peated.engineering', trend: Ongoing, status: 'Ongoing', max: '539'},
     {level:'default', title: 'Error', culprit: 'Text content does not match server-rendered HTML', project: NextJSLogo, location: 'https://peated.engineering', trend: Escalating1, status: 'Escalating', max: '3'},

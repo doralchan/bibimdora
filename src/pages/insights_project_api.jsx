@@ -35,6 +35,12 @@ function InsightsProjectAPI() {
       borderColor: ['#837AA3']
     }]
   };
+
+  const examplesQueries = [
+    { name: 'SELECT database.billing WHERE...', description: 'context/description', value: 'XXXmx'},
+    { name: 'UPDATE database.billing WHERE...', description: 'context/description', value: 'XXXms'},
+    { name: 'DELETE database.billing WHERE...', description: 'context/description', value: 'XXXms'},
+  ];
   
   const dataQueues = {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
@@ -49,6 +55,12 @@ function InsightsProjectAPI() {
       }
     ]
   };
+
+  const examplesQueues = [
+    { name: 'default', description: 'context/description', value: 'XXXms'},
+    { name: 'email', description: 'context/description', value: 'XXXms'},
+    { name: 'outbox', description: 'context/description', value: 'XXXms'},
+  ];
   
   const dataCaches = {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
@@ -57,6 +69,12 @@ function InsightsProjectAPI() {
       borderColor: ['#837AA3'],
     }]
   }
+
+  const examplesCaches = [
+    { name: 'Job Key 1', description: 'context/description', value: 'XX.X%'},
+    { name: 'Job Key 2', description: 'context/description', value: 'XX.X%'},
+    { name: 'Job Key 3', description: 'context/description', value: 'XX.X%'},
+  ];
 
   return (
     <Main>
@@ -75,15 +93,15 @@ function InsightsProjectAPI() {
           </WidgetIssueList>
           <WidgetQueries title='Top Queries'>
             <Lines data={dataQueries} />
-            <ExampleList />
+            <ExampleList data={examplesQueries} />
           </WidgetQueries>
-          <WidgetQueues title='Queue Breakdown'>
+          <WidgetQueues title='Top Queue Destinations'>
             <Lines data={dataQueues} />
-            <ExampleList />
+            <ExampleList data={examplesQueues} />
           </WidgetQueues>
           <WidgetCaches title='Top Cache Hit Rates'>
             <Lines data={dataCaches} />
-            <ExampleList />
+            <ExampleList data={examplesCaches} />
           </WidgetCaches>
           <WidgetTransactions>
             <TransactionList />
