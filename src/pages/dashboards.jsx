@@ -13,6 +13,7 @@ function Dashboards(){
     <StyledContainer>
       <Subnavigation subtitle='Dashboards'>
         <SubnavGroup>
+          <SubnavItem to='dashboards-overview'>Overview</SubnavItem>
           <SubnavItem to='all'>All Dashboards</SubnavItem>
         </SubnavGroup>
         <SubnavGroup>

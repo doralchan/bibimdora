@@ -6,8 +6,8 @@ function Subnavigation({className, children, subtitle, defaultValue, onChange}) 
   return (
     <SubnavigationStyles className={className}>
       <HeaderStyles>
-        <TitleStyles>Organization</TitleStyles>
-        <SubtitleStyles>{subtitle}</SubtitleStyles>
+        <TitleStyles>{subtitle}</TitleStyles>
+        <SubtitleStyles>Empower Plant</SubtitleStyles>
       </HeaderStyles>
       <ListStyles>{children}</ListStyles>
     </SubnavigationStyles>

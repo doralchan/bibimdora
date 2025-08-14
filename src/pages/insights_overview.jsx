@@ -12,7 +12,7 @@ import Lines from '../components/lines'
 
 import styled from 'styled-components'
 
-function Overview() {
+function InsightsOverview() {
   const dataA = {
     labels: ['X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X', 'X/X'],
     datasets: [{
@@ -247,4 +247,4 @@ const StyledTransactions = styled(Transactions)`
   height: 100%;
 `;
 
-export default Overview
+export default InsightsOverview

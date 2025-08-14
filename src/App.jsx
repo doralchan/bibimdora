@@ -20,12 +20,13 @@ import ExploreProfiles from './pages/explore_profiles'
 import ExploreLogs from './pages/explore_logs'
 
 import Dashboards from './pages/dashboards'
+import DashboardsOverview from './pages/dashboards_overview'
 import AllDashboards from './pages/dashboards_all'
 import SavedDashboard1 from './pages/dashboards_saved1'
 import SavedDashboard2 from './pages/dashboards_saved2'
 
 import Insights from './pages/insights'
-import Overview from './pages/insights_overview'
+import InsightsOverview from './pages/insights_overview'
 import InsightsProjectWeb from './pages/insights_project_web'
 import InsightsProjectServer from './pages/insights_project_server'
 import InsightsProjectWorker from './pages/insights_project_worker'
@@ -84,7 +85,7 @@ function App() {
             <Route path='' element={<Navigate to='/issues/all'/>} /> 
           </Route>
           <Route path='/insights' element={<Insights/>}>
-            <Route path='overview' element={<Overview/>} />
+            <Route path='insights-overview' element={<InsightsOverview/>} />
             <Route path='web' element={<InsightsProjectWeb/>} />
             <Route path='server' element={<InsightsProjectServer/>} />
             <Route path='worker' element={<InsightsProjectWorker/>} />
@@ -104,7 +105,7 @@ function App() {
             <Route path='ui-mobile' element={<InsightsUIMobile/>} />
             <Route path='assets-mobile' element={<InsightsAssetsMobile/>} />
             <Route path='network-mobile' element={<InsightsNetworkMobile/>} />            
-            <Route path='' element={<Navigate to='/insights/overview'/>} />
+            <Route path='' element={<Navigate to='/insights/insights-overview'/>} />
           </Route>
           <Route path='/explore' element={<Explore/>}>
             <Route path='spans' element={<ExploreSpans/>} />
@@ -115,10 +116,11 @@ function App() {
             <Route path='' element={<Navigate to='/explore/spans'/>} />
           </Route>
           <Route path='/dashboards' element={<Dashboards/>}>
+            <Route path='dashboards-overview' element={<DashboardsOverview/>} />
             <Route path='all' element={<AllDashboards/>} />
             <Route path='saved1' element={<SavedDashboard1/>} />
             <Route path='saved2' element={<SavedDashboard2/>} />
-            <Route path='' element={<Navigate to='/dashboards/all'/>} />
+            <Route path='' element={<Navigate to='/dashboards/dashboards-overview'/>} />
           </Route>
           <Route path='/settings' element={<Settings />}>
             <Route path='account' element={<Account/>} />
