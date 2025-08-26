@@ -7,7 +7,6 @@ import DefaultLogo from '../assets/logo-default.svg'
 import NextJSLogo from '../assets/logo-nextjs.svg'
 import AppleLogo from '../assets/logo-apple.svg'
 import NodeLogo from '../assets/logo-node.svg'
-import LaravelLogo from '../assets/logo-laravel.svg'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -25,8 +24,6 @@ function Dashboards(){
           <SubnavItem to='web' src={NextJSLogo}>@peated/web</SubnavItem>
           <SubnavItem to='iOS' src={AppleLogo}>@peated/iOS</SubnavItem>
           <SubnavItem to='server' src={NodeLogo}>@peated/server</SubnavItem>
-          <SubnavItem to='worker' src={NodeLogo}>@peated/worker</SubnavItem>
-          <SubnavItem to='api' src={LaravelLogo}>@peated/API</SubnavItem>
           <SubnavItem to='saved1' src={DefaultLogo}>Custom Dash 1</SubnavItem>
           <SubnavItem to='saved2' src={DefaultLogo}>Custom Dash 2</SubnavItem>
         </SubnavGroup>

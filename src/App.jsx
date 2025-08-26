@@ -120,8 +120,6 @@ function App() {
             <Route path='all' element={<AllDashboards/>} />
             <Route path='web' element={<InsightsProjectWeb/>} />
             <Route path='server' element={<InsightsProjectServer/>} />
-            <Route path='worker' element={<InsightsProjectWorker/>} />
-            <Route path='api' element={<InsightsProjectAPI/>} />
             <Route path='iOS' element={<InsightsProjectiOS/>} />
             <Route path='saved1' element={<SavedDashboard1/>} />
             <Route path='saved2' element={<SavedDashboard2/>} />

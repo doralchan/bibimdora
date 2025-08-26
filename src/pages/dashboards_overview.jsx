@@ -1,9 +1,9 @@
 import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
+import Card from '../layouts/card'
 
 import Banner from '../components/banner'
-import Card from '../components/card'
 import HeroImage from '../assets/hero-image-1.png'
 
 import styled from 'styled-components'
@@ -69,7 +69,7 @@ const GridPreview = styled('div')`
 
 const ListPreview = styled('div')`
   padding-top: var(--space-sm);
-  color: var(--purple200);
+  color: var(--purple100);
 `;
 
 const SectionGrid = styled('div')`

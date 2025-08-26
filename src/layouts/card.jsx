@@ -27,6 +27,7 @@ const StyledCard = styled('div')`
   min-height: 175px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 `;
 
 const CardHeader = styled('div')`
