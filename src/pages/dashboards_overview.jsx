@@ -21,33 +21,28 @@ function DashboardsOverview() {
         >
           <StyledHero src={HeroImage} alt='' />
         </Banner>
-        <SectionGrid>
+        <Section>
           <h3>Recently Viewed</h3>
           <GridPreview>
-            <Card title='custom_dash_1' description='MM/DD/YY' />
             <Card title='@peated/iOS' description='MM/DD/YY' />
-            <Card title='top_queries' description='MM/DD/YY' />
+            <Card title='custom_dash_1' description='MM/DD/YY' />
           </GridPreview>
-        </SectionGrid>
-        <SectionGrid>
-          <h3>Most Popular with Your Team</h3>
+        </Section>
+        <Section>
+          <h3>Most Viewed By Team</h3>
           <GridPreview>
             <Card title='mobile_vitals' description='MM/DD/YY' />
             <Card title='@peated/iOS' description='MM/DD/YY' />
             <Card title='custom_dash_3' description='MM/DD/YY' />
             <Card title='outbound_requests' description='MM/DD/YY' />
           </GridPreview>
-        </SectionGrid>
-        <SectionList>
-          <div>
-            <h3>All Projects</h3>
-            <ListPreview>[List Here]</ListPreview>
-          </div>
-          <div>
-            <h3>All Insights Templates</h3>
-            <ListPreview>[List Here]</ListPreview>
-          </div>
-        </SectionList>
+        </Section>
+        <Section>
+          <h3>Recommended</h3>
+          <ListPreview>
+            [Starred Items]
+          </ListPreview>
+        </Section>
       </Body>
     </Main>
   )
@@ -60,6 +55,10 @@ const StyledHero = styled('img')`
   max-width: 300px;
 `;
 
+const Section = styled('div')`
+  padding-top: var(--space-lg);
+`;
+
 const GridPreview = styled('div')`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -70,17 +69,6 @@ const GridPreview = styled('div')`
 const ListPreview = styled('div')`
   padding-top: var(--space-sm);
   color: var(--purple100);
-`;
-
-const SectionGrid = styled('div')`
-  padding-top: var(--space-lg);
-`;
-
-const SectionList = styled('div')`
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: var(--space-md);
-  padding-top: var(--space-lg);
 `;
 
 export default DashboardsOverview
