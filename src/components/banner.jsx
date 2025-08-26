@@ -23,7 +23,7 @@ const StyledBanner = styled('div')`
   padding: var(--space-lg) 8%;
   border-radius: var(--radius);
   position: relative;
-  min-height: 40vh;
+  min-height: 20vh;
   display: flex;
   align-items: center;
 `;
