@@ -1,3 +1,5 @@
+import IconClose from '../assets/icon-close.svg'
+
 import Button from '../components/button'
 import styled from 'styled-components'
 import '../styles/theme.css'
@@ -5,6 +7,7 @@ import '../styles/theme.css'
 const Banner = ({className, children, title, description, primary, secondary}) => (
   <StyledBanner className={className}>
     <MainContent>
+      <StyledIconClose src={IconClose}/>
       <h1>{title}</h1>
       <Description>{description}</Description>
       <Actions>
@@ -23,7 +26,8 @@ const StyledBanner = styled('div')`
   padding: var(--space-lg) 8%;
   border-radius: var(--radius);
   position: relative;
-  min-height: 20vh;
+  height: 20vh;
+  min-height: 150px;
   display: flex;
   align-items: center;
 `;
@@ -44,6 +48,14 @@ const MainContent = styled('div')`
   gap: var(--space-unit);
   width: 50%;
   max-width: 800px;
+`;
+
+const StyledIconClose = styled('img')`
+  width: var(--space-lg);
+  height: var(--space-lg);
+  position: absolute;
+  right: var(--space-lg);
+  top: var(--space-lg);
 `;
 
 export default Banner;

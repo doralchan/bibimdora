@@ -2,6 +2,7 @@ import Main from '../layouts/main'
 import Header from '../layouts/header'
 import Body from '../layouts/body'
 import Card from '../layouts/card'
+import StarredItem from '../layouts/starred_item'
 
 import Banner from '../components/banner'
 import HeroImage from '../assets/hero-image-1.png'
@@ -29,7 +30,7 @@ function DashboardsOverview() {
           </GridPreview>
         </Section>
         <Section>
-          <h3>Most Viewed By Team</h3>
+          <h3>Most Viewed</h3>
           <GridPreview>
             <Card title='mobile_vitals' description='MM/DD/YY' />
             <Card title='@peated/iOS' description='MM/DD/YY' />
@@ -40,7 +41,22 @@ function DashboardsOverview() {
         <Section>
           <h3>Recommended</h3>
           <ListPreview>
-            [Starred Items]
+            <StarredItem>Web Vitals</StarredItem>
+            <StarredItem>Network Requests</StarredItem>
+            <StarredItem>Assets</StarredItem>
+            <StarredItem>Queries</StarredItem>
+            <StarredItem>Outbound API Requests</StarredItem>
+            <StarredItem>Caches</StarredItem>
+            <StarredItem>Queues</StarredItem>
+            <StarredItem>Mobile Vitals</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
+            <StarredItem>Dashboard Template</StarredItem>
           </ListPreview>
         </Section>
       </Body>
@@ -67,8 +83,11 @@ const GridPreview = styled('div')`
 `;
 
 const ListPreview = styled('div')`
-  padding-top: var(--space-sm);
-  color: var(--purple100);
+  padding-top: var(--space-md);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: var(--space-sm);
 `;
 
 export default DashboardsOverview
