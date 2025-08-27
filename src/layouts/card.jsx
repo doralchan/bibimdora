@@ -33,10 +33,13 @@ const StyledCard = styled('div')`
 const CardHeader = styled('div')`
   display: flex;
   justify-content: space-between;
-  padding: var(--space-lg) var(--space-lg) var(--space-md) var(--space-lg);
+  padding: var(--space-lg) var(--space-lg) var(--space-sm) var(--space-lg);
 `;
 
 const CardBody = styled('div')`
+  display: flex;
+  align-content: center;
+  justify-content: center;
   background-color: var(--dark300);
   height: 100%;
   width: 100%;
