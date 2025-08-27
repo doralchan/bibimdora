@@ -10,7 +10,7 @@ const Card = ({className, title, description, children}) => (
         <h4>{title}</h4>
         <Description>{description}</Description>
       </div>
-      <Avatar src={AvatarImage} />
+      <Avatar />
     </CardHeader>
     <CardBody>
       {children}
@@ -47,11 +47,13 @@ const Description = styled('p')`
   margin-bottom: var(--space-sm);
 `;
 
-const Avatar = styled('img')`
-  height: 32px;
-  width: 32px;
+const Avatar = styled('div')`
+  width: var(--space-xl);
+  height: var(--space-xl);
   border-radius: 100%;
   border: 2px solid var(--purple200);
+  background-image: url(${AvatarImage});
+  background-size: 100%;
 `;
 
 export default Card;

@@ -1,6 +1,6 @@
 import Select, {components} from 'react-select'
 
-import IconStar from '../assets/icon-star.svg'
+import IconStarFilled from '../assets/icon-star-filled.svg'
 import IconCheckmark from '../assets/icon-checkmark.svg'
 
 import Icon from '../components/icon'
@@ -57,7 +57,7 @@ function ServiceSelect ({className, onChange}) {
         {props.data.checkbox === true ? <Checkbox defaultChecked={true} /> : null}
         {props.data.checkbox === false ? <StyledCheckmark /> : null}
         {props.data.label}
-        {props.data.checkbox === true ? <StyledIcon src={IconStar} /> : null}
+        {props.data.checkbox === true ? <StyledIcon src={IconStarFilled} /> : null}
       </components.Option>
     )
   }
