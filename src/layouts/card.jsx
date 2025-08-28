@@ -33,7 +33,7 @@ const StyledCard = styled('div')`
 const CardHeader = styled('div')`
   display: flex;
   justify-content: space-between;
-  padding: var(--space-lg) var(--space-lg) var(--space-sm) var(--space-lg);
+  padding: var(--space-md) var(--space-lg) var(--space-md) var(--space-lg);
 `;
 
 const CardBody = styled('div')`
@@ -47,7 +47,6 @@ const CardBody = styled('div')`
 
 const Description = styled('p')`
   color: var(--purple100);
-  margin-bottom: var(--space-sm);
 `;
 
 const Avatar = styled('div')`
