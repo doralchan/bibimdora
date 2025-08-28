@@ -1,5 +1,4 @@
 import Link from '../components/link'
-import Icon from '../components/icon'
 import Table from '../components/table'
 
 import styled from 'styled-components'
@@ -60,10 +59,6 @@ const HeaderCell = styled(Cell)`
   font-size: 0.9em;
   color: var(--purple100);
   border-bottom: 3px solid var(--dark500);
-`;
-
-const StyledIcon = styled(Icon)`
-  float: right;
 `;
 
 export default OtherList

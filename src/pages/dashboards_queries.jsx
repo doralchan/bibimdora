@@ -5,10 +5,10 @@ import FilterBar from '../layouts/filterBar'
 
 import DefaultLogo from '../assets/logo-default.svg'
 
-function SavedDashboard1() {
+function DashboardsQueries() {
   return (
     <Main>
-      <Header title='Custom Dashboard 1' logo={DefaultLogo}/>
+      <Header title='Queries' logo={DefaultLogo}/>
       <Body>
         <FilterBar />
       </Body>
@@ -16,4 +16,4 @@ function SavedDashboard1() {
   )
 }
 
-export default SavedDashboard1
+export default DashboardsQueries

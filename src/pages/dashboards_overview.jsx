@@ -46,18 +46,14 @@ function DashboardsOverview() {
         <Section>
           <h3>Recommended</h3>
           <ListPreview>
-            <StarredItem>Web Vitals</StarredItem>
+            <StarredItem preStarred>Web Vitals</StarredItem>
+            <StarredItem preStarred>Queries</StarredItem>
             <StarredItem>Network Requests</StarredItem>
             <StarredItem>Assets</StarredItem>
-            <StarredItem>Queries</StarredItem>
             <StarredItem>Outbound API Requests</StarredItem>
             <StarredItem>Caches</StarredItem>
             <StarredItem>Queues</StarredItem>
             <StarredItem>Mobile Vitals</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
           </ListPreview>
         </Section>
       </Body>
@@ -84,11 +80,11 @@ const GridPreview = styled('div')`
 `;
 
 const ListPreview = styled('div')`
-  padding-top: var(--space-md);
+  padding-top: var(--space-lg);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  gap: var(--space-sm);
+  gap: var(--space-lg);
 `;
 
 const DashPreview = styled('img')`

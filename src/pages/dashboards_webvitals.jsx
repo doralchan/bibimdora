@@ -5,10 +5,10 @@ import FilterBar from '../layouts/filterBar'
 
 import DefaultLogo from '../assets/logo-default.svg'
 
-function SavedDashboard2() {
+function DashboardsWebVitals() {
   return (
     <Main>
-      <Header title='Custom Dashboard 2' logo={DefaultLogo}/>
+      <Header title='Web Vitals' logo={DefaultLogo}/>
       <Body>
         <FilterBar />
       </Body>
@@ -16,4 +16,4 @@ function SavedDashboard2() {
   )
 }
 
-export default SavedDashboard2
+export default DashboardsWebVitals

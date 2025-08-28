@@ -22,8 +22,8 @@ import ExploreLogs from './pages/explore_logs'
 import Dashboards from './pages/dashboards'
 import DashboardsOverview from './pages/dashboards_overview'
 import AllDashboards from './pages/dashboards_all'
-import SavedDashboard1 from './pages/dashboards_saved1'
-import SavedDashboard2 from './pages/dashboards_saved2'
+import DashboardsWebVitals from './pages/dashboards_webvitals'
+import DashboardsQueries from './pages/dashboards_queries'
 
 import Insights from './pages/insights'
 import InsightsOverview from './pages/insights_overview'
@@ -121,8 +121,10 @@ function App() {
             <Route path='web' element={<InsightsProjectWeb/>} />
             <Route path='server' element={<InsightsProjectServer/>} />
             <Route path='iOS' element={<InsightsProjectiOS/>} />
-            <Route path='saved1' element={<SavedDashboard1/>} />
-            <Route path='saved2' element={<SavedDashboard2/>} />
+            <Route path='worker' element={<InsightsProjectWorker/>} />
+            <Route path='api' element={<InsightsProjectAPI/>} />
+            <Route path='webvitals' element={<DashboardsWebVitals/>} />
+            <Route path='queries' element={<DashboardsQueries/>} />
             <Route path='' element={<Navigate to='/dashboards/dashboards-overview'/>} />
           </Route>
           <Route path='/settings' element={<Settings />}>
