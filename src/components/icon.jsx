@@ -9,6 +9,7 @@ const IconStyles = styled('img')`
   display: block;
   width: var(--space-lg);
   height: var(--space-lg);
+  margin: 0 auto;
 `;
 
 export default Icon;
