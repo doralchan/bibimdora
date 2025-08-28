@@ -10,7 +10,7 @@ function InsightsProjectServer() {
     <Main>
       <Header title='@peated/server' logo={NodeLogo} />
       <Body>
-        <FilterBar isServicePage />
+        <FilterBar />
       </Body>
     </Main>
   )

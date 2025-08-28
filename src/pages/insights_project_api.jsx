@@ -80,7 +80,7 @@ function InsightsProjectAPI() {
     <Main>
       <Header title='@peated/API' logo={LaravelLogo} />
       <Body>
-        <FilterBar isServicePage />
+        <FilterBar />
         <GridStyles>
           <WidgetThroughput title='Throughput Requests v. Errors'>
             <BarsLines />

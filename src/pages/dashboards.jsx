@@ -23,10 +23,10 @@ function Dashboards(){
         <SubnavGroup>
           <SubnavHeader>Starred Dashboards</SubnavHeader>
           <SubnavItem to='web' src={NextJSLogo}>@peated/web</SubnavItem>
+          <SubnavItem to='api' src={LaravelLogo}>@peated/API</SubnavItem>
           <SubnavItem to='iOS' src={AppleLogo}>@peated/iOS</SubnavItem>
           <SubnavItem to='server' src={NodeLogo}>@peated/server</SubnavItem>
           <SubnavItem to='worker' src={NodeLogo}>@peated/worker</SubnavItem>
-          <SubnavItem to='api' src={LaravelLogo}>@peated/API</SubnavItem>
           <SubnavItem to='webvitals' src={DefaultLogo}>Web Vitals</SubnavItem>
           <SubnavItem to='queries' src={DefaultLogo}>Queries</SubnavItem>
         </SubnavGroup>

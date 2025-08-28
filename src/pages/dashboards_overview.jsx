@@ -83,7 +83,7 @@ const ListPreview = styled('div')`
   padding-top: var(--space-lg);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: var(--space-lg);
 `;
 

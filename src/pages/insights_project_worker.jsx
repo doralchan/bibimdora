@@ -10,7 +10,7 @@ function InsightsProjectWorker() {
     <Main>
       <Header title='@peated/worker' logo={NodeLogo} />
       <Body>
-        <FilterBar isServicePage />
+        <FilterBar />
       </Body>
     </Main>
   )

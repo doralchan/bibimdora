@@ -10,7 +10,7 @@ function InsightsProjectiOS() {
     <Main>
       <Header title='@peated/iOS' logo={AppleLogo} />
       <Body>
-        <FilterBar isServicePage />
+        <FilterBar />
       </Body>
     </Main>
   )
