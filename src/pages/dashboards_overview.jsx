@@ -17,7 +17,7 @@ import styled from 'styled-components'
 function DashboardsOverview() {
   return (
     <Main>
-      <Header title='Overview'/>
+      <Header title='Overview' cta='Create Dashboard'/>
       <Body>
         <Banner 
           title='New AI Agent Monitoring' 

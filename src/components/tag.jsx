@@ -13,7 +13,7 @@ const TagStyles = styled('div')`
   font-size: 10px;
   padding: 2px var(--space-xs);
   color: var(--white);
-  background-color: rgba(180, 80, 188, 0.5);
+  background-color: rgba(180, 80, 188, 0.4);
 `;
 
 export default Tag;

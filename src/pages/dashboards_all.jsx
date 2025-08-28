@@ -11,7 +11,7 @@ import '../styles/theme.css'
 function AllDashboards() {
   return (
     <Main>
-      <Header title='All Dashboards'/>
+      <Header title='All Dashboards' cta='Create Dashboard'/>
       <Body>
         <Section>
           <SectionHeader>Created by Me</SectionHeader>

@@ -10,7 +10,7 @@ const Header = ({className, children, title, cta, logo}) => (
         {logo ? <StyledLogo src={logo} /> : null}
         <h2>{title}</h2>
       </TitleStyles>
-      {cta ? <ActionStyles><Button>{cta}</Button></ActionStyles> : null}
+      {cta ? <ActionStyles><Button priority>{cta}</Button></ActionStyles> : null}
       <TabStyles>{children}</TabStyles>
     </HeaderStyles>
   );
