@@ -46,8 +46,8 @@ function DashboardsOverview() {
         <Section>
           <h3>Recommended</h3>
           <ListPreview>
-            <StarredItem preStarred>Web Vitals</StarredItem>
-            <StarredItem preStarred>Queries</StarredItem>
+            <StarredItem defaultStarred>Web Vitals</StarredItem>
+            <StarredItem defaultStarred>Queries</StarredItem>
             <StarredItem>Network Requests</StarredItem>
             <StarredItem>Assets</StarredItem>
             <StarredItem>Outbound API Requests</StarredItem>

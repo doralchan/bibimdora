@@ -2,7 +2,6 @@ import Sentry from '../components/sentry'
 import NavItem from '../layouts/navitem'
 
 import IconIssues from '../assets/icon-issues.svg'
-import IconChart from '../assets/icon-chart.svg'
 import IconExplore from '../assets/icon-explore.svg'
 import IconDashboards from '../assets/icon-dashboards.svg'
 import IconSettings from '../assets/icon-settings.svg'
@@ -18,7 +17,6 @@ const Navigation = ({className}) => (
       <NavItem to='issues' src={IconIssues} />
       <NavItem to='explore' src={IconExplore} />
       <NavItem to='dashboards' src={IconDashboards} />
-      <NavItem to='insights' src={IconChart} />
     </NavTop>
     <NavBottom>
       <NavItem to='new' src={IconBroadcast} />

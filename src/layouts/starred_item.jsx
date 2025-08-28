@@ -7,14 +7,14 @@ import IconStarEmpty from '../assets/icon-star-empty.svg'
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-function StarredItem({className, to, children, preStarred}) {
+function StarredItem({className, to, children, defaultStarred}) {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <StyledItem className={className}>
-      <StyledIcon 
+      <StyledIcon
         onClick={() => setIsActive(!isActive)}
-        src={isActive ? IconStarFilled : IconStarEmpty}
+        src={isActive || defaultStarred ? IconStarFilled : IconStarEmpty}
       />
       <StyledLink to={to}>
         <StyledTitle>{children}</StyledTitle>
