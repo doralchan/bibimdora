@@ -1,36 +1,42 @@
+import {NavLink} from 'react-router-dom';
+import {useState} from 'react';
+
 import IconStarFilled from '../assets/icon-star-filled.svg'
 import IconStarEmpty from '../assets/icon-star-empty.svg'
 
 import styled from 'styled-components'
 import '../styles/theme.css'
 
-const StarredItem = ({className, defaultStarred, onChange, children}) => (
-  <StyledItem
-    onChange={onChange} 
-    defaultStarred={defaultStarred} 
-    className={className}>
-    <StyledIcon src={IconStarEmpty} />
-    <p>{children}</p>
-  </StyledItem>
-);
+function StarredItem({className, to, defaultStarred, children}) {
+  const [isActive, setIsActive] = useState(false);
+
+  return (
+    <StyledItem className={className}>
+      <StyledIcon 
+        onClick={() => setIsActive(!isActive)}
+        defaultStarred={defaultStarred}
+        src={isActive ? IconStarFilled : IconStarEmpty}
+      />
+      <StyledLink to={to}>{children}</StyledLink>
+    </StyledItem>
+  )
+}
 
 const StyledItem = styled('div')`
   display: flex;
   gap: var(--space-sm);
-  cursor: pointer;
-  color: var(--purple100);
-  transition: all 300ms ease-in-out;
-
-  &:hover {
-    transition: all 300ms ease-in-out;
-    color: var(--purple200);
-  }
+  align-items: center;
 `;
 
 const StyledIcon = styled('img')`
   width: var(--space-lg);
   height: var(--space-lg);
-  opacity: 0.2;
+  cursor: pointer;
+`;
+
+const StyledLink = styled(NavLink)`
+  color: var(--purple100);
+  text-decoration: none;
 `;
 
 export default StarredItem;

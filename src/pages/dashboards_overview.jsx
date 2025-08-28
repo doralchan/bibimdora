@@ -58,10 +58,6 @@ function DashboardsOverview() {
             <StarredItem>Dashboard Template</StarredItem>
             <StarredItem>Dashboard Template</StarredItem>
             <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
-            <StarredItem>Dashboard Template</StarredItem>
           </ListPreview>
         </Section>
       </Body>

@@ -40,7 +40,7 @@ const CardBody = styled('div')`
   display: flex;
   align-content: center;
   justify-content: center;
-  background-color: var(--dark300);
+  border-top: 1px solid var(--dark400);
   height: 100%;
   width: 100%;
 `;
