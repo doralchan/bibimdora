@@ -13,7 +13,7 @@ function MyDashboardsList({className}) {
     { name: '@peated/iOS', owner: 'user_name', projects: '2', lastviewed:'1/23/2025', domain:'mobile' },
     { name: '@peated/server', owner: 'user_name', projects: '2', lastviewed:'1/2/2025', domain:'backend' },
     { name: '@peated/worker', owner: 'user_name', projects: '2', lastviewed:'10/28/2024', domain:'backend' },
-    { name: '@peated/API', owner: 'user_name', projects: '2', lastviewed:'12/25/2024', domain:'frontend' },
+    { name: '@peated/API', owner: 'user_name', projects: '2', lastviewed:'12/25/2023', domain:'frontend' },
   ];
 
   return (
