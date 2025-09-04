@@ -10,15 +10,15 @@ import styled from 'styled-components'
 function OtherDashboardsList({className}) {
   const headers = ['Star', 'Name', 'Owner', 'Projects', 'Tags', 'Last Viewed']
   const data = [
-    { starred: true, name: 'Web Vitals', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: true, name: 'Queries', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'Network Requests', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'Assets', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'Outbound API Requests', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'Caches', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'Queues', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'Mobile Vitals', owner: 'sentry', projects: 'all', lastviewed:'Today' },
-    { starred: false, name: 'All Projects', owner: 'sentry', projects: 'all', lastviewed:'Today' },
+    { starred: true, name: 'Web Vitals', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'frontend' },
+    { starred: true, name: 'Queries', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'backend' },
+    { starred: false, name: 'Network Requests', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'frontend' },
+    { starred: false, name: 'Assets', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'frontend' },
+    { starred: false, name: 'Outbound API Requests', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'backend' },
+    { starred: false, name: 'Caches', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'backend' },
+    { starred: false, name: 'Queues', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'backend' },
+    { starred: false, name: 'Mobile Vitals', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'mobile' },
+    { starred: false, name: 'All Projects', owner: 'sentry', projects: 'all', lastviewed:'Today', domain:'projects' },
   ];
 
   return (
@@ -43,9 +43,9 @@ function OtherDashboardsList({className}) {
               <Cell>{object.projects}</Cell>
               <Cell>
                 <TagSet>
-                  <Tag>tag1</Tag>
-                  <Tag>tag2</Tag>
-                  <Tag>tag3</Tag>
+                  <Tag>{object.domain}</Tag>
+                  <Tag>web</Tag>
+                  <Tag>module</Tag>
                 </TagSet>
               </Cell>
               <Cell>{object.lastviewed}</Cell>

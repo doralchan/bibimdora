@@ -9,11 +9,11 @@ import styled from 'styled-components'
 function MyDashboardsList({className}) {
   const headers = ['Star', 'Name', 'Owner', 'Projects', 'Tags', 'Last Viewed']
   const data = [
-    { name: '@peated/web', owner: 'user_name', projects: '1', lastviewed:'Today' },
-    { name: '@peated/iOS', owner: 'user_name', projects: '2', lastviewed:'1/23/2025' },
-    { name: '@peated/server', owner: 'user_name', projects: '2', lastviewed:'1/2/2025' },
-    { name: '@peated/worker', owner: 'user_name', projects: '2', lastviewed:'10/28/2024' },
-    { name: '@peated/API', owner: 'user_name', projects: '2', lastviewed:'12/25/2024' },
+    { name: '@peated/web', owner: 'user_name', projects: '1', lastviewed:'Today', domain:'frontend' },
+    { name: '@peated/iOS', owner: 'user_name', projects: '2', lastviewed:'1/23/2025', domain:'mobile' },
+    { name: '@peated/server', owner: 'user_name', projects: '2', lastviewed:'1/2/2025', domain:'backend' },
+    { name: '@peated/worker', owner: 'user_name', projects: '2', lastviewed:'10/28/2024', domain:'backend' },
+    { name: '@peated/API', owner: 'user_name', projects: '2', lastviewed:'12/25/2024', domain:'frontend' },
   ];
 
   return (
@@ -38,9 +38,9 @@ function MyDashboardsList({className}) {
               <Cell>{object.projects}</Cell>
               <Cell>
                 <TagSet>
-                  <Tag>tag1</Tag>
-                  <Tag>tag2</Tag>
-                  <Tag>tag3</Tag>
+                  <Tag>{object.domain}</Tag>
+                  <Tag>web</Tag>
+                  <Tag>project</Tag>
                 </TagSet>
               </Cell>
               <Cell>{object.lastviewed}</Cell>
